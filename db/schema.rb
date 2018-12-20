@@ -10,16 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_20_122743) do
+ActiveRecord::Schema.define(version: 2018_12_20_112230) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "adminpack"
   enable_extension "plpgsql"
-
-  create_table "admin_abilities", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
 
   create_table "gatecodes", force: :cascade do |t|
     t.string "location"
@@ -30,10 +25,10 @@ ActiveRecord::Schema.define(version: 2018_12_20_122743) do
 
   create_table "phonenumbers", force: :cascade do |t|
     t.string "name"
-    t.integer "home"
-    t.integer "office"
-    t.integer "cell"
-    t.integer "secondary_contact"
+    t.string "home"
+    t.string "office"
+    t.string "cell"
+    t.string "secondary_contact"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

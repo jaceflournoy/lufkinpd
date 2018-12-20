@@ -10,11 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_20_103054) do
+ActiveRecord::Schema.define(version: 2018_12_20_122743) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "adminpack"
   enable_extension "plpgsql"
+
+  create_table "admin_abilities", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "gatecodes", force: :cascade do |t|
     t.string "location"
@@ -46,6 +51,7 @@ ActiveRecord::Schema.define(version: 2018_12_20_103054) do
     t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "role"
     t.index ["username"], name: "index_users_on_username", unique: true
   end
 

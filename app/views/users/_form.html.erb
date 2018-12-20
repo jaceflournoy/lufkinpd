@@ -26,7 +26,11 @@
     <%= form.password_field :password_confirmation %>
   </div>
 
+  <%= form.collection_select(:role, User::ROLES, :to_s, lambda{|i| i.to_s.humanize}) %>
+
+<br />
   <div class="actions">
+    <br/>
     <%= form.submit %>
   </div>
 <% end %>

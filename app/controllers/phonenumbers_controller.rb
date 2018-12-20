@@ -1,4 +1,5 @@
 class PhonenumbersController < ApplicationController
+  load_and_authorize_resource
   before_action :set_phonenumber, only: [:show, :edit, :update, :destroy]
 
   # GET /phonenumbers

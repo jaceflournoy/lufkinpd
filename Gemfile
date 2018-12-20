@@ -58,3 +58,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #railsadmin
 gem 'rails_admin', '~> 1.3'
+
+#cancancan
+gem 'cancancan', '~> 2.0'

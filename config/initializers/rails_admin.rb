@@ -1,4 +1,13 @@
+
 RailsAdmin.config do |config|
+
+
+  config.authenticate_with do
+    authenticate_or_request_with_http_basic('Login required') do |username, password|
+      user = User.where(name:username).first
+      user.authenticate(password) if user
+    end
+  end
 
   ### Popular gems integration
 
@@ -9,7 +18,8 @@ RailsAdmin.config do |config|
   # config.current_user_method(&:current_user)
 
   ## == Cancan ==
-  # config.authorize_with :cancan
+  #config.parent_controller = 'ApplicationController'
+  #config.authorize_with :cancancan
 
   ## == Pundit ==
   # config.authorize_with :pundit

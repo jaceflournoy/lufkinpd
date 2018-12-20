@@ -1,4 +1,5 @@
 class GatecodesController < ApplicationController
+  load_and_authorize_resource
   before_action :set_gatecode, only: [:show, :edit, :update, :destroy]
 
   # GET /gatecodes

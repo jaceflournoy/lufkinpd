@@ -1,0 +1,32 @@
+<%= form_with(model: rollcall, local: true) do |form| %>
+  <% if rollcall.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(rollcall.errors.count, "error") %> prohibited this rollcall from being saved:</h2>
+
+      <ul>
+      <% rollcall.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label "Radio #" %>
+    <%= form.number_field :radionum %>
+  </div>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

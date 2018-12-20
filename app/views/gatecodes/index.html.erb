@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Gate Codes</h1>
+
+<table class="center">
+  <thead>
+    <tr>
+      <th>Location</th>
+      <th>Code</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @gatecodes.each do |gatecode| %>
+      <tr>
+        <td><%= gatecode.location %></td>
+        <td><%= gatecode.code %></td>
+        <td><%= link_to 'Show', gatecode %></td>
+        <td><%= link_to 'Edit', edit_gatecode_path(gatecode) %></td>
+        <td><%= link_to 'Destroy', gatecode, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Gate Code', new_gatecode_path %>

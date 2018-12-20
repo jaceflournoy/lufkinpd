@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  home: 1
+  office: 1
+  cell: 1
+  secondary_contact: 1
+
+two:
+  name: MyString
+  home: 1
+  office: 1
+  cell: 1
+  secondary_contact: 1

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @gatecode.location %>
+</p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @gatecode.code %>
+</p>
+
+<%= link_to 'Edit', edit_gatecode_path(@gatecode) %> |
+<%= link_to 'Back', gatecodes_path %>

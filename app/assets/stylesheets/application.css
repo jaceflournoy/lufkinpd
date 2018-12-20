@@ -13,3 +13,146 @@
  *= require_tree .
  *= require_self
  */
+
+/* CSS Document */
+
+
+#header {
+    border-bottom: 4px solid #f44336;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    background-color: #008CBA;
+    text-decoration-color: #ffffff;
+    color: white;
+}
+
+.button {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    padding: 14px 40px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    background-color: #f44336; /* Red */
+    color: white;
+    border: 2px solid #f44336;
+    border-radius: 4px;
+    width: 23%;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+    cursor: pointer;
+}
+
+.button2 {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    padding: 14px 40px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    background-color: #008CBA; /* Blue */
+    color: white;
+    border: 2px solid #008CBA;
+    border-radius: 4px;
+    width: 23%;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+    cursor: pointer;
+}
+
+.button3 {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    padding: 14px 40px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    background-color: #000000; /* Black */
+    color: white;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    width: 23%;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+    cursor: pointer;
+}
+
+.a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:link{
+    text-decoration: none;
+    border: 2px solid #f44336;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.button2:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.button3:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+a:link, a:visited {
+    text-align: center;
+    text-decoration: none;
+}
+
+
+a:hover, a:active {
+    color: #008CBA;
+    text-decoration: none;
+}
+
+#login {
+    display:inline-block;
+    position: absolute;
+    right: 0;
+}
+
+#leftbutton {
+    text-align: left;
+    padding-left: 50px;
+    float: left;
+}
+
+tr.spaceUnder>td {
+    padding-bottom: 1em;
+    padding-right: 1em;
+}
+
+table {
+    background-color: #fff;
+}
+
+table.center {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+th,td {
+    padding: 15px;
+}
+
+.tbl{
+    width: 75%;
+    border: 1px solid #dadada;
+    margin: 10%;
+    padding-top: 50px;
+}
+
+th{
+    background-color: #dadada;
+}

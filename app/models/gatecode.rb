@@ -1,0 +1,2 @@
+class Gatecode < ApplicationRecord
+end

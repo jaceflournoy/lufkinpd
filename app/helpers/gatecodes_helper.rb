@@ -1,0 +1,2 @@
+module GatecodesHelper
+end

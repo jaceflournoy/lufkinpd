@@ -1,0 +1,2 @@
+class Rollcall < ApplicationRecord
+end

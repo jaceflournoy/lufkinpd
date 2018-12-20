@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Radionum:</strong>
+  <%= @rollcall.radionum %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @rollcall.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @rollcall.description %>
+</p>
+
+<%= link_to 'Edit', edit_rollcall_path(@rollcall) %> |
+<%= link_to 'Back', rollcalls_path %>

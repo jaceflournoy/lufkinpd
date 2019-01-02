@@ -61,3 +61,7 @@ gem 'rails_admin', '~> 1.3'
 
 #cancancan
 gem 'cancancan', '~> 2.0'
+
+gem 'image_processing', '~> 1.2'
+
+gem 'mini_magick'

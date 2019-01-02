@@ -4,5 +4,6 @@ class DashboardController < ApplicationController
     @phonenumbers = Phonenumber.all
     @gatecodes = Gatecode.all
     @rollcalls = Rollcall.all
+    @sexoffenders = Sexoffender.all
   end
 end

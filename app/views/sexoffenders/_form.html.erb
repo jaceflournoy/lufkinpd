@@ -1,0 +1,52 @@
+<%= form_with(model: sexoffender, local: true) do |form| %>
+  <% if sexoffender.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(sexoffender.errors.count, "error") %> prohibited this sexoffender from being saved:</h2>
+
+      <ul>
+      <% sexoffender.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label "Image: " %>
+    <%= form.file_field :image %>
+  </div>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dateofbirth %>
+    <%= form.date_field :dateofbirth %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address %>
+    <%= form.text_field :address %>
+  </div>
+
+  <div class="field">
+    <%= form.label :offense %>
+    <%= form.text_field :offense %>
+  </div>
+
+  <div class="field">
+    <%= form.label :risklevel %>
+    <%= form.text_field :risklevel %>
+  </div>
+
+  <div class="field">
+    <%= form.label :officer %>
+    <%= form.text_field :officer %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

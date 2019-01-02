@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+<%=image_tag(@sexoffender.image, style: 'width:140px;height:140px;')%>
+
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @sexoffender.name %>
+</p>
+
+<p>
+  <strong>Date of Birth:</strong>
+  <%= @sexoffender.dateofbirth %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @sexoffender.address %>
+</p>
+
+<p>
+  <strong>Offense:</strong>
+  <%= @sexoffender.offense %>
+</p>
+
+<p>
+  <strong>Risklevel:</strong>
+  <%= @sexoffender.risklevel %>
+</p>
+
+<p>
+  <strong>Officer:</strong>
+  <%= @sexoffender.officer %>
+</p>
+
+<%= link_to 'Edit', edit_sexoffender_path(@sexoffender) %> |
+<%= link_to 'Back', sexoffenders_path %>

@@ -1,0 +1,2 @@
+class Radionumber < ApplicationRecord
+end

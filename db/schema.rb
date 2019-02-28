@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_28_015745) do
+ActiveRecord::Schema.define(version: 2019_02_28_021155) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "adminpack"
@@ -50,6 +50,14 @@ ActiveRecord::Schema.define(version: 2019_02_28_015745) do
     t.string "office"
     t.string "cell"
     t.string "secondary_contact"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "radionumbers", force: :cascade do |t|
+    t.string "officer"
+    t.integer "radionumber"
+    t.string "extrainfo"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

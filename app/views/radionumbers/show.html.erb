@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Officer:</strong>
+  <%= @radionumber.officer %>
+</p>
+
+<p>
+  <strong>Radionumber:</strong>
+  <%= @radionumber.radionumber %>
+</p>
+
+<p>
+  <strong>Extrainfo:</strong>
+  <%= @radionumber.extrainfo %>
+</p>
+
+<%= link_to 'Edit', edit_radionumber_path(@radionumber) %> |
+<%= link_to 'Back', radionumbers_path %>

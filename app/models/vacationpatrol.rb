@@ -1,0 +1,2 @@
+class Vacationpatrol < ApplicationRecord
+end

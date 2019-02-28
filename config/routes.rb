@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :vacationpatrols
   resources :sexoffenders
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   get 'sessions/new'

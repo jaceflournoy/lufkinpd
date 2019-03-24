@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+<center>
+<h1>Fleet Tickets</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Unit Number</th>
+      <th>Reporting Officer</th>
+      <th>Problem</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @fleettickets.each do |fleetticket| %>
+      <tr>
+        <td><%= fleetticket.unitnumber %></td>
+        <td><%= fleetticket.reportingofficer %></td>
+        <td><%= fleetticket.problem %></td>
+        <td><%= link_to 'Show', fleetticket %></td>
+        <td><%= link_to 'Edit', edit_fleetticket_path(fleetticket) %></td>
+        <td><%= link_to 'Destroy', fleetticket, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Fleet Ticket', new_fleetticket_path %>
+</center>

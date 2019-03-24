@@ -1,0 +1,32 @@
+<%= form_with(model: fleetticket, local: true) do |form| %>
+  <% if fleetticket.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(fleetticket.errors.count, "error") %> prohibited this fleetticket from being saved:</h2>
+
+      <ul>
+      <% fleetticket.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :unitnumber, "Unit Number" %>
+    <%= form.number_field :unitnumber %>
+  </div>
+
+  <div class="field">
+    <%= form.label :reportingofficer, "Reporting Officer" %>
+    <%= form.text_field :reportingofficer %>
+  </div>
+
+  <div class="field">
+    <%= form.label :problem, "Explain the problem in detail" %>
+    <%= form.text_area :problem %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit "Submit"%>
+  </div>
+<% end %>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_28_021155) do
+ActiveRecord::Schema.define(version: 2019_03_24_202518) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "adminpack"
@@ -35,6 +35,14 @@ ActiveRecord::Schema.define(version: 2019_02_28_021155) do
     t.string "checksum", null: false
     t.datetime "created_at", null: false
     t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
+  end
+
+  create_table "fleettickets", force: :cascade do |t|
+    t.integer "unitnumber"
+    t.string "reportingofficer"
+    t.text "problem"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "gatecodes", force: :cascade do |t|

@@ -1,0 +1,2 @@
+class Fleetticket < ApplicationRecord
+end

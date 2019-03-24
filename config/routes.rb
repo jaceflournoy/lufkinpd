@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :fleettickets
   resources :radionumbers
   resources :vacationpatrols
   resources :sexoffenders

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  officer: MyString
+  radionumber: 1
+  extrainfo: MyString
+
+two:
+  officer: MyString
+  radionumber: 1
+  extrainfo: MyString

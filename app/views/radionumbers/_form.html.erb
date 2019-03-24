@@ -1,0 +1,32 @@
+<%= form_with(model: radionumber, local: true) do |form| %>
+  <% if radionumber.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(radionumber.errors.count, "error") %> prohibited this radionumber from being saved:</h2>
+
+      <ul>
+      <% radionumber.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :officer %>
+    <%= form.text_field :officer %>
+  </div>
+
+  <div class="field">
+    <%= form.label :radionumber %>
+    <%= form.number_field :radionumber %>
+  </div>
+
+  <div class="field">
+    <%= form.label :extrainfo %>
+    <%= form.text_field :extrainfo %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

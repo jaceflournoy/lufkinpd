@@ -1,0 +1,62 @@
+<%= form_with(model: cchlog, local: true) do |form| %>
+  <% if cchlog.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(cchlog.errors.count, "error") %> prohibited this cchlog from being saved:</h2>
+
+      <ul>
+      <% cchlog.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dateofbirth %>
+    <%= form.date_select :dateofbirth %>
+  </div>
+
+  <div class="field">
+    <%= form.label :idnum %>
+    <%= form.text_field :idnum %>
+  </div>
+
+  <div class="field">
+    <%= form.label :operator %>
+    <%= form.text_field :operator %>
+  </div>
+
+  <div class="field">
+    <%= form.label :reason %>
+    <%= form.text_field :reason %>
+  </div>
+
+  <div class="field">
+    <%= form.label :officer %>
+    <%= form.text_field :officer %>
+  </div>
+
+  <div class="field">
+    <%= form.label :disposition %>
+    <%= form.text_field :disposition %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dispositiondate %>
+    <%= form.date_select :dispositiondate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :comment %>
+    <%= form.text_area :comment %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

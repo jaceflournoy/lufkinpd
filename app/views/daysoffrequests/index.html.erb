@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Daysoffrequests</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Operatorname</th>
+      <th>Firstdayoff</th>
+      <th>Lastdayoff</th>
+      <th>Returndate</th>
+      <th>Hoursrequested</th>
+      <th>Comment</th>
+      <th>Approved</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @daysoffrequests.each do |daysoffrequest| %>
+      <tr>
+        <td><%= daysoffrequest.operatorname %></td>
+        <td><%= daysoffrequest.firstdayoff %></td>
+        <td><%= daysoffrequest.lastdayoff %></td>
+        <td><%= daysoffrequest.returndate %></td>
+        <td><%= daysoffrequest.hoursrequested %></td>
+        <td><%= daysoffrequest.comment %></td>
+        <td><%= daysoffrequest.approved %></td>
+        <td><%= link_to 'Show', daysoffrequest %></td>
+        <td><%= link_to 'Edit', edit_daysoffrequest_path(daysoffrequest) %></td>
+        <td><%= link_to 'Destroy', daysoffrequest, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Daysoffrequest', new_daysoffrequest_path %>

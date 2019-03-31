@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_24_202518) do
+ActiveRecord::Schema.define(version: 2019_03_31_103525) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "adminpack"
@@ -37,6 +37,32 @@ ActiveRecord::Schema.define(version: 2019_03_24_202518) do
     t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
   end
 
+  create_table "cchlogs", force: :cascade do |t|
+    t.string "name"
+    t.date "dateofbirth"
+    t.string "idnum"
+    t.string "operator"
+    t.string "reason"
+    t.string "officer"
+    t.string "disposition"
+    t.date "dispositiondate"
+    t.text "comment"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "daysoffrequests", force: :cascade do |t|
+    t.string "operatorname"
+    t.date "firstdayoff"
+    t.date "lastdayoff"
+    t.date "returndate"
+    t.integer "hoursrequested"
+    t.text "comment"
+    t.boolean "approved"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "fleettickets", force: :cascade do |t|
     t.integer "unitnumber"
     t.string "reportingofficer"
@@ -48,6 +74,14 @@ ActiveRecord::Schema.define(version: 2019_03_24_202518) do
   create_table "gatecodes", force: :cascade do |t|
     t.string "location"
     t.string "code"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "ithelptickets", force: :cascade do |t|
+    t.string "name"
+    t.string "unit"
+    t.text "problem"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

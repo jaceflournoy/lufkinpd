@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  operatorname: MyString
+  firstdayoff: 2019-03-31
+  lastdayoff: 2019-03-31
+  returndate: 2019-03-31
+  hoursrequested: 1
+  comment: MyText
+  approved: false
+
+two:
+  operatorname: MyString
+  firstdayoff: 2019-03-31
+  lastdayoff: 2019-03-31
+  returndate: 2019-03-31
+  hoursrequested: 1
+  comment: MyText
+  approved: false

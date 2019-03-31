@@ -1,0 +1,2 @@
+class Daysoffrequest < ApplicationRecord
+end

@@ -28,6 +28,7 @@ class FleetticketsController < ApplicationController
 
     respond_to do |format|
       if @fleetticket.save
+        UserMailer.welcome_email(@user).deliver_now
         format.html { redirect_to @fleetticket, notice: 'Fleetticket was successfully created.' }
         format.json { render :show, status: :created, location: @fleetticket }
       else

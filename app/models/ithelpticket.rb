@@ -1,0 +1,2 @@
+class Ithelpticket < ApplicationRecord
+end

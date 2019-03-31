@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @cchlog.name %>
+</p>
+
+<p>
+  <strong>Dateofbirth:</strong>
+  <%= @cchlog.dateofbirth %>
+</p>
+
+<p>
+  <strong>Idnum:</strong>
+  <%= @cchlog.idnum %>
+</p>
+
+<p>
+  <strong>Operator:</strong>
+  <%= @cchlog.operator %>
+</p>
+
+<p>
+  <strong>Reason:</strong>
+  <%= @cchlog.reason %>
+</p>
+
+<p>
+  <strong>Officer:</strong>
+  <%= @cchlog.officer %>
+</p>
+
+<p>
+  <strong>Disposition:</strong>
+  <%= @cchlog.disposition %>
+</p>
+
+<p>
+  <strong>Dispositiondate:</strong>
+  <%= @cchlog.dispositiondate %>
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= @cchlog.comment %>
+</p>
+
+<%= link_to 'Edit', edit_cchlog_path(@cchlog) %> |
+<%= link_to 'Back', cchlogs_path %>

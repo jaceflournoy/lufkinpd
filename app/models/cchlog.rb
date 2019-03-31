@@ -1,0 +1,2 @@
+class Cchlog < ApplicationRecord
+end

@@ -1,0 +1,52 @@
+<%= form_with(model: daysoffrequest, local: true) do |form| %>
+  <% if daysoffrequest.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(daysoffrequest.errors.count, "error") %> prohibited this daysoffrequest from being saved:</h2>
+
+      <ul>
+      <% daysoffrequest.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :operatorname %>
+    <%= form.text_field :operatorname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :firstdayoff %>
+    <%= form.date_select :firstdayoff %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lastdayoff %>
+    <%= form.date_select :lastdayoff %>
+  </div>
+
+  <div class="field">
+    <%= form.label :returndate %>
+    <%= form.date_select :returndate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hoursrequested %>
+    <%= form.number_field :hoursrequested %>
+  </div>
+
+  <div class="field">
+    <%= form.label :comment %>
+    <%= form.text_area :comment %>
+  </div>
+
+  <div class="field">
+    <%= form.label :approved %>
+    <%= form.check_box :approved %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

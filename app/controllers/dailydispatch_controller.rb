@@ -1,5 +1,4 @@
-class DashboardController < ApplicationController
-
+class DailydispatchController < ApplicationController
   def index
     @phonenumbers = Phonenumber.all
     @gatecodes = Gatecode.all

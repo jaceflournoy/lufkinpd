@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @ithelpticket.name %>
+</p>
+
+<p>
+  <strong>Unit:</strong>
+  <%= @ithelpticket.unit %>
+</p>
+
+<p>
+  <strong>Problem:</strong>
+  <%= @ithelpticket.problem %>
+</p>
+
+<%= link_to 'Edit', edit_ithelpticket_path(@ithelpticket) %> |
+<%= link_to 'Back', ithelptickets_path %>

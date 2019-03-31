@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  dateofbirth: 2019-03-31
+  idnum: MyString
+  operator: MyString
+  reason: MyString
+  officer: MyString
+  disposition: MyString
+  dispositiondate: 2019-03-31
+  comment: MyText
+
+two:
+  name: MyString
+  dateofbirth: 2019-03-31
+  idnum: MyString
+  operator: MyString
+  reason: MyString
+  officer: MyString
+  disposition: MyString
+  dispositiondate: 2019-03-31
+  comment: MyText

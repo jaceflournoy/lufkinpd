@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Cchlogs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Dateofbirth</th>
+      <th>Idnum</th>
+      <th>Operator</th>
+      <th>Reason</th>
+      <th>Officer</th>
+      <th>Disposition</th>
+      <th>Dispositiondate</th>
+      <th>Comment</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cchlogs.each do |cchlog| %>
+      <tr>
+        <td><%= cchlog.name %></td>
+        <td><%= cchlog.dateofbirth %></td>
+        <td><%= cchlog.idnum %></td>
+        <td><%= cchlog.operator %></td>
+        <td><%= cchlog.reason %></td>
+        <td><%= cchlog.officer %></td>
+        <td><%= cchlog.disposition %></td>
+        <td><%= cchlog.dispositiondate %></td>
+        <td><%= cchlog.comment %></td>
+        <td><%= link_to 'Show', cchlog %></td>
+        <td><%= link_to 'Edit', edit_cchlog_path(cchlog) %></td>
+        <td><%= link_to 'Destroy', cchlog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cchlog', new_cchlog_path %>

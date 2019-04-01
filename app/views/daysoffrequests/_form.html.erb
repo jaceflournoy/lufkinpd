@@ -12,28 +12,33 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :operatorname %>
+    <%= form.label :operatorname, "Operator Name" %>
     <%= form.text_field :operatorname %>
   </div>
 
   <div class="field">
-    <%= form.label :firstdayoff %>
+    <%= form.label :firstdayoff, "First Day Off"%>
     <%= form.date_select :firstdayoff %>
   </div>
 
   <div class="field">
-    <%= form.label :lastdayoff %>
+    <%= form.label :lastdayoff , "Last Day Off"%>
     <%= form.date_select :lastdayoff %>
   </div>
 
   <div class="field">
-    <%= form.label :returndate %>
+    <%= form.label :returndate , "Return Date"%>
     <%= form.date_select :returndate %>
   </div>
 
   <div class="field">
-    <%= form.label :hoursrequested %>
-    <%= form.number_field :hoursrequested %>
+  <%= form.label :hoursrequested , "Hours Requested"%>
+  <%= form.number_field :hoursrequested %>
+</div>
+
+  <div class="field">
+    <%= form.label :timerequested , "Type of Time Requested" %>
+    <%= form.collection_select(:daysoffrequest, Daysoffrequest::TYPES, :to_s, lambda{|i| i.to_s.humanize}) %>
   </div>
 
   <div class="field">
@@ -47,6 +52,6 @@
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Submit" %>
   </div>
 <% end %>

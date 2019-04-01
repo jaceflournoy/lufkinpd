@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_31_103525) do
+ActiveRecord::Schema.define(version: 2019_04_01_004850) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "adminpack"
@@ -61,6 +61,7 @@ ActiveRecord::Schema.define(version: 2019_03_31_103525) do
     t.boolean "approved"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "timerequested"
   end
 
   create_table "fleettickets", force: :cascade do |t|

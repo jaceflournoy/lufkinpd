@@ -17,23 +17,24 @@
   </div>
 
   <div class="field">
-    <%= form.label :dateofbirth %>
+    <%= form.label :dateofbirth, "DOB" %>
     <%= form.date_select :dateofbirth %>
   </div>
 
   <div class="field">
-    <%= form.label :idnum %>
+    <%= form.label :idnum, "ID" %>
     <%= form.text_field :idnum %>
   </div>
 
   <div class="field">
-    <%= form.label :operator %>
+    <%= form.label :operator%>
     <%= form.text_field :operator %>
   </div>
 
   <div class="field">
     <%= form.label :reason %>
-    <%= form.text_field :reason %>
+    <%= form.collection_select(:reason, Cchlog::REASONS, :to_s, lambda{|i| i.to_s.humanize}) %>
+
   </div>
 
   <div class="field">
@@ -43,11 +44,11 @@
 
   <div class="field">
     <%= form.label :disposition %>
-    <%= form.text_field :disposition %>
+    <%= form.collection_select(:disposition, Cchlog::DISPOSITIONS, :to_s, lambda{|i| i.to_s.humanize}) %>
   </div>
 
   <div class="field">
-    <%= form.label :dispositiondate %>
+    <%= form.label :dispositiondate, "Disposition Date"%>
     <%= form.date_select :dispositiondate %>
   </div>
 
@@ -57,6 +58,6 @@
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Submit"%>
   </div>
 <% end %>

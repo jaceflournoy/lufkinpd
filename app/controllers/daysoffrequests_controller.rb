@@ -69,6 +69,6 @@ class DaysoffrequestsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def daysoffrequest_params
-      params.require(:daysoffrequest).permit(:operatorname, :firstdayoff, :lastdayoff, :returndate, :hoursrequested, :comment, :approved)
+      params.require(:daysoffrequest).permit(:operatorname, :firstdayoff, :lastdayoff, :returndate, :hoursrequested, :timerequested, :comment, :approved)
     end
 end

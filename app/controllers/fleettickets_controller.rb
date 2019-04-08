@@ -26,15 +26,19 @@ class FleetticketsController < ApplicationController
   def create
     @fleetticket = Fleetticket.new(fleetticket_params)
 
+    if @fleetticket.save
+    FleetTicketMailer.fleetTicket_email(@fleetticket).deliver_now
+
     respond_to do |format|
       if @fleetticket.save
-        UserMailer.welcome_email(@user).deliver_now
         format.html { redirect_to @fleetticket, notice: 'Fleetticket was successfully created.' }
         format.json { render :show, status: :created, location: @fleetticket }
       else
         format.html { render :new }
         format.json { render json: @fleetticket.errors, status: :unprocessable_entity }
       end
+    end
+
     end
   end
 

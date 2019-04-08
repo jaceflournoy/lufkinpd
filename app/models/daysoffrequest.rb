@@ -1,3 +1,7 @@
 class Daysoffrequest < ApplicationRecord
   TYPES = %i[vacation comp_time holiday birthday sick other]
+
+  validates_presence_of :operatorname, :hoursrequested, :comment
+  validates_numericality_of :hoursrequested
+
 end

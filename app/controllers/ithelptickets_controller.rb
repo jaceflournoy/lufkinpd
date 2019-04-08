@@ -26,13 +26,17 @@ class IthelpticketsController < ApplicationController
   def create
     @ithelpticket = Ithelpticket.new(ithelpticket_params)
 
-    respond_to do |format|
-      if @ithelpticket.save
-        format.html { redirect_to @ithelpticket, notice: 'Ithelpticket was successfully created.' }
-        format.json { render :show, status: :created, location: @ithelpticket }
-      else
-        format.html { render :new }
-        format.json { render json: @ithelpticket.errors, status: :unprocessable_entity }
+    if @ithelpticket.save
+      HelpTicketMailer.helpTicket_email(@ithelpticket).deliver_now
+
+      respond_to do |format|
+        if @ithelpticket.save
+          format.html { redirect_to @ithelpticket, notice: 'Ithelpticket was successfully created.' }
+          format.json { render :show, status: :created, location: @ithelpticket }
+        else
+          format.html { render :new }
+          format.json { render json: @ithelpticket.errors, status: :unprocessable_entity }
+        end
       end
     end
   end

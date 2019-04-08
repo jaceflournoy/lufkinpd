@@ -26,19 +26,15 @@ class VacationpatrolsController < ApplicationController
   def create
     @vacationpatrol = Vacationpatrol.new(vacationpatrol_params)
 
-    if @vacationpatrol.save
-      VacationPatrolMailer.vacationPatrol_email(@vacationpatrol).deliver_now
-
     respond_to do |format|
       if @vacationpatrol.save
+        VacationPatrolMailer.vacationPatrol_email(@vacationpatrol).deliver_now
         format.html { redirect_to @vacationpatrol, notice: 'Vacationpatrol was successfully created.' }
         format.json { render :show, status: :created, location: @vacationpatrol }
       else
         format.html { render :new }
         format.json { render json: @vacationpatrol.errors, status: :unprocessable_entity }
       end
-    end
-
     end
   end
 

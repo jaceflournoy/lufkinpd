@@ -163,6 +163,8 @@ ActiveRecord::Schema.define(version: 2019_04_08_041417) do
     t.date "dateofbirth"
   end
 
+  create_table "test", id: false, force: :cascade do |t|
+  end
 
   create_table "txdotlights", force: :cascade do |t|
     t.string "intersection"

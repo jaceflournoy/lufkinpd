@@ -29,7 +29,7 @@ class IthelpticketsController < ApplicationController
       respond_to do |format|
         if @ithelpticket.save
           HelpTicketMailer.helpTicket_email(@ithelpticket).deliver_now
-          format.html { redirect_to @ithelpticket, notice: 'Ithelpticket was successfully created.' }
+          format.html { redirect_to @ithelpticket, notice: 'IT Help Ticket was successfully created. Email Sent.' }
           format.json { render :show, status: :created, location: @ithelpticket }
         else
           format.html { render :new }

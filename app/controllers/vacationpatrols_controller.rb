@@ -29,7 +29,7 @@ class VacationpatrolsController < ApplicationController
     respond_to do |format|
       if @vacationpatrol.save
         VacationPatrolMailer.vacationPatrol_email(@vacationpatrol).deliver_now
-        format.html { redirect_to @vacationpatrol, notice: 'Vacationpatrol was successfully created.' }
+        format.html { redirect_to @vacationpatrol, notice: 'Vacation Patrol was successfully created. Email Sent.' }
         format.json { render :show, status: :created, location: @vacationpatrol }
       else
         format.html { render :new }

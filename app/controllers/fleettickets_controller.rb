@@ -29,7 +29,7 @@ class FleetticketsController < ApplicationController
     respond_to do |format|
       if @fleetticket.save
         FleetTicketMailer.fleetTicket_email(@fleetticket).deliver_now
-        format.html { redirect_to @fleetticket, notice: 'Fleetticket was successfully created.' }
+        format.html { redirect_to @fleetticket, notice: 'Fleet Ticket was successfully created. Email Sent.' }
         format.json { render :show, status: :created, location: @fleetticket }
       else
         format.html { render :new }
@@ -43,7 +43,7 @@ class FleetticketsController < ApplicationController
   def update
     respond_to do |format|
       if @fleetticket.update(fleetticket_params)
-        format.html { redirect_to @fleetticket, notice: 'Fleetticket was successfully updated.' }
+        format.html { redirect_to @fleetticket, notice: 'Fleet Ticket was successfully updated. ' }
         format.json { render :show, status: :ok, location: @fleetticket }
       else
         format.html { render :edit }

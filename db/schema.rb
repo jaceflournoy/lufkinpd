@@ -163,7 +163,7 @@ ActiveRecord::Schema.define(version: 2019_04_08_041417) do
     t.datetime "updated_at", null: false
     t.date "dateofbirth"
   end
-
+  
   create_table "txdotlights", force: :cascade do |t|
     t.string "intersection"
     t.string "name"

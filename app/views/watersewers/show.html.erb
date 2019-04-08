@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @watersewer.address %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @watersewer.name %>
+</p>
+
+<p>
+  <strong>Call Back:</strong>
+  <%= @watersewer.callback %>
+</p>
+
+<p>
+  <strong>Unit Assigned:</strong>
+  <%= @watersewer.unitassigned %>
+</p>
+
+<p>
+  <strong>Problem:</strong>
+  <%= @watersewer.problem %>
+</p>
+
+<p>
+  <strong>Wateroff:</strong>
+  <%= @watersewer.wateroff %>
+</p>
+
+<p>
+  <strong>Cityleak:</strong>
+  <%= @watersewer.cityleak %>
+</p>
+
+<p>
+  <strong>Privateleak:</strong>
+  <%= @watersewer.privateleak %>
+</p>
+
+<p>
+  <strong>Noleak:</strong>
+  <%= @watersewer.noleak %>
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= @watersewer.comment %>
+</p>
+
+<%= link_to 'Edit', edit_watersewer_path(@watersewer) %> |
+<%= link_to 'Back', watersewers_path %>

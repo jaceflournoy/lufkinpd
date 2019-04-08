@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @genericcallout.address %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @genericcallout.name %>
+</p>
+
+<p>
+  <strong>Call Back:</strong>
+  <%= @genericcallout.callback %>
+</p>
+
+<p>
+  <strong>Unit Assigned:</strong>
+  <%= @genericcallout.unitassigned %>
+</p>
+
+<p>
+  <strong>Problem:</strong>
+  <%= @genericcallout.problem %>
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= @genericcallout.comment %>
+</p>
+
+<%= link_to 'Edit', edit_genericcallout_path(@genericcallout) %> |
+<%= link_to 'Back', genericcallouts_path %>

@@ -1,0 +1,2 @@
+class Txdotlight < ApplicationRecord
+end

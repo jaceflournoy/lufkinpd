@@ -1,0 +1,2 @@
+class Txdotstreet < ApplicationRecord
+end

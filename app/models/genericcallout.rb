@@ -1,0 +1,2 @@
+class Genericcallout < ApplicationRecord
+end

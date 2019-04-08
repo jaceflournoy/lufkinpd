@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @animalcontrol.address %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @animalcontrol.name %>
+</p>
+
+<p>
+  <strong>Call Back:</strong>
+  <%= @animalcontrol.callback %>
+</p>
+
+<p>
+  <strong>Unit Assigned:</strong>
+  <%= @animalcontrol.unitassigned %>
+</p>
+
+<p>
+  <strong>Problem:</strong>
+  <%= @animalcontrol.problem %>
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= @animalcontrol.comment %>
+</p>
+
+<%= link_to 'Edit', edit_animalcontrol_path(@animalcontrol) %> |
+<%= link_to 'Back', animalcontrols_path %>

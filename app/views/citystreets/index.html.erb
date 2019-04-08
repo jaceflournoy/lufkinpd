@@ -1,0 +1,56 @@
+<center>
+<p id="notice"><%= notice %></p>
+
+<h1>City Street Dept. Call-Out</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Address</th>
+      <th>Name</th>
+      <th>Call Back</th>
+      <th>Unit Assigned</th>
+      <th>Problem</th>
+      <th>Closest Intersection</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Lightout</th>
+      <th>Lightred</th>
+      <th>Roadhazard</th>
+      <th>Needed</th>
+      <th>Comment</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @citystreets.each do |citystreet| %>
+      <tr>
+        <td><%= citystreet.address %></td>
+        <td><%= citystreet.name %></td>
+        <td><%= citystreet.callback %></td>
+        <td><%= citystreet.unitassigned %></td>
+        <td><%= citystreet.problem %></td>
+        <td><%= citystreet.closestintersection %></td>
+        <td><%= citystreet.city %></td>
+        <td><%= citystreet.state %></td>
+        <td><%= citystreet.lightout %></td>
+        <td><%= citystreet.lightred %></td>
+        <td><%= citystreet.roadhazard %></td>
+        <td><%= citystreet.needed %></td>
+        <td><%= citystreet.comment %></td>
+        <td><%= link_to 'Show', citystreet %></td>
+        <td><%= link_to 'Edit', edit_citystreet_path(citystreet) %></td>
+        <td><%= link_to 'Destroy', citystreet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Call-Out', new_citystreet_path %>
+  <br />-
+  <br />
+  <a href="/pages/afterhours.html">Back to After Hours Call-Out</a>
+</center>

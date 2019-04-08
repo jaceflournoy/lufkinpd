@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Operator Name:</strong>
+  <%= @daysoffrequest.operatorname %>
+</p>
+
+<p>
+  <strong>First Day Off:</strong>
+  <%= @daysoffrequest.firstdayoff %>
+</p>
+
+<p>
+  <strong>Last Day Off:</strong>
+  <%= @daysoffrequest.lastdayoff %>
+</p>
+
+<p>
+  <strong>Return Date:</strong>
+  <%= @daysoffrequest.returndate %>
+</p>
+
+<p>
+  <strong>Hours Requested:</strong>
+  <%= @daysoffrequest.hoursrequested %>
+</p>
+
+<p>
+  <strong>Type of Time Requested:</strong>
+  <%= @daysoffrequest.timerequested %>
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= @daysoffrequest.comment %>
+</p>
+
+<p>
+  <strong>Approved:</strong>
+  <%= @daysoffrequest.approved %>
+</p>
+
+<%= link_to 'Edit', edit_daysoffrequest_path(@daysoffrequest) %> |
+<%= link_to 'Back', daysoffrequests_path %>

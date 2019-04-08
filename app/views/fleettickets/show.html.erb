@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Unitnumber:</strong>
+  <%= @fleetticket.unitnumber %>
+</p>
+
+<p>
+  <strong>Reportingofficer:</strong>
+  <%= @fleetticket.reportingofficer %>
+</p>
+
+<p>
+  <strong>Problem:</strong>
+  <%= @fleetticket.problem %>
+</p>
+
+<%= link_to 'Edit', edit_fleetticket_path(@fleetticket) %> |
+<%= link_to 'Back', fleettickets_path %>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>LPD Intranet</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<header><a class="weatherwidget-io" href="https://forecast7.com/en/31d34n94d73/lufkin/?unit=us" data-label_1="LUFKIN" data-label_2="WEATHER" data-theme="pure" ></a>
+</header>
+<body style="background-color:#383838;">
+<p id="notice"><%= notice %></p>
+<h1 style="color: white;"><a href="/dailydispatch" style="color: white;">The Daily Dispatch</a></h1>
+<center>
+  <div class="w3-container w3-padding-24" >
+    <a href="/rollcalls/new"><button type="button" class="button"><i class = "fas fa-file-alt"></i>  ROLL CALL</button></a>
+    <a href="/rollcalls"><button type="button" class="button"><i class = "fas fa-align-center"></i>  ROLL REVIEW</button></a>
+    <a href="/gatecodes"><button type="button" class="button"><i class = "fas fa-hashtag"></i>  GATE CODES</button></a>
+  </div>
+  <div class="w3-container w3-padding-24">
+    <a href="#"><button type="button" class="button2"><i class = "fas fa-hourglass-half"></i>  AFTER HOURS CALLOUT</button></a>
+    <a href="/daysoffrequests/new"><button type="button" class="button2"><i class = "fas fa-calendar-alt"></i>  DAYS OFF REQUEST</button></a>
+    <a href="/pages/matrix.html"><button type="button" class="button2"><i class = "fas fa-phone-square"></i>  "THE MATRIX"</button></a>
+  </div>
+
+  <div class="w3-container w3-padding-24">
+    <a href="#"><button type="button" class="button"><i class = "fas fa-exclamation-circle"></i>  911 TROUBLE REPORT</button></a>
+    <a href="#"><button type="button" class="button"><i class = "fas fa-building"></i>  GEO BASE REPORT</button></a>
+    <a href="/cchlogs/new"><button type="button" class="button"><i class="fas fa-file-alt"></i>  CCH LOG ENTRY</button></a>
+  </div>
+  <div class="w3-container w3-padding-24">
+    <a href="/pages/pipelines.html"><button type="button" class="button2"><i class = "fas fa-gas-pump"></i> PIPELINE EMERGENCY NOTIFICATION</button></a>
+    <a href="#"><button type="button" class="button2"><i class = "fas fa-align-right"></i>  TLETS/NCIC FORMS</button></a>
+    <a href="#"><button type="button" class="button2"><i class = "fas fa-align-right"></i>  TRAINING REQUESTS FORMS</button></a>
+  </div>
+  <div class="w3-container w3-padding-24">
+    <a href="#"><button type="button" class="button"><i class = "fas fa-campground"></i>  THE TEE PEE</button></a>
+    <a href="https://www.nhc.noaa.gov/" target="_blank"><button type="button" class="button"><i class = "fas fa-wind"></i>  NOAA HURRICANE CENTER</button></a>
+    <a href="/dashboard/index"><button type="button" class="button"><i class = "fas fa-home"></i>  LPD INTRANET</button></a>
+  </div>
+</center>
+</body>
+
+<script type='text/javascript' src='https://darksky.net/widget/graph-bar/31.3386,-94.7289/us12/en.js?width=100%&height=265&title=Full Forecast&textColor=ffffff&bgColor=383838&transparency=false&skyColor=ffffff&fontFamily=Default&customFont=&units=us&timeColor=ffffff&tempColor=ffffff&currentDetailsOption=true'></script>
+
+</html>

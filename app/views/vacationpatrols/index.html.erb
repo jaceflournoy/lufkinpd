@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Vacation Patrol</h1>
+
+<table class="center">
+  <thead>
+    <tr>
+      <th>Officer</th>
+      <th>Comment</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @vacationpatrols.each do |vacationpatrol| %>
+      <tr>
+        <td><%= vacationpatrol.officer %></td>
+        <td><%= vacationpatrol.comment %></td>
+        <td><%= link_to 'Show', vacationpatrol %></td>
+        <td><%= link_to 'Edit', edit_vacationpatrol_path(vacationpatrol) %></td>
+        <td><%= link_to 'Destroy', vacationpatrol, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Vacation Patrol', new_vacationpatrol_path %>

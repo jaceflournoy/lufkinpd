@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+<center>
+<h1>IT Help Tickets</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Unit</th>
+      <th>Problem</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ithelptickets.each do |ithelpticket| %>
+      <tr>
+        <td><%= ithelpticket.name %></td>
+        <td><%= ithelpticket.unit %></td>
+        <td><%= ithelpticket.problem %></td>
+        <td><%= link_to 'Show', ithelpticket %></td>
+        <td><%= link_to 'Edit', edit_ithelpticket_path(ithelpticket) %></td>
+        <td><%= link_to 'Destroy', ithelpticket, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ticket', new_ithelpticket_path %>
+</center>

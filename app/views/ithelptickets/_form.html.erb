@@ -1,0 +1,32 @@
+<%= form_with(model: ithelpticket, local: true) do |form| %>
+  <% if ithelpticket.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(ithelpticket.errors.count, "error") %> prohibited this ithelpticket from being saved:</h2>
+
+      <ul>
+      <% ithelpticket.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name, "Name:" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :unit, "Unit/Office" %>
+    <%= form.text_field :unit %>
+  </div>
+
+  <div class="field">
+    <%= form.label :problem, "Explain problem:" %>
+    <%= form.text_area :problem %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit "Submit Ticket"%>
+  </div>
+<% end %>

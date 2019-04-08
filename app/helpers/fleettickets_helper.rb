@@ -1,0 +1,2 @@
+module FleetticketsHelper
+end

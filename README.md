@@ -24,7 +24,9 @@ Features/Improvements:
 
 -----------------
 
-Changelog - 4/8 (afterhours)
+Changelog - 4/8 (afterhours/EmailBranch)
+- Added Email Functionality for Vacation patrol, fleet ticket, and IT Help Ticket
+- Added data validation for most forms
 - Added Animal Control Call-Out form
 - Added Water/Sewer Problem Call-Out form
 - Added City Street Call-Out form

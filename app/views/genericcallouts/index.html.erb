@@ -1,0 +1,42 @@
+<center>
+<p id="notice"><%= notice %></p>
+
+<h1>Generic Call-Out</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Address</th>
+      <th>Name</th>
+      <th>Call Back</th>
+      <th>Unit Assigned</th>
+      <th>Problem</th>
+      <th>Comment</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @genericcallouts.each do |genericcallout| %>
+      <tr>
+        <td><%= genericcallout.address %></td>
+        <td><%= genericcallout.name %></td>
+        <td><%= genericcallout.callback %></td>
+        <td><%= genericcallout.unitassigned %></td>
+        <td><%= genericcallout.problem %></td>
+        <td><%= genericcallout.comment %></td>
+        <td><%= link_to 'Show', genericcallout %></td>
+        <td><%= link_to 'Edit', edit_genericcallout_path(genericcallout) %></td>
+        <td><%= link_to 'Destroy', genericcallout, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Call-Out', new_genericcallout_path %>
+  <br />-
+  <br />
+  <a href="/pages/afterhours.html">Back to After Hours Call-Out</a>
+</center>

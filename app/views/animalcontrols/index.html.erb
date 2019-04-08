@@ -1,0 +1,42 @@
+<center>
+<p id="notice"><%= notice %></p>
+
+<h1>Animal Control Call-Outs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Address</th>
+      <th>Name</th>
+      <th>Call Back</th>
+      <th>Unit Assigned</th>
+      <th>Problem</th>
+      <th>Comment</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @animalcontrols.each do |animalcontrol| %>
+      <tr>
+        <td><%= animalcontrol.address %></td>
+        <td><%= animalcontrol.name %></td>
+        <td><%= animalcontrol.callback %></td>
+        <td><%= animalcontrol.unitassigned %></td>
+        <td><%= animalcontrol.problem %></td>
+        <td><%= animalcontrol.comment %></td>
+        <td><%= link_to 'Show', animalcontrol %></td>
+        <td><%= link_to 'Edit', edit_animalcontrol_path(animalcontrol) %></td>
+        <td><%= link_to 'Destroy', animalcontrol, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Call-Out', new_animalcontrol_path %>
+  <br />-
+  <br />
+  <a href="/pages/afterhours.html">Back to After Hours Call-Out</a>
+</center>

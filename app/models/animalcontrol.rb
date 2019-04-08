@@ -1,0 +1,2 @@
+class Animalcontrol < ApplicationRecord
+end

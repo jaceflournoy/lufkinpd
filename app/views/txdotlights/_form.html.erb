@@ -1,0 +1,67 @@
+<%= form_with(model: txdotlight, local: true) do |form| %>
+  <% if txdotlight.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(txdotlight.errors.count, "error") %> prohibited this txdotlight from being saved:</h2>
+
+      <ul>
+      <% txdotlight.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :intersection %>
+    <%= form.text_field :intersection %>
+  </div>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :callback, "Call Back" %>
+    <%= form.text_field :callback %>
+  </div>
+
+  <div class="field">
+    <%= form.label :unitassigned, "Unit Assigned" %>
+    <%= form.text_field :unitassigned %>
+  </div>
+
+  <div class="field">
+    <%= form.label :problem %>
+    <%= form.text_area :problem %>
+  </div>
+
+  <div class="field">
+    <%= form.label :city %>
+    <%= form.check_box :city %>
+  </div>
+
+  <div class="field">
+    <%= form.label :state %>
+    <%= form.check_box :state %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lightout %>
+    <%= form.check_box :lightout %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lightred %>
+    <%= form.check_box :lightred %>
+  </div>
+
+  <div class="field">
+    <%= form.label :comment %>
+    <%= form.text_area :comment %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit "Submit" %>
+  </div>
+<% end %>

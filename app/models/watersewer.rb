@@ -1,0 +1,2 @@
+class Watersewer < ApplicationRecord
+end

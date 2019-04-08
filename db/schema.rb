@@ -13,6 +13,7 @@
 ActiveRecord::Schema.define(version: 2019_04_08_041417) do
 
   # These are extensions that must be enabled in order to support this database
+  enable_extension "adminpack"
   enable_extension "plpgsql"
 
   create_table "active_storage_attachments", force: :cascade do |t|
@@ -162,7 +163,6 @@ ActiveRecord::Schema.define(version: 2019_04_08_041417) do
     t.datetime "updated_at", null: false
     t.date "dateofbirth"
   end
-
 
   create_table "txdotlights", force: :cascade do |t|
     t.string "intersection"

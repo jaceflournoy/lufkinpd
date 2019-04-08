@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  intersection: MyString
+  name: MyString
+  callback: MyString
+  unitassigned: MyString
+  problem: MyText
+  city: false
+  state: false
+  needed: MyString
+  comment: MyText
+
+two:
+  intersection: MyString
+  name: MyString
+  callback: MyString
+  unitassigned: MyString
+  problem: MyText
+  city: false
+  state: false
+  needed: MyString
+  comment: MyText

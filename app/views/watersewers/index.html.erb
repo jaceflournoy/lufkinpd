@@ -1,0 +1,50 @@
+<center>
+<p id="notice"><%= notice %></p>
+
+<h1>Water/Sewer Call-Out</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Address</th>
+      <th>Name</th>
+      <th>Call Back</th>
+      <th>Unit Assigned</th>
+      <th>Problem</th>
+      <th>Water Off?</th>
+      <th>City Leak?</th>
+      <th>Private Leak?</th>
+      <th>No leak?</th>
+      <th>Comment</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @watersewers.each do |watersewer| %>
+      <tr>
+        <td><%= watersewer.address %></td>
+        <td><%= watersewer.name %></td>
+        <td><%= watersewer.callback %></td>
+        <td><%= watersewer.unitassigned %></td>
+        <td><%= watersewer.problem %></td>
+        <td><%= watersewer.wateroff %></td>
+        <td><%= watersewer.cityleak %></td>
+        <td><%= watersewer.privateleak %></td>
+        <td><%= watersewer.noleak %></td>
+        <td><%= watersewer.comment %></td>
+        <td><%= link_to 'Show', watersewer %></td>
+        <td><%= link_to 'Edit', edit_watersewer_path(watersewer) %></td>
+        <td><%= link_to 'Destroy', watersewer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Call-Out', new_watersewer_path %>
+  <br />-
+  <br />
+  <a href="/pages/afterhours.html">Back to After Hours Call-Out</a>
+</center>

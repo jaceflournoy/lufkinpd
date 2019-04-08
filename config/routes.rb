@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  resources :txdotstreets
+  resources :txdotlights
+  resources :genericcallouts
+  resources :citystreets
+  resources :watersewers
+  resources :animalcontrols
   resources :cchlogs
   resources :daysoffrequests
   resources :ithelptickets

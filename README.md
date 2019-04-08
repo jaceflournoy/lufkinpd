@@ -3,7 +3,7 @@
 TODO - LUFKINPD
 
 Mandatory:
-- After Hours Callout Forms
+- Finish tidying/formatting After Hours Call-Out Forms
 - 911 Trouble Report - Ask What to do
 - GEO Base Report - Think of how to do it
 - Add email functionality for certain forms
@@ -13,6 +13,7 @@ Mandatory:
 - Work on roles/priviledges for certain forms
 - For Daysoffrequest, change language from true to Yes and false to No
 - Humanize All Form fields
+- Change text field sizes/appearance sitewide
 
 Features/Improvements:
 - Improve Site Navigation
@@ -22,6 +23,15 @@ Features/Improvements:
 - Find a better way to distinguish Daily Dispatch from LufkinPD home
 
 -----------------
+
+Changelog - 4/8 (afterhours)
+- Added Animal Control Call-Out form
+- Added Water/Sewer Problem Call-Out form
+- Added City Street Call-Out form
+- Added TX-DOT Lights Call-Out form
+- Added TX-DOT Streets Call-Out form
+- Added Generic Call-Out form
+- Updated README
 
 Changelog - 3/31 (forms branch update2)
 - Added Drop down list for Type of Time Requested (Days off Request)

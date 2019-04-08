@@ -1,0 +1,62 @@
+<%= form_with(model: txdotstreet, local: true) do |form| %>
+  <% if txdotstreet.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(txdotstreet.errors.count, "error") %> prohibited this txdotstreet callout from being saved:</h2>
+
+      <ul>
+      <% txdotstreet.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :intersection %>
+    <%= form.text_field :intersection %>
+  </div>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :callback, "Call Back" %>
+    <%= form.text_field :callback %>
+  </div>
+
+  <div class="field">
+    <%= form.label :unitassigned, "Unit Assigned" %>
+    <%= form.text_field :unitassigned %>
+  </div>
+
+  <div class="field">
+    <%= form.label :problem %>
+    <%= form.text_area :problem %>
+  </div>
+
+  <div class="field">
+    <%= form.label :city %>
+    <%= form.check_box :city %>
+  </div>
+
+  <div class="field">
+    <%= form.label :state %>
+    <%= form.check_box :state %>
+  </div>
+
+  <div class="field">
+    <%= form.label :needed, "What is needed, if anything?" %>
+    <%= form.text_field :needed %>
+  </div>
+
+  <div class="field">
+    <%= form.label :comment %>
+    <%= form.text_area :comment %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit "Submit"%>
+  </div>
+<% end %>

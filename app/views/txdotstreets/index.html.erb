@@ -1,0 +1,48 @@
+<center>
+<p id="notice"><%= notice %></p>
+
+<h1>TX-DOT Streets Call-Out</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Intersection</th>
+      <th>Name</th>
+      <th>Call Back</th>
+      <th>Unit Assigned</th>
+      <th>Problem</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Needed</th>
+      <th>Comment</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @txdotstreets.each do |txdotstreet| %>
+      <tr>
+        <td><%= txdotstreet.intersection %></td>
+        <td><%= txdotstreet.name %></td>
+        <td><%= txdotstreet.callback %></td>
+        <td><%= txdotstreet.unitassigned %></td>
+        <td><%= txdotstreet.problem %></td>
+        <td><%= txdotstreet.city %></td>
+        <td><%= txdotstreet.state %></td>
+        <td><%= txdotstreet.needed %></td>
+        <td><%= txdotstreet.comment %></td>
+        <td><%= link_to 'Show', txdotstreet %></td>
+        <td><%= link_to 'Edit', edit_txdotstreet_path(txdotstreet) %></td>
+        <td><%= link_to 'Destroy', txdotstreet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Call-Out', new_txdotstreet_path %>
+  <br />-
+  <br />
+  <a href="/pages/afterhours.html">Back to After Hours Call-Out</a>
+</center>

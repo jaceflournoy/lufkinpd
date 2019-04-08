@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_01_004850) do
+ActiveRecord::Schema.define(version: 2019_04_08_041417) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -36,6 +36,17 @@ ActiveRecord::Schema.define(version: 2019_04_01_004850) do
     t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
   end
 
+  create_table "animalcontrols", force: :cascade do |t|
+    t.string "address"
+    t.string "name"
+    t.string "callback"
+    t.string "unitassigned"
+    t.text "problem"
+    t.text "comment"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "cchlogs", force: :cascade do |t|
     t.string "name"
     t.date "dateofbirth"
@@ -45,6 +56,24 @@ ActiveRecord::Schema.define(version: 2019_04_01_004850) do
     t.string "officer"
     t.string "disposition"
     t.date "dispositiondate"
+    t.text "comment"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "citystreets", force: :cascade do |t|
+    t.string "address"
+    t.string "name"
+    t.string "callback"
+    t.string "unitassigned"
+    t.text "problem"
+    t.string "closestintersection"
+    t.boolean "city"
+    t.boolean "state"
+    t.boolean "lightout"
+    t.boolean "lightred"
+    t.boolean "roadhazard"
+    t.string "needed"
     t.text "comment"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -74,6 +103,17 @@ ActiveRecord::Schema.define(version: 2019_04_01_004850) do
   create_table "gatecodes", force: :cascade do |t|
     t.string "location"
     t.string "code"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "genericcallouts", force: :cascade do |t|
+    t.string "address"
+    t.string "name"
+    t.string "callback"
+    t.string "unitassigned"
+    t.text "problem"
+    t.text "comment"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -123,7 +163,34 @@ ActiveRecord::Schema.define(version: 2019_04_01_004850) do
     t.date "dateofbirth"
   end
 
-  create_table "test", id: false, force: :cascade do |t|
+
+  create_table "txdotlights", force: :cascade do |t|
+    t.string "intersection"
+    t.string "name"
+    t.string "callback"
+    t.string "unitassigned"
+    t.text "problem"
+    t.boolean "city"
+    t.boolean "state"
+    t.boolean "lightout"
+    t.boolean "lightred"
+    t.text "comment"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "txdotstreets", force: :cascade do |t|
+    t.string "intersection"
+    t.string "name"
+    t.string "callback"
+    t.string "unitassigned"
+    t.text "problem"
+    t.boolean "city"
+    t.boolean "state"
+    t.string "needed"
+    t.text "comment"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|
@@ -137,6 +204,21 @@ ActiveRecord::Schema.define(version: 2019_04_01_004850) do
 
   create_table "vacationpatrols", force: :cascade do |t|
     t.string "officer"
+    t.text "comment"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "watersewers", force: :cascade do |t|
+    t.string "address"
+    t.string "name"
+    t.string "callback"
+    t.string "unitassigned"
+    t.text "problem"
+    t.boolean "wateroff"
+    t.boolean "cityleak"
+    t.boolean "privateleak"
+    t.boolean "noleak"
     t.text "comment"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

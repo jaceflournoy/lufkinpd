@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   mount Lockup::Engine, at: '/lockup'
   resources :georeports
   resources :txdotstreets

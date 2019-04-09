@@ -28,7 +28,7 @@
         <td><%= daysoffrequest.hoursrequested %></td>
         <td><%= daysoffrequest.timerequested %></td>
         <td><%= daysoffrequest.comment %></td>
-        <td><%= daysoffrequest.approved %></td>
+        <td><%= daysoffrequest.approved_to_string %></td>
         <td><%= link_to 'Show', daysoffrequest %></td>
         <td><%= link_to 'Edit', edit_daysoffrequest_path(daysoffrequest) %></td>
         <td><%= link_to 'Destroy', daysoffrequest, method: :delete, data: { confirm: 'Are you sure?' } %></td>

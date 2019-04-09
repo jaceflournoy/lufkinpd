@@ -21,7 +21,8 @@ Features/Improvements:
 -----------------
 
 Changelog - 4/8
-- Login page for admin panel
+- Massive Amount of Language Changes Sitewide
+- Re-added railsadmin
 - Add overall site login page
 - Added Daily dispatch link to header for easier navigation
 - Edited Error Handling

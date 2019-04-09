@@ -1,0 +1,250 @@
+/* line 1, app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 0px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+}
+
+/* line 11, app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 17, app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 23, app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+
+/* line 26, app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+
+/* line 30, app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+}
+
+/* line 35, app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 39, app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 5px 7px;
+}
+
+/* line 44, app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 49, app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 53, app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  display: inline-block;
+}
+
+/* line 64, app/assets/stylesheets/scaffolds.scss */
+.field_with_errors input, .field_with_errors textarea {
+  background-color: lightpink;
+  color: white;
+}
+
+/* line 70, app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+
+/* line 74, app/assets/stylesheets/scaffolds.scss */
+.formTable td {
+  padding: 5px 5px 3px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+/* CSS Document */
+
+
+
+#header {
+    border-bottom: 4px solid #f44336;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    background-color: #008CBA;
+    text-decoration-color: #ffffff;
+    color: white;
+}
+
+.button {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    padding: 14px 40px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    background-color: #f44336; /* Red */
+    color: white;
+    border: 2px solid #f44336;
+    border-radius: 4px;
+    width: 23%;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+    cursor: pointer;
+}
+
+.button2 {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    padding: 14px 40px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    background-color: #008CBA; /* Blue */
+    color: white;
+    border: 2px solid #008CBA;
+    border-radius: 4px;
+    width: 23%;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+    cursor: pointer;
+}
+
+.button3 {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    padding: 14px 40px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    background-color: #000000; /* Black */
+    color: white;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    width: 23%;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+    cursor: pointer;
+}
+
+.a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:link{
+    text-decoration: none;
+    border: 2px solid #f44336;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.button2:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.button3:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+a:link, a:visited {
+    text-align: center;
+    text-decoration: none;
+}
+
+
+a:hover, a:active {
+    color: #008CBA;
+    text-decoration: none;
+}
+
+#login {
+    display:inline-block;
+    position: absolute;
+    right: 10px;
+}
+
+#login a{
+    color:white;
+    text-decoration: underline;
+}
+
+#leftbutton {
+    text-align: left;
+    padding-left: 50px;
+    float: left;
+}
+
+tr.spaceUnder>td {
+    padding-bottom: 1em;
+    padding-right: 1em;
+}
+
+table {
+    background-color: #fff;
+}
+
+table.center {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+th,td {
+    padding: 15px;
+}
+
+.tbl{
+    width: 75%;
+    border: 1px solid #dadada;
+    margin: 10%;
+    padding-top: 50px;
+}
+
+th{
+    background-color: #dadada;
+}

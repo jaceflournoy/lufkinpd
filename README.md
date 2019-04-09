@@ -5,7 +5,7 @@ TODO - LUFKINPD
 Mandatory:
 - Finish tidying/formatting After Hours Call-Out Forms
 - 911 Trouble Report - Ask What to do
-- GEO Base Report - Think of how to do it
+
 - Add email functionality for certain forms
 - Data validation
 - Reformat new forms and existing ones (text changes, possibly form layout)
@@ -25,6 +25,7 @@ Features/Improvements:
 -----------------
 
 Changelog - 4/8 (afterhours/EmailBranch)
+- Geo Base Report
 - Added Email Functionality for Vacation patrol, fleet ticket, and IT Help Ticket
 - Added data validation for most forms
 - Added Animal Control Call-Out form

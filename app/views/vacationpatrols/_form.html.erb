@@ -1,12 +1,13 @@
 <%= form_with(model: vacationpatrol, local: true) do |form| %>
   <% if vacationpatrol.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(vacationpatrol.errors.count, "error") %> prohibited this vacationpatrol from being saved:</h2>
-
+      <div class="alert alert-danger">
+        <h2>The form contains <%= pluralize(vacationpatrol.errors.count, "error") %>.</h2>
+      </div>
       <ul>
-      <% vacationpatrol.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
+        <% vacationpatrol.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
       </ul>
     </div>
   <% end %>

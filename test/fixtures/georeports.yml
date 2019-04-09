@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  presentaddress: MyString
+  changeaddrto: MyString
+  biznamechange: MyString
+  comment: MyText
+  name1: MyString
+  phone1: MyString
+  name2: MyString
+  phone2: MyString
+  name3: MyString
+  phone3: MyString
+  reportedby: MyString
+
+two:
+  presentaddress: MyString
+  changeaddrto: MyString
+  biznamechange: MyString
+  comment: MyText
+  name1: MyString
+  phone1: MyString
+  name2: MyString
+  phone2: MyString
+  name3: MyString
+  phone3: MyString
+  reportedby: MyString

@@ -8,6 +8,8 @@ class Ability
 
     if user.role == "admin"
       can :manage, :all
+      can :access, :rails_admin
+      can :read, :dashboard
     end
 
   end

@@ -1,0 +1,56 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Present Address:</strong>
+  <%= @georeport.presentaddress %>
+</p>
+
+<p>
+  <strong>Change To:</strong>
+  <%= @georeport.changeaddrto %>
+</p>
+
+<p>
+  <strong>Business Name Change:</strong>
+  <%= @georeport.biznamechange %>
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= @georeport.comment %>
+</p>
+<hr width="20%">
+<br />
+<strong>Keyholder Notifications</strong>
+<div class="formTable">
+<center>
+<table>
+  <tr>
+    <td><strong>Name:</strong></td>
+    <td><%= @georeport.name1 %></td>
+    <td><strong>Phone:</strong></td>
+    <td><%= @georeport.phone1 %></td>
+  </tr>
+  <tr>
+    <td><strong>Name:</strong></td>
+    <td><%= @georeport.name2 %></td>
+    <td><strong>Phone:</strong></td>
+    <td><%= @georeport.phone2 %></td>
+  </tr>
+  <tr>
+    <td><strong>Name:</strong></td>
+    <td><%= @georeport.name3 %></td>
+    <td><strong>Phone:</strong></td>
+    <td><%= @georeport.phone3 %></td>
+  </tr>
+</table>
+</center>
+</div>
+
+<p>
+  <strong>Reported by:</strong>
+  <%= @georeport.reportedby %>
+</p>
+
+<%= link_to 'Edit', edit_georeport_path(@georeport) %> |
+<%= link_to 'Back', georeports_path %>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_08_041417) do
+ActiveRecord::Schema.define(version: 2019_04_09_011552) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -114,6 +114,22 @@ ActiveRecord::Schema.define(version: 2019_04_08_041417) do
     t.string "unitassigned"
     t.text "problem"
     t.text "comment"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "georeports", force: :cascade do |t|
+    t.string "presentaddress"
+    t.string "changeaddrto"
+    t.string "biznamechange"
+    t.text "comment"
+    t.string "name1"
+    t.string "phone1"
+    t.string "name2"
+    t.string "phone2"
+    t.string "name3"
+    t.string "phone3"
+    t.string "reportedby"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

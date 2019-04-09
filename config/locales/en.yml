@@ -33,6 +33,9 @@ en:
   unauthorized:
     manage:
       all: "You are not authorized to perform this action. Please contact your supervisor if you have any questions."
+  helpers:
+    submit:
+      create: "Submit"
 
   activerecord:
     models:
@@ -90,3 +93,67 @@ en:
       watersewer:
         one: "Water/Sewer Call Out"
         other: "Water/Sewer Call Outs"
+
+    attributes:
+      animalcontrol:
+        callback: "Call Back"
+        unitassigned: "Unit Assigned"
+      cchlog:
+        dateofbirth: "DOB"
+        idnum: "ID"
+        dispositiondate: "Disposition Date"
+      citystreet:
+        callback: "Call Back"
+        unitassigned: "Unit Assigned"
+        closestintersection: "Closest Intersection"
+        lightout: "Is the Light Out?"
+        lightred: "Is the Light Flashing Red?"
+        roadhazard: "Road Hazard?"
+      daysoffrequest:
+        operatorname: "Operator Name"
+        firstdayoff: "First Day Off"
+        lastdayoff: "Last Day Off"
+        returndate: "Return Date"
+        hoursrequested: "Hours Requested"
+        timerequested: "Type of Time Requested"
+      fleetticket:
+        unitnumber: "Unit Number"
+        reportingofficer: "Reporting Officer"
+      genericcallout:
+        callback: "Call Back"
+        unitassigned: "Unit Assigned"
+      georeport:
+        presentaddress: "Present Address"
+        changeaddrto: "Change To"
+        biznamechange: "Business Name Change"
+        name1: "Name"
+        name2: "Name"
+        name3: "Name"
+        phone1: "Phone"
+        phone2: "Phone"
+        phone3: "Phone"
+        reportedby: "Reported By"
+      radionumber:
+        radionumber: "Radio Number"
+        extrainfo: "Extra Info."
+      rollcall:
+        radionum: "Radio Number"
+      sexoffender:
+        risklevel: "Risk Level"
+        dateofbirth: "DOB"
+      txdotlight:
+        callback: "Call Back"
+        unitassigned: "Unit Assigned"
+        lightout: "Is the Light Out?"
+        lightred: "Is the Light Flashing Red?"
+      txdotstreet:
+        callback: "Call Back"
+        unitassigned: "Unit Assigned"
+      watersewer:
+        callback: "Call Back"
+        unitassigned: "Unit Assigned"
+        wateroff: "Is the Water Turned Off?"
+        cityleak: "Is it a City Leak?"
+        privateleak: "Is it a Private Leak?"
+        noleak: "No leak?"
+

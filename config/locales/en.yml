@@ -33,3 +33,60 @@ en:
   unauthorized:
     manage:
       all: "You are not authorized to perform this action. Please contact your supervisor if you have any questions."
+
+  activerecord:
+    models:
+      animalcontrol:
+        one: "Animal Control Call Out"
+        other: "Animal Control Call Outs"
+      cchlog:
+        one: "CCH Log"
+        other: "CCH Logs"
+      citystreet:
+        one: "City/Street Problem Call Out"
+        other: "City/Street Problem Call Outs"
+      daysoffrequest:
+        one: "Days Off Request"
+        other: "Days Off Requests"
+      fleetticket:
+        one: "Fleet Ticket"
+        other: "Fleet Tickets"
+      gatecode:
+        one: "Gate Code"
+        other: "Gate Codes"
+      genericcallout:
+        one: "Generic Call Out"
+        other: "Generic Call Outs"
+      georeport:
+        one: "GeoBase Report"
+        other: "GeoBase Reports"
+      ithelpticket:
+        one: "IT Help Ticket"
+        other: "IT Help Tickets"
+      phonenumber:
+        one: "Phone Number"
+        other: "Phone Numbers"
+      radionumber:
+        one: "Radio Number"
+        other: "Radio Numbers"
+      rollcall:
+        one: "Roll Call"
+        other: "Roll Calls"
+      sexoffender:
+        one: "Sex Offender"
+        other: "Sex Offenders"
+      txdotlight:
+        one: "TX-DOT Light Call Out"
+        other: "TX-DOT Light Call-Outs"
+      txdotstreet:
+        one: "TX-DOT Street Call Out"
+        other: "TX-DOT Street Call Outs"
+      user:
+        one: "User"
+        other: "Users"
+      vacationpatrol:
+        one: "Vacation Patrol"
+        other: "Vacation Patrols"
+      watersewer:
+        one: "Water/Sewer Call Out"
+        other: "Water/Sewer Call Outs"

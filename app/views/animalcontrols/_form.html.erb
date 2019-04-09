@@ -11,6 +11,19 @@
     </div>
   <% end %>
 
+  <% if @animalcontrol.errors.any? %>
+    <div id="error_explanation">
+      <div class="alert alert-danger">
+        The form contains <%= pluralize(@animalcontrol.errors.count, "error") %>.
+      </div>
+      <ul>
+        <% @animalcontrol.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
   <div class="field">
     <%= form.label :address %>
     <%= form.text_field :address %>

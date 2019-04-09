@@ -65,3 +65,7 @@ gem 'cancancan', '~> 2.0'
 gem 'image_processing', '~> 1.2'
 
 gem 'mini_magick'
+
+gem 'bootstrap-sass', '~> 3.4.1'
+gem 'sassc-rails', '>= 2.1.0'
+gem 'jquery-rails'

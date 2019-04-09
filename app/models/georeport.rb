@@ -1,0 +1,2 @@
+class Georeport < ApplicationRecord
+end

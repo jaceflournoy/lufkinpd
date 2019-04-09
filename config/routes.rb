@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  mount Lockup::Engine, at: '/lockup'
+  resources :georeports
   resources :txdotstreets
   resources :txdotlights
   resources :genericcallouts
@@ -16,7 +18,6 @@ Rails.application.routes.draw do
   resources :gatecodes
   resources :rollcalls
   resources :sessions
-  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   get 'sessions/new'
   get 'sessions/create'
   get 'sessions/destroy'

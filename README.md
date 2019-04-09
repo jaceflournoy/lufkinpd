@@ -4,27 +4,27 @@ TODO - LUFKINPD
 
 Mandatory:
 - Finish tidying/formatting After Hours Call-Out Forms
-- 911 Trouble Report - Ask What to do
-
-- Add email functionality for certain forms
-- Data validation
+- 911 Trouble Report - Get with Ashley on how she wants to accomplish this
+- Data validation (finish up)
 - Reformat new forms and existing ones (text changes, possibly form layout)
 - Contact Ashley for TLETS/NCIC Forms & Training Request Forms & TeePee
-- Work on roles/priviledges for certain forms
+- Work on roles/priviledges
 - For Daysoffrequest, change language from true to Yes and false to No
 - Humanize All Form fields
 - Change text field sizes/appearance sitewide
 
 Features/Improvements:
-- Improve Site Navigation
-- Add overall site login page
 - Add audit log
 - javascript loading problem for weather
 - Find a better way to distinguish Daily Dispatch from LufkinPD home
 
 -----------------
 
-Changelog - 4/8 (afterhours/EmailBranch)
+Changelog - 4/8
+- Login page for admin panel
+- Add overall site login page
+- Added Daily dispatch link to header for easier navigation
+- Edited Error Handling
 - Geo Base Report
 - Added Email Functionality for Vacation patrol, fleet ticket, and IT Help Ticket
 - Added data validation for most forms
@@ -51,8 +51,3 @@ Changelog - 3/31 (forms branch update)
 - Fixed Routing Problem
 - Added Days Off Request
 - Added Temporary Matrix - May have a better solution in the future (out of scope)
-
-
-
-test
-

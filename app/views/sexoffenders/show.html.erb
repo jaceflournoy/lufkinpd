@@ -1,39 +1,43 @@
 <p id="notice"><%= notice %></p>
+<div class="wrapper">
+  <div class="left">
+    <%=image_tag(@sexoffender.image, style: 'width:180px;height:180px;')%>
+  </div>
 
-<p>
-<%=image_tag(@sexoffender.image, style: 'width:140px;height:140px;')%>
+  <div class="right">
+    <p>
+      <strong>Name:</strong>
+      <%= @sexoffender.name %>
+    </p>
 
-</p>
+    <p>
+      <strong>Date of Birth:</strong>
+      <%= @sexoffender.dateofbirth %>
+    </p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @sexoffender.name %>
-</p>
+    <p>
+      <strong>Address:</strong>
+      <%= @sexoffender.address %>
+    </p>
 
-<p>
-  <strong>Date of Birth:</strong>
-  <%= @sexoffender.dateofbirth %>
-</p>
+    <p>
+      <strong>Offense:</strong>
+      <%= @sexoffender.offense %>
+    </p>
 
-<p>
-  <strong>Address:</strong>
-  <%= @sexoffender.address %>
-</p>
+    <p>
+      <strong>Risklevel:</strong>
+      <%= @sexoffender.risklevel %>
+    </p>
 
-<p>
-  <strong>Offense:</strong>
-  <%= @sexoffender.offense %>
-</p>
-
-<p>
-  <strong>Risklevel:</strong>
-  <%= @sexoffender.risklevel %>
-</p>
-
-<p>
-  <strong>Officer:</strong>
-  <%= @sexoffender.officer %>
-</p>
-
-<%= link_to 'Edit', edit_sexoffender_path(@sexoffender) %> |
-<%= link_to 'Back', sexoffenders_path %>
+    <p>
+      <strong>Officer:</strong>
+      <%= @sexoffender.officer %>
+    </p>
+  </div>
+</div>
+<br><br>
+<div class="center">
+  <%= link_to 'Edit', edit_sexoffender_path(@sexoffender) %> |
+  <%= link_to 'Back', sexoffenders_path %>
+</div>

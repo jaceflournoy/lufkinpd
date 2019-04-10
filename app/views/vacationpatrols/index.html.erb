@@ -16,9 +16,11 @@
       <tr>
         <td><%= vacationpatrol.officer %></td>
         <td><%= vacationpatrol.comment %></td>
-        <td><%= link_to 'Show', vacationpatrol %></td>
-        <td><%= link_to 'Edit', edit_vacationpatrol_path(vacationpatrol) %></td>
-        <td><%= link_to 'Destroy', vacationpatrol, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to '', vacationpatrol, class: "far fa-eye"
+        %></td>
+        <td><%= link_to '', edit_vacationpatrol_path(vacationpatrol), class: "far fa-edit"
+        %></td>
+        <td><%= link_to '', vacationpatrol, method: :delete, data: { confirm: 'Are you sure?' }, class: "far fa-trash-alt" %></td>
       </tr>
     <% end %>
   </tbody>

@@ -28,7 +28,7 @@ class SexoffendersController < ApplicationController
 
     respond_to do |format|
       if @sexoffender.save
-        format.html { redirect_to @sexoffender, notice: 'Sexoffender was successfully created.' }
+        format.html { redirect_to @sexoffender, notice: 'Sex Offender was successfully created.' }
         format.json { render :show, status: :created, location: @sexoffender }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class SexoffendersController < ApplicationController
   def update
     respond_to do |format|
       if @sexoffender.update(sexoffender_params)
-        format.html { redirect_to @sexoffender, notice: 'Sexoffender was successfully updated.' }
+        format.html { redirect_to @sexoffender, notice: 'Sex Offender was successfully updated.' }
         format.json { render :show, status: :ok, location: @sexoffender }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class SexoffendersController < ApplicationController
   def destroy
     @sexoffender.destroy
     respond_to do |format|
-      format.html { redirect_to sexoffenders_url, notice: 'Sexoffender was successfully destroyed.' }
+      format.html { redirect_to sexoffenders_url, notice: 'Sex Offender was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

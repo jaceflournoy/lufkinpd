@@ -3,16 +3,18 @@
 TODO - LUFKINPD
 
 Mandatory:
-- 911 Trouble Report - Get with Ashley on how she wants to accomplish this
 - Work on roles/priviledges
 - Humanize All Form fields
+- Add search bar to most forms
 
 Features/Improvements:
 - Add audit log
-- Find a better way to distinguish Daily Dispatch from LufkinPD home
 
 -----------------
 Changelog - 4/10
+- Added 911 Trouble Report
+- Made entire site dark
+- Added icons for "Show, Edit, Destroy"
 - Updated look of buttons
 - Added name validation for Phone Number
 - Added Mail link in top left corner

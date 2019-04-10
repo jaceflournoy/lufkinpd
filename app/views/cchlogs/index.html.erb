@@ -31,9 +31,11 @@
         <td><%= cchlog.disposition %></td>
         <td><%= cchlog.dispositiondate %></td>
         <td><%= cchlog.comment %></td>
-        <td><%= link_to 'Show', cchlog %></td>
-        <td><%= link_to 'Edit', edit_cchlog_path(cchlog) %></td>
-        <td><%= link_to 'Destroy', cchlog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to '', cchlog, class: "far fa-eye"
+        %></td>
+        <td><%= link_to '', edit_cchlog_path(cchlog), class: "far fa-edit"
+        %></td>
+        <td><%= link_to '', cchlog, method: :delete, data: { confirm: 'Are you sure?' }, class: "far fa-trash-alt" %></td>
       </tr>
     <% end %>
   </tbody>

@@ -57,7 +57,7 @@ class FleetticketsController < ApplicationController
   def destroy
     @fleetticket.destroy
     respond_to do |format|
-      format.html { redirect_to fleettickets_url, notice: 'Fleetticket was successfully destroyed.' }
+      format.html { redirect_to fleettickets_url, notice: 'Fleet Ticket was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

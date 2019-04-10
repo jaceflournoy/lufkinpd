@@ -25,9 +25,11 @@
         <td><%= genericcallout.unitassigned %></td>
         <td><%= genericcallout.problem %></td>
         <td><%= genericcallout.comment %></td>
-        <td><%= link_to 'Show', genericcallout %></td>
-        <td><%= link_to 'Edit', edit_genericcallout_path(genericcallout) %></td>
-        <td><%= link_to 'Destroy', genericcallout, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to '', genericcallout, class: "far fa-eye"
+        %></td>
+        <td><%= link_to '', edit_genericcallout_path(genericcallout), class: "far fa-edit"
+        %></td>
+        <td><%= link_to '', genericcallout, method: :delete, data: { confirm: 'Are you sure?' }, class: "far fa-trash-alt" %></td>
       </tr>
     <% end %>
   </tbody>

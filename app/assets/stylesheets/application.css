@@ -16,7 +16,10 @@
 
 /* CSS Document */
 
-
+body {
+    background-color: #383838;
+    color: white;
+}
 
 textarea {
     width:390px;
@@ -130,13 +133,14 @@ input{
 }
 
 a:link, a:visited {
+    color: white;
     text-align: center;
     text-decoration: none;
 }
 
 
 a:hover, a:active {
-    color: #008CBA;
+    color: #f44336;
     text-decoration: none;
 }
 
@@ -177,7 +181,12 @@ tr.spaceUnder>td {
 }
 
 table {
-    background-color: #fff;
+    background-color: #383838;
+    color: white;
+}
+
+table th {
+    color: black;
 }
 
 table.center {

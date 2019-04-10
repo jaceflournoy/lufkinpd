@@ -1,0 +1,297 @@
+/* line 1, app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 0px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+}
+
+/* line 11, app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 17, app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 23, app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+
+/* line 26, app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+
+/* line 30, app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+}
+
+/* line 35, app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 39, app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 5px 7px;
+}
+
+/* line 44, app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 49, app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 53, app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #383838;
+  display: inline-block;
+}
+
+/* line 64, app/assets/stylesheets/scaffolds.scss */
+.field_with_errors input, .field_with_errors textarea {
+  background-color: lightpink;
+  color: white;
+}
+
+/* line 70, app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+
+/* line 74, app/assets/stylesheets/scaffolds.scss */
+.formTable td {
+  padding: 5px 5px 3px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+/* CSS Document */
+
+
+body {
+    background-color: #383838;
+    color: white;
+}
+
+textarea {
+    width:390px;
+    height: 150px;
+    margin: 8px 0;
+    padding: 5px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input{
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#header {
+    border-bottom: 4px solid #f44336;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    background-color: #008CBA;
+    text-decoration-color: #ffffff;
+    color: white;
+}
+
+.button {
+    /* background styles */
+    position: relative;
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #f44336; /*for compatibility with older browsers*/
+    background-image: linear-gradient(#f44336,#f44336);
+
+    /* text styles */
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    font-family: sans-serif;
+    font-weight: 100;
+    border-radius: 6px;
+    box-shadow: 0px 1px 2px -2px #333;
+    text-shadow: 0px -1px #333;
+    cursor: pointer;
+}
+
+.button:after{
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: calc(100% - 4px);
+    height: 50%;
+    background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.2));
+}
+
+.button:hover{
+    background: linear-gradient(#9b0503, #ff7171);
+}
+
+.button2 {
+    /* background styles */
+    position: relative;
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #008CBA; /*for compatibility with older browsers*/
+    background-image: linear-gradient(#008CBA, #00a8d6);
+
+    /* text styles */
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    font-family: sans-serif;
+    font-weight: 100;
+    border-radius: 6px;
+    box-shadow: 0px 1px 4px -2px #333;
+    text-shadow: 0px -1px #333;
+    cursor:pointer;
+}
+
+.button2:after{
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: calc(100% - 4px);
+    height: 50%;
+    background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.2));
+}
+
+.button2:hover{
+    background: linear-gradient(#00569b, #2487c6);
+}
+
+
+
+
+.a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:link{
+    text-decoration: none;
+    border: 2px solid #f44336;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+a:link, a:visited {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+a:hover, a:active {
+    color: #f44336;
+    text-decoration: none;
+}
+
+#login {
+    display:inline-block;
+    position: absolute;
+    right: 10px;
+}
+
+#login a{
+    color:white;
+    text-decoration: underline;
+}
+
+#mail {
+    display:inline-block;
+    position: absolute;
+    float: left;
+    color: white;
+    font-size: 50px;
+    left: calc(2% - 4px);
+    top: 5px;
+}
+
+#mail a:visited {
+    color:white;
+}
+
+#leftbutton {
+    text-align: left;
+    padding-left: 50px;
+    float: left;
+}
+
+tr.spaceUnder>td {
+    padding-bottom: 1em;
+    padding-right: 1em;
+}
+
+table {
+    background-color: #383838;
+    color: white;
+}
+
+table th {
+    color: black;
+}
+
+table.center {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+th,td {
+    padding: 15px;
+}
+
+.tbl{
+    width: 75%;
+    border: 1px solid #dadada;
+    margin: 10%;
+    padding-top: 50px;
+}
+
+th{
+    background-color: #dadada;
+}

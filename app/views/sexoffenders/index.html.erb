@@ -34,9 +34,11 @@
         <td><%= sexoffender.risklevel %></td>
         <td><%= sexoffender.officer %></td>
         <% end %>
-        <td><%= link_to 'Show', sexoffender %></td>
-        <td><%= link_to 'Edit', edit_sexoffender_path(sexoffender) %></td>
-        <td><%= link_to 'Destroy', sexoffender, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to '', sexoffender , class: "far fa-eye"
+        %></td>
+        <td><%= link_to '', edit_sexoffender_path(sexoffender), class: "far fa-edit"
+        %></td>
+        <td><%= link_to '', sexoffender, method: :delete, data: { confirm: 'Are you sure?' }, class: "far fa-trash-alt" %></td>
       </tr>
     <% end %>
   </tbody>

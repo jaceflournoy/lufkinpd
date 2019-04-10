@@ -16,9 +16,11 @@
       <tr>
         <td><%= gatecode.location %></td>
         <td><%= gatecode.code %></td>
-        <td><%= link_to 'Show', gatecode %></td>
-        <td><%= link_to 'Edit', edit_gatecode_path(gatecode) %></td>
-        <td><%= link_to 'Destroy', gatecode, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to '', gatecode, class: "far fa-eye"
+        %></td>
+        <td><%= link_to '', edit_gatecode_path(gatecode), class: "far fa-edit"
+        %></td>
+        <td><%= link_to '', gatecode, method: :delete, data: { confirm: 'Are you sure?' }, class: "far fa-trash-alt" %></td>
       </tr>
     <% end %>
   </tbody>

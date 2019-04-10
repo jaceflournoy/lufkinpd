@@ -39,9 +39,11 @@
         <td><%= citystreet.roadhazard_to_string %></td>
         <td><%= citystreet.needed %></td>
         <td><%= citystreet.comment %></td>
-        <td><%= link_to 'Show', citystreet %></td>
-        <td><%= link_to 'Edit', edit_citystreet_path(citystreet) %></td>
-        <td><%= link_to 'Destroy', citystreet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to '', citystreet, class: "far fa-eye"
+        %></td>
+        <td><%= link_to '', edit_citystreet_path(citystreet), class: "far fa-edit"
+        %></td>
+        <td><%= link_to '', citystreet, method: :delete, data: { confirm: 'Are you sure?' }, class: "far fa-trash-alt" %></td>
       </tr>
     <% end %>
   </tbody>

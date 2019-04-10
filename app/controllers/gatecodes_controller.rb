@@ -29,7 +29,7 @@ class GatecodesController < ApplicationController
 
     respond_to do |format|
       if @gatecode.save
-        format.html { redirect_to @gatecode, notice: 'Gatecode was successfully created.' }
+        format.html { redirect_to @gatecode, notice: 'Gate Code was successfully created.' }
         format.json { render :show, status: :created, location: @gatecode }
       else
         format.html { render :new }
@@ -43,7 +43,7 @@ class GatecodesController < ApplicationController
   def update
     respond_to do |format|
       if @gatecode.update(gatecode_params)
-        format.html { redirect_to @gatecode, notice: 'Gatecode was successfully updated.' }
+        format.html { redirect_to @gatecode, notice: 'Gate Code was successfully updated.' }
         format.json { render :show, status: :ok, location: @gatecode }
       else
         format.html { render :edit }
@@ -57,7 +57,7 @@ class GatecodesController < ApplicationController
   def destroy
     @gatecode.destroy
     respond_to do |format|
-      format.html { redirect_to gatecodes_url, notice: 'Gatecode was successfully destroyed.' }
+      format.html { redirect_to gatecodes_url, notice: 'Gate Code was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

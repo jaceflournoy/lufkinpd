@@ -43,7 +43,7 @@ class VacationpatrolsController < ApplicationController
   def update
     respond_to do |format|
       if @vacationpatrol.update(vacationpatrol_params)
-        format.html { redirect_to @vacationpatrol, notice: 'Vacationpatrol was successfully updated.' }
+        format.html { redirect_to @vacationpatrol, notice: 'Vacation Patrol was successfully updated.' }
         format.json { render :show, status: :ok, location: @vacationpatrol }
       else
         format.html { render :edit }
@@ -57,7 +57,7 @@ class VacationpatrolsController < ApplicationController
   def destroy
     @vacationpatrol.destroy
     respond_to do |format|
-      format.html { redirect_to vacationpatrols_url, notice: 'Vacationpatrol was successfully destroyed.' }
+      format.html { redirect_to vacationpatrols_url, notice: 'Vacation Patrol was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

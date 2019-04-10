@@ -28,7 +28,7 @@ class TxdotlightsController < ApplicationController
 
     respond_to do |format|
       if @txdotlight.save
-        format.html { redirect_to @txdotlight, notice: 'Txdotlight was successfully created.' }
+        format.html { redirect_to @txdotlight, notice: 'TX-DOT Light Call-Out was successfully created.' }
         format.json { render :show, status: :created, location: @txdotlight }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class TxdotlightsController < ApplicationController
   def update
     respond_to do |format|
       if @txdotlight.update(txdotlight_params)
-        format.html { redirect_to @txdotlight, notice: 'Txdotlight was successfully updated.' }
+        format.html { redirect_to @txdotlight, notice: 'TX-DOT Light Call-Out was successfully updated.' }
         format.json { render :show, status: :ok, location: @txdotlight }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class TxdotlightsController < ApplicationController
   def destroy
     @txdotlight.destroy
     respond_to do |format|
-      format.html { redirect_to txdotlights_url, notice: 'Txdotlight was successfully destroyed.' }
+      format.html { redirect_to txdotlights_url, notice: 'TX-DOT Light Call-Out was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

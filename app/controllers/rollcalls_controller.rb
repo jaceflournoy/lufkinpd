@@ -29,7 +29,7 @@ class RollcallsController < ApplicationController
 
     respond_to do |format|
       if @rollcall.save
-        format.html { redirect_to @rollcall, notice: 'Rollcall was successfully created.' }
+        format.html { redirect_to @rollcall, notice: 'Roll Call was successfully created.' }
         format.json { render :show, status: :created, location: @rollcall }
       else
         format.html { render :new }
@@ -43,7 +43,7 @@ class RollcallsController < ApplicationController
   def update
     respond_to do |format|
       if @rollcall.update(rollcall_params)
-        format.html { redirect_to @rollcall, notice: 'Rollcall was successfully updated.' }
+        format.html { redirect_to @rollcall, notice: 'Roll Call was successfully updated.' }
         format.json { render :show, status: :ok, location: @rollcall }
       else
         format.html { render :edit }
@@ -57,7 +57,7 @@ class RollcallsController < ApplicationController
   def destroy
     @rollcall.destroy
     respond_to do |format|
-      format.html { redirect_to rollcalls_url, notice: 'Rollcall was successfully destroyed.' }
+      format.html { redirect_to rollcalls_url, notice: 'Roll Call was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

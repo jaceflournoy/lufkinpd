@@ -28,7 +28,7 @@ class CitystreetsController < ApplicationController
 
     respond_to do |format|
       if @citystreet.save
-        format.html { redirect_to @citystreet, notice: 'Citystreet was successfully created.' }
+        format.html { redirect_to @citystreet, notice: 'City/Street Call-Out was successfully created.' }
         format.json { render :show, status: :created, location: @citystreet }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class CitystreetsController < ApplicationController
   def update
     respond_to do |format|
       if @citystreet.update(citystreet_params)
-        format.html { redirect_to @citystreet, notice: 'Citystreet was successfully updated.' }
+        format.html { redirect_to @citystreet, notice: 'City/Street Call-Out was successfully updated.' }
         format.json { render :show, status: :ok, location: @citystreet }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class CitystreetsController < ApplicationController
   def destroy
     @citystreet.destroy
     respond_to do |format|
-      format.html { redirect_to citystreets_url, notice: 'Citystreet was successfully destroyed.' }
+      format.html { redirect_to citystreets_url, notice: 'City/Street Call-Out was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

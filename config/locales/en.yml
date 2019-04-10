@@ -93,6 +93,9 @@ en:
       watersewer:
         one: "Water/Sewer Call Out"
         other: "Water/Sewer Call Outs"
+      trouble911:
+        one: "911 Trouble Report"
+        other: "911 Trouble Reports"
 
     attributes:
       animalcontrol:
@@ -156,4 +159,10 @@ en:
         cityleak: "Is it a City Leak?"
         privateleak: "Is it a Private Leak?"
         noleak: "No leak?"
+      trouble911:
+        providername: "Provider Name"
+        phonenumber: "Phone Number"
+        faxnumber: "Fax Number"
+        extrainfo: "Extra Info."
+
 

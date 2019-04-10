@@ -18,9 +18,11 @@
         <td><%= fleetticket.unitnumber %></td>
         <td><%= fleetticket.reportingofficer %></td>
         <td><%= fleetticket.problem %></td>
-        <td><%= link_to 'Show', fleetticket %></td>
-        <td><%= link_to 'Edit', edit_fleetticket_path(fleetticket) %></td>
-        <td><%= link_to 'Destroy', fleetticket, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to '', fleetticket , class: "far fa-eye"
+        %></td>
+        <td><%= link_to '', edit_fleetticket_path(fleetticket), class: "far fa-edit"
+        %></td>
+        <td><%= link_to '', fleetticket, method: :delete, data: { confirm: 'Are you sure?' }, class: "far fa-trash-alt" %></td>
       </tr>
     <% end %>
   </tbody>

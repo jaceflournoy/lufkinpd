@@ -25,9 +25,10 @@
         <td><%= animalcontrol.unitassigned %></td>
         <td><%= animalcontrol.problem %></td>
         <td><%= animalcontrol.comment %></td>
-        <td><%= link_to 'Show', animalcontrol %></td>
-        <td><%= link_to 'Edit', edit_animalcontrol_path(animalcontrol) %></td>
-        <td><%= link_to 'Destroy', animalcontrol, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to '', animalcontrol , class: "far fa-eye"%></td>
+        <td><%= link_to '', edit_animalcontrol_path(animalcontrol), class: "far fa-edit"
+        %></td>
+        <td><%= link_to '', animalcontrol, method: :delete, data: { confirm: 'Are you sure?' }, class: "far fa-trash-alt" %></td>
       </tr>
     <% end %>
   </tbody>

@@ -4,13 +4,11 @@ TODO - LUFKINPD
 
 Mandatory:
 - 911 Trouble Report - Get with Ashley on how she wants to accomplish this
-- Contact Ashley for TLETS/NCIC Forms & Training Request Forms & TeePee
 - Work on roles/priviledges
 - Humanize All Form fields
 
 Features/Improvements:
 - Add audit log
-- javascript loading problem for weather
 - Find a better way to distinguish Daily Dispatch from LufkinPD home
 
 -----------------
@@ -19,6 +17,11 @@ Changelog - 4/10
 - Added name validation for Phone Number
 - Added Mail link in top left corner
 - Added default avatar if user didn't upload an image
+- Fixed javascript weather issue
+- Added Training Request Forms
+- Added TLETS/NCIC Forms
+- Added TeePee Doc
+
 
 Changelog - 4/9
 - More Language Changes

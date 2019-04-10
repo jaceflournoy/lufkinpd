@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TLETS/NCIC Forms</title>
+  <style>
+    .column1 {
+      float: left;
+      width: 50%;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+<center>
+  <body>
+  <h1> TLETS/NCIC Forms</h1>
+  <div class="row">
+    <div class="column1">
+      <h2><%= link_to "Missing Person Entry Form","/TLETS/Missing Person Entry Form.doc", target: :_blank  %></h2>
+      <h2><%= link_to "Missing Person Entry Supplement","/TLETS/Missing Person Entry Supplement.doc", target: :_blank  %></h2>
+      <h2><%= link_to "Protective Order Entry Form","/TLETS/Protective Order Entry Form.doc", target: :_blank  %></h2>
+      <h2><%= link_to "Protective Order Entry Supplement Form","/TLETS/Protective Order Entry Supplement Form.doc", target: :_blank  %></h2>
+      <h2><%= link_to "Recovered Gun Entry Form","/TLETS/Recovered Gun Entry Form.doc", target: :_blank  %></h2>
+      <h2><%= link_to "Stolen Add On Boat Part Entry Form","/TLETS/Stolen Add On Boat Part Entry form.doc", target: :_blank  %></h2>
+      <h2><%= link_to "Stolen Article Consecutively Serialized Entry Form","/TLETS/Stolen Article Consecutively Serialized Entry Form.doc", target: :_blank  %></h2>
+      <h2><%= link_to "Stolen Article Entry Form","/TLETS/Stolen Article Entry Form.doc", target: :_blank  %></h2>
+      <h2><%= link_to "Stolen Boat Entry Form","/TLETS/Stolen Boat Entry.doc", target: :_blank  %></h2>
+    </div>
+    <div class="column1">
+      <h2><%= link_to "Stolen Gun Entry Form","/TLETS/Stolen Gun Entry Form.doc", target: :_blank  %></h2>
+      <h2><%= link_to "Stolen License Plate Entry Form","/TLETS/Stolen License Plate Entry Form.doc", target: :_blank  %></h2>
+      <h2><%= link_to "Stolen Security Entry Form","/TLETS/Stolen Security Entry Form.doc", target: :_blank  %></h2>
+      <h2><%= link_to "Stolen Vehicle Boat Part Entry form","/TLETS/Stolen Vehicle Boat Part Entry form.doc", target: :_blank  %></h2>
+      <h2><%= link_to "Stolen Vehicle Entry Form","/TLETS/Stolen Vehicle Entry Form.doc", target: :_blank  %></h2>
+      <h2><%= link_to "Threat Against Peace Officer Entry Form","/TLETS/THREAT AGAINST PEACE OFC.doc", target: :_blank  %></h2>
+      <h2><%= link_to "Threat Against Peace Officer Supplement","/TLETS/THREAT AGAINST PEACE OFC SUPP.doc", target: :_blank  %></h2>
+      <h2><%= link_to "Violent Person Entry Form","/TLETS/VIOLENT PERSON.doc", target: :_blank  %></h2>
+      <h2><%= link_to "Wanted Person Entry Form","/TLETS/Wanted Person Entry Form.doc", target: :_blank  %></h2>
+    </div>
+  </div>
+  <h3><a href="/dailydispatch" data-turbolinks="false">Back to Daily Dispatch</a></h3>
+  </body>
+</center>
+</html>

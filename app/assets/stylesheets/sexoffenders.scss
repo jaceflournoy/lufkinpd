@@ -1,3 +1,19 @@
 // Place all the styles related to the sexoffenders controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.wrapper {
+  column-count: 2;
+  column-width: 10px;
+  column-rule: 1px solid lightblue;
+  margin-left:30px;
+}
+
+.wrapper .left{
+  text-align: right;
+  padding-right: 10px;
+}
+
+.wrapper .right{
+  text-align: left;
+  padding-left: 10px;
+}

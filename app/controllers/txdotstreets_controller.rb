@@ -28,7 +28,7 @@ class TxdotstreetsController < ApplicationController
 
     respond_to do |format|
       if @txdotstreet.save
-        format.html { redirect_to @txdotstreet, notice: 'Txdotstreet was successfully created.' }
+        format.html { redirect_to @txdotstreet, notice: 'TX-DOT Street Call-Out was successfully created.' }
         format.json { render :show, status: :created, location: @txdotstreet }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class TxdotstreetsController < ApplicationController
   def update
     respond_to do |format|
       if @txdotstreet.update(txdotstreet_params)
-        format.html { redirect_to @txdotstreet, notice: 'Txdotstreet was successfully updated.' }
+        format.html { redirect_to @txdotstreet, notice: 'TX-DOT Street Call-Out was successfully updated.' }
         format.json { render :show, status: :ok, location: @txdotstreet }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class TxdotstreetsController < ApplicationController
   def destroy
     @txdotstreet.destroy
     respond_to do |format|
-      format.html { redirect_to txdotstreets_url, notice: 'Txdotstreet was successfully destroyed.' }
+      format.html { redirect_to txdotstreets_url, notice: 'TX-DOT Street Call-Out was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

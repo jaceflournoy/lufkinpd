@@ -28,7 +28,7 @@ class GenericcalloutsController < ApplicationController
 
     respond_to do |format|
       if @genericcallout.save
-        format.html { redirect_to @genericcallout, notice: 'Genericcallout was successfully created.' }
+        format.html { redirect_to @genericcallout, notice: 'Generic Call-Out was successfully created.' }
         format.json { render :show, status: :created, location: @genericcallout }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class GenericcalloutsController < ApplicationController
   def update
     respond_to do |format|
       if @genericcallout.update(genericcallout_params)
-        format.html { redirect_to @genericcallout, notice: 'Genericcallout was successfully updated.' }
+        format.html { redirect_to @genericcallout, notice: 'Generic Call-Out was successfully updated.' }
         format.json { render :show, status: :ok, location: @genericcallout }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class GenericcalloutsController < ApplicationController
   def destroy
     @genericcallout.destroy
     respond_to do |format|
-      format.html { redirect_to genericcallouts_url, notice: 'Genericcallout was successfully destroyed.' }
+      format.html { redirect_to genericcallouts_url, notice: 'Generic Call-Out was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

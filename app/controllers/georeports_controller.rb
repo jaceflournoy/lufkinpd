@@ -28,7 +28,7 @@ class GeoreportsController < ApplicationController
 
     respond_to do |format|
       if @georeport.save
-        format.html { redirect_to @georeport, notice: 'Georeport was successfully created.' }
+        format.html { redirect_to @georeport, notice: 'GeoBase Report was successfully created.' }
         format.json { render :show, status: :created, location: @georeport }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class GeoreportsController < ApplicationController
   def update
     respond_to do |format|
       if @georeport.update(georeport_params)
-        format.html { redirect_to @georeport, notice: 'Georeport was successfully updated.' }
+        format.html { redirect_to @georeport, notice: 'GeoBase Report was successfully updated.' }
         format.json { render :show, status: :ok, location: @georeport }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class GeoreportsController < ApplicationController
   def destroy
     @georeport.destroy
     respond_to do |format|
-      format.html { redirect_to georeports_url, notice: 'Georeport was successfully destroyed.' }
+      format.html { redirect_to georeports_url, notice: 'GeoBase Report was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

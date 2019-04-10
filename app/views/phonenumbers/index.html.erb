@@ -22,9 +22,11 @@
         <td><%= phonenumber.office %></td>
         <td><%= phonenumber.cell %></td>
         <td><%= phonenumber.secondary_contact %></td>
-        <td><%= link_to 'Show', phonenumber %></td>
-        <td><%= link_to 'Edit', edit_phonenumber_path(phonenumber) %></td>
-        <td><%= link_to 'Destroy', phonenumber, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to '', phonenumber, class: "far fa-eye"
+        %></td>
+        <td><%= link_to '', edit_phonenumber_path(phonenumber), class: "far fa-edit"
+        %></td>
+        <td><%= link_to '', phonenumber, method: :delete, data: { confirm: 'Are you sure?' }, class: "far fa-trash-alt" %></td>
       </tr>
     <% end %>
   </tbody>

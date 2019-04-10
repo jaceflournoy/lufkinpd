@@ -23,9 +23,11 @@
         <td><%= georeport.biznamechange %></td>
         <td><%= georeport.comment %></td>
         <td><%= georeport.reportedby %></td>
-        <td><%= link_to 'Show', georeport %></td>
-        <td><%= link_to 'Edit', edit_georeport_path(georeport) %></td>
-        <td><%= link_to 'Destroy', georeport, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to '', georeport, class: "far fa-eye"
+        %></td>
+        <td><%= link_to '', edit_georeport_path(georeport), class: "far fa-edit"
+        %></td>
+        <td><%= link_to '', georeport, method: :delete, data: { confirm: 'Are you sure?' }, class: "far fa-trash-alt" %></td>
       </tr>
     <% end %>
   </tbody>

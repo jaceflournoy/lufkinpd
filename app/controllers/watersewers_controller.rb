@@ -28,7 +28,7 @@ class WatersewersController < ApplicationController
 
     respond_to do |format|
       if @watersewer.save
-        format.html { redirect_to @watersewer, notice: 'Watersewer was successfully created.' }
+        format.html { redirect_to @watersewer, notice: 'Water/Sewer Call-Out was successfully created.' }
         format.json { render :show, status: :created, location: @watersewer }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class WatersewersController < ApplicationController
   def update
     respond_to do |format|
       if @watersewer.update(watersewer_params)
-        format.html { redirect_to @watersewer, notice: 'Watersewer was successfully updated.' }
+        format.html { redirect_to @watersewer, notice: 'Water/Sewer Call-Out was successfully updated.' }
         format.json { render :show, status: :ok, location: @watersewer }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class WatersewersController < ApplicationController
   def destroy
     @watersewer.destroy
     respond_to do |format|
-      format.html { redirect_to watersewers_url, notice: 'Watersewer was successfully destroyed.' }
+      format.html { redirect_to watersewers_url, notice: 'Water/Sewer Call-Out was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

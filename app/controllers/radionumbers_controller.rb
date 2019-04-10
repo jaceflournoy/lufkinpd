@@ -28,7 +28,7 @@ class RadionumbersController < ApplicationController
 
     respond_to do |format|
       if @radionumber.save
-        format.html { redirect_to @radionumber, notice: 'Radionumber was successfully created.' }
+        format.html { redirect_to @radionumber, notice: 'Radio Number was successfully created.' }
         format.json { render :show, status: :created, location: @radionumber }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class RadionumbersController < ApplicationController
   def update
     respond_to do |format|
       if @radionumber.update(radionumber_params)
-        format.html { redirect_to @radionumber, notice: 'Radionumber was successfully updated.' }
+        format.html { redirect_to @radionumber, notice: 'Radio Number was successfully updated.' }
         format.json { render :show, status: :ok, location: @radionumber }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class RadionumbersController < ApplicationController
   def destroy
     @radionumber.destroy
     respond_to do |format|
-      format.html { redirect_to radionumbers_url, notice: 'Radionumber was successfully destroyed.' }
+      format.html { redirect_to radionumbers_url, notice: 'Radio Number was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

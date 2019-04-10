@@ -28,7 +28,7 @@ class DaysoffrequestsController < ApplicationController
 
     respond_to do |format|
       if @daysoffrequest.save
-        format.html { redirect_to @daysoffrequest, notice: 'Daysoffrequest was successfully created.' }
+        format.html { redirect_to @daysoffrequest, notice: 'Days Off Request was successfully created.' }
         format.json { render :show, status: :created, location: @daysoffrequest }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class DaysoffrequestsController < ApplicationController
   def update
     respond_to do |format|
       if @daysoffrequest.update(daysoffrequest_params)
-        format.html { redirect_to @daysoffrequest, notice: 'Daysoffrequest was successfully updated.' }
+        format.html { redirect_to @daysoffrequest, notice: 'Days Off Request was successfully updated.' }
         format.json { render :show, status: :ok, location: @daysoffrequest }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class DaysoffrequestsController < ApplicationController
   def destroy
     @daysoffrequest.destroy
     respond_to do |format|
-      format.html { redirect_to daysoffrequests_url, notice: 'Daysoffrequest was successfully destroyed.' }
+      format.html { redirect_to daysoffrequests_url, notice: 'Days Off Request was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

@@ -43,7 +43,7 @@ class IthelpticketsController < ApplicationController
   def update
     respond_to do |format|
       if @ithelpticket.update(ithelpticket_params)
-        format.html { redirect_to @ithelpticket, notice: 'Ithelpticket was successfully updated.' }
+        format.html { redirect_to @ithelpticket, notice: 'IT Help Ticket was successfully updated.' }
         format.json { render :show, status: :ok, location: @ithelpticket }
       else
         format.html { render :edit }
@@ -57,7 +57,7 @@ class IthelpticketsController < ApplicationController
   def destroy
     @ithelpticket.destroy
     respond_to do |format|
-      format.html { redirect_to ithelptickets_url, notice: 'Ithelpticket was successfully destroyed.' }
+      format.html { redirect_to ithelptickets_url, notice: 'IT Help Ticket was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

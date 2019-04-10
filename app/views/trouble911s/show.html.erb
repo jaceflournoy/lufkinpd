@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Provider Name:</strong>
+  <%= @trouble911.providername %>
+</p>
+
+<p>
+  <strong>Phone Number:</strong>
+  <%= @trouble911.phonenumber %>
+</p>
+
+<p>
+  <strong>Fax Number:</strong>
+  <%= @trouble911.faxnumber %>
+</p>
+
+<p>
+  <strong>Extra Info:</strong>
+  <%= @trouble911.extrainfo %>
+</p>
+
+<%= link_to 'Edit', edit_trouble911_path(@trouble911) %> |
+<%= link_to 'Back', trouble911s_path %>

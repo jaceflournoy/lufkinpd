@@ -28,7 +28,7 @@ class AnimalcontrolsController < ApplicationController
 
     respond_to do |format|
       if @animalcontrol.save
-        format.html { redirect_to @animalcontrol, notice: 'Animalcontrol was successfully created.' }
+        format.html { redirect_to @animalcontrol, notice: 'Animal Control Call-Out was successfully created.' }
         format.json { render :show, status: :created, location: @animalcontrol }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class AnimalcontrolsController < ApplicationController
   def update
     respond_to do |format|
       if @animalcontrol.update(animalcontrol_params)
-        format.html { redirect_to @animalcontrol, notice: 'Animalcontrol was successfully updated.' }
+        format.html { redirect_to @animalcontrol, notice: 'Animal Control Call-Out was successfully updated.' }
         format.json { render :show, status: :ok, location: @animalcontrol }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class AnimalcontrolsController < ApplicationController
   def destroy
     @animalcontrol.destroy
     respond_to do |format|
-      format.html { redirect_to animalcontrols_url, notice: 'Animalcontrol was successfully destroyed.' }
+      format.html { redirect_to animalcontrols_url, notice: 'Animal Control Call-Out was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

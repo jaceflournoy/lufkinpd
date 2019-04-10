@@ -31,9 +31,11 @@
         <td><%= txdotstreet.state_to_string %></td>
         <td><%= txdotstreet.needed %></td>
         <td><%= txdotstreet.comment %></td>
-        <td><%= link_to 'Show', txdotstreet %></td>
-        <td><%= link_to 'Edit', edit_txdotstreet_path(txdotstreet) %></td>
-        <td><%= link_to 'Destroy', txdotstreet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to '', txdotstreet , class: "far fa-eye"
+        %></td>
+        <td><%= link_to '', edit_txdotstreet_path(txdotstreet), class: "far fa-edit"
+        %></td>
+        <td><%= link_to '', txdotstreet, method: :delete, data: { confirm: 'Are you sure?' }, class: "far fa-trash-alt" %></td>
       </tr>
     <% end %>
   </tbody>

@@ -33,9 +33,11 @@
         <td><%= watersewer.private_to_string %></td>
         <td><%= watersewer.no_to_string %></td>
         <td><%= watersewer.comment %></td>
-        <td><%= link_to 'Show', watersewer %></td>
-        <td><%= link_to 'Edit', edit_watersewer_path(watersewer) %></td>
-        <td><%= link_to 'Destroy', watersewer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to '', watersewer , class: "far fa-eye"
+        %></td>
+        <td><%= link_to '', edit_watersewer_path(watersewer), class: "far fa-edit"
+        %></td>
+        <td><%= link_to '', watersewer, method: :delete, data: { confirm: 'Are you sure?' }, class: "far fa-trash-alt" %></td>
       </tr>
     <% end %>
   </tbody>

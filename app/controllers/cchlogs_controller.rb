@@ -28,7 +28,7 @@ class CchlogsController < ApplicationController
 
     respond_to do |format|
       if @cchlog.save
-        format.html { redirect_to @cchlog, notice: 'Cchlog was successfully created.' }
+        format.html { redirect_to @cchlog, notice: 'CCH Log was successfully created.' }
         format.json { render :show, status: :created, location: @cchlog }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class CchlogsController < ApplicationController
   def update
     respond_to do |format|
       if @cchlog.update(cchlog_params)
-        format.html { redirect_to @cchlog, notice: 'Cchlog was successfully updated.' }
+        format.html { redirect_to @cchlog, notice: 'CCH Log was successfully updated.' }
         format.json { render :show, status: :ok, location: @cchlog }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class CchlogsController < ApplicationController
   def destroy
     @cchlog.destroy
     respond_to do |format|
-      format.html { redirect_to cchlogs_url, notice: 'Cchlog was successfully destroyed.' }
+      format.html { redirect_to cchlogs_url, notice: 'CCH Log was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

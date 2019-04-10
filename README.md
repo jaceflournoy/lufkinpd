@@ -14,6 +14,11 @@ Features/Improvements:
 - Find a better way to distinguish Daily Dispatch from LufkinPD home
 
 -----------------
+Changelog - 4/10
+- Updated look of buttons
+- Added name validation for Phone Number
+- Added Mail link in top left corner
+
 Changelog - 4/9
 - More Language Changes
 - Edited CSS for text fields/areas

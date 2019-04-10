@@ -3,10 +3,11 @@ class Phonenumber < ApplicationRecord
             presence: true,
             length: {maximum: 140},
             on: :create,
-            allow_nil: false
+            allow_nil: false,
+            format: { with: /\A[a-zA-Z]+\z/,
+                      message: "only allows letters" }
 
   validates :home,
-            presence: true,
             length: {maximum: 140},
             on: :create,
             allow_nil: false
@@ -25,4 +26,13 @@ class Phonenumber < ApplicationRecord
             length: {maximum: 140},
             on: :create,
             allow_nil: false
+
+  validate :any_present?
+
+  def any_present?
+    if %w(home office cell secondary_contact).all?{|attr| self[attr].blank?}
+      errors.add :base, "At least one phone number must be entered."
+    end
+  end
+
 end

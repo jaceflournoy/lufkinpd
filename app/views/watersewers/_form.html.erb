@@ -13,27 +13,27 @@
 
   <div class="field">
     <%= form.label :address %>
-    <%= form.text_field :address %>
+    <%= form.text_field :address, maxlength: 140, size: 30 %>
   </div>
 
   <div class="field">
     <%= form.label :name %>
-    <%= form.text_field :name %>
+    <%= form.text_field :name, maxlength: 140, size: 30 %>
   </div>
 
   <div class="field">
     <%= form.label :callback, "Call Back"%>
-    <%= form.text_field :callback %>
+    <%= form.text_field :callback, maxlength: 140, size: 30 %>
   </div>
 
   <div class="field">
     <%= form.label :unitassigned, "Unit Assigned" %>
-    <%= form.text_field :unitassigned %>
+    <%= form.text_field :unitassigned, maxlength: 140, size: 30 %>
   </div>
 
   <div class="field">
     <%= form.label :problem %>
-    <%= form.text_area :problem %>
+    <%= form.text_area :problem, maxlength: 400 %>
   </div>
 
   <div class="field">
@@ -58,7 +58,7 @@
 
   <div class="field">
     <%= form.label :comment %>
-    <%= form.text_area :comment %>
+    <%= form.text_area :comment, maxlength: 400 %>
   </div>
 
   <div class="actions">

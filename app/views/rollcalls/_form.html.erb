@@ -14,17 +14,17 @@
 
   <div class="field">
     <%= form.label "Radio #" %>
-    <%= form.number_field :radionum %>
+    <%= form.number_field :radionum, maxlength: 9 %>
   </div>
 
   <div class="field">
     <%= form.label :title %>
-    <%= form.text_field :title %>
+    <%= form.text_field :title, maxlength: 140, size: 30 %>
   </div>
 
   <div class="field">
     <%= form.label :description %>
-    <%= form.text_area :description %>
+    <%= form.text_area :description, maxlength: 400 %>
   </div>
 
   <div class="actions">

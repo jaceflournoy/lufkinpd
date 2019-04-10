@@ -3,15 +3,10 @@
 TODO - LUFKINPD
 
 Mandatory:
-- Finish tidying/formatting After Hours Call-Out Forms
 - 911 Trouble Report - Get with Ashley on how she wants to accomplish this
-- Data validation (finish up)
-- Reformat new forms and existing ones (text changes, possibly form layout)
 - Contact Ashley for TLETS/NCIC Forms & Training Request Forms & TeePee
 - Work on roles/priviledges
-- For Daysoffrequest, change language from true to Yes and false to No
 - Humanize All Form fields
-- Change text field sizes/appearance sitewide
 
 Features/Improvements:
 - Add audit log
@@ -19,6 +14,12 @@ Features/Improvements:
 - Find a better way to distinguish Daily Dispatch from LufkinPD home
 
 -----------------
+Changelog - 4/9
+- More Language Changes
+- Edited CSS for text fields/areas
+- Added sitewide data validation for just about everything
+- Recompiled Assets for deployment
+- Added Date Validation Gem
 
 Changelog - 4/8
 - Massive Amount of Language Changes Sitewide

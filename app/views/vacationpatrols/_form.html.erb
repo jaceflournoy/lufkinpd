@@ -14,12 +14,12 @@
 
   <div class="field">
     <%= form.label :officer %>
-    <%= form.text_field :officer %>
+    <%= form.text_field :officer, maxlength: 140, size: 30 %>
   </div>
 
   <div class="field">
     <%= form.label :comment %>
-    <%= form.text_area :comment %>
+    <%= form.text_area :comment, maxlength: 400 %>
   </div>
 
   <div class="actions">

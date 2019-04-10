@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= form.label :name %>
-    <%= form.text_field :name %>
+    <%= form.text_field :name, maxlength: 140, size: 30 %>
   </div>
 
   <div class="field">
@@ -23,12 +23,12 @@
 
   <div class="field">
     <%= form.label :idnum, "ID" %>
-    <%= form.text_field :idnum %>
+    <%= form.text_field :idnum, maxlength: 140, size: 30 %>
   </div>
 
   <div class="field">
     <%= form.label :operator%>
-    <%= form.text_field :operator %>
+    <%= form.text_field :operator, maxlength: 140, size: 30 %>
   </div>
 
   <div class="field">
@@ -39,7 +39,7 @@
 
   <div class="field">
     <%= form.label :officer %>
-    <%= form.text_field :officer %>
+    <%= form.text_field :officer, maxlength: 140, size: 30 %>
   </div>
 
   <div class="field">
@@ -54,7 +54,7 @@
 
   <div class="field">
     <%= form.label :comment %>
-    <%= form.text_area :comment %>
+    <%= form.text_area :comment, maxlength: 400 %>
   </div>
 
   <div class="actions">

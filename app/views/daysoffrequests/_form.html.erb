@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= form.label :operatorname, "Operator Name" %>
-    <%= form.text_field :operatorname %>
+    <%= form.text_field :operatorname, maxlength: 140, size: 30 %>
   </div>
 
   <div class="field">
@@ -43,7 +43,7 @@
 
   <div class="field">
     <%= form.label :comment %>
-    <%= form.text_area :comment %>
+    <%= form.text_area :comment, maxlength: 400 %>
   </div>
 
   <div class="field">

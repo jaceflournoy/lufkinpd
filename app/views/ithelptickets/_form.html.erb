@@ -14,17 +14,17 @@
 
   <div class="field">
     <%= form.label :name, "Name:" %>
-    <%= form.text_field :name %>
+    <%= form.text_field :name, maxlength: 140, size: 30 %>
   </div>
 
   <div class="field">
     <%= form.label :unit, "Unit/Office" %>
-    <%= form.text_field :unit %>
+    <%= form.text_field :unit, maxlength: 140, size: 30 %>
   </div>
 
   <div class="field">
     <%= form.label :problem, "Explain problem:" %>
-    <%= form.text_area :problem %>
+    <%= form.text_area :problem, maxlength: 400 %>
   </div>
 
   <div class="actions">

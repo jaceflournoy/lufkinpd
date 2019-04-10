@@ -18,6 +18,7 @@ Changelog - 4/10
 - Updated look of buttons
 - Added name validation for Phone Number
 - Added Mail link in top left corner
+- Added default avatar if user didn't upload an image
 
 Changelog - 4/9
 - More Language Changes

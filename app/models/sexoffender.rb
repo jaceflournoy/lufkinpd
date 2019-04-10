@@ -1,5 +1,6 @@
 class Sexoffender < ApplicationRecord
   has_one_attached :image
+
   validates_date :dateofbirth, :on_or_before => lambda {Date.current}
   validates :name,
             presence: true,
@@ -30,4 +31,14 @@ class Sexoffender < ApplicationRecord
             presence: true,
             on: :create,
             allow_nil: false
-end
+
+  before_create :add_default_sexoff_img, on: [:create, :update]
+
+  private def add_default_sexoff_img
+    unless image.attached?
+      self.image.attach(io: File.open('app/assets/images/defaultimages/default-avatar.jpg'), filename: 'default-avatar.jpg', content_type: 'image/jpg')
+    end
+  end
+
+  end
+

@@ -1,40 +1,45 @@
 <p id="notice"><%= notice %></p>
+<div class="wrapper">
 
+  <div class="left">
+    <p>
+    <%=image_tag(@sexoffender.image, style: 'width:160px;height:160px;')%>
 
-<p>
-<%=image_tag(@sexoffender.image, style: 'width:140px;height:140px;')%>
+    </p>
+  </div>
 
-</p>
+  <div class="right">
+    <p>
+      <strong>Name:</strong>
+      <%= @sexoffender.name.humanize %>
+    </p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @sexoffender.name.humanize %>
-</p>
+    <p>
+      <strong>Date of Birth:</strong>
+      <%= @sexoffender.dateofbirth %>
+    </p>
 
-<p>
-  <strong>Date of Birth:</strong>
-  <%= @sexoffender.dateofbirth %>
-</p>
+    <p>
+      <strong>Address:</strong>
+      <%= @sexoffender.address.humanize %>
+    </p>
 
-<p>
-  <strong>Address:</strong>
-  <%= @sexoffender.address.humanize %>
-</p>
+    <p>
+      <strong>Offense:</strong>
+      <%= @sexoffender.offense.humanize %>
+    </p>
 
-<p>
-  <strong>Offense:</strong>
-  <%= @sexoffender.offense.humanize %>
-</p>
+    <p>
+      <strong>Risklevel:</strong>
+      <%= @sexoffender.risklevel.humanize %>
+    </p>
 
-<p>
-  <strong>Risklevel:</strong>
-  <%= @sexoffender.risklevel.humanize %>
-</p>
-
-<p>
-  <strong>Officer:</strong>
-  <%= @sexoffender.officer.humanize %>
-</p>
-
+    <p>
+      <strong>Officer:</strong>
+      <%= @sexoffender.officer.humanize %>
+    </p>
+  </div>
+</div>
+<br><br>
 <%= link_to 'Edit', edit_sexoffender_path(@sexoffender) %> |
 <%= link_to 'Back', sexoffenders_path %>

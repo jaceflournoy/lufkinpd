@@ -4,7 +4,7 @@ class VacationpatrolsController < ApplicationController
   # GET /vacationpatrols
   # GET /vacationpatrols.json
   def index
-    @vacationpatrols = Vacationpatrol.all
+    @vacationpatrols = Vacationpatrol.all.where(["officer LIKE ?","%#{params[:name_search]}%"])
   end
 
   # GET /vacationpatrols/1

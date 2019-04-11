@@ -5,7 +5,7 @@ class RollcallsController < ApplicationController
   # GET /rollcalls
   # GET /rollcalls.json
   def index
-    @rollcalls = Rollcall.all
+      @rollcalls = Rollcall.all
   end
 
   # GET /rollcalls/1

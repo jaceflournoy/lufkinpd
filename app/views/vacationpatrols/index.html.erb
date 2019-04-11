@@ -1,4 +1,10 @@
 <p id="notice"><%= notice %></p>
+<div id="search">
+  <%= form_tag vacationpatrols_path, :method => 'get' do %>
+    <%= text_field_tag :name_search, params[:name_search], :placeholder => "Officer Name" %>
+    <%= submit_tag "Search" %>
+  <% end %>
+</div>
 
 <h1>Vacation Patrol</h1>
 

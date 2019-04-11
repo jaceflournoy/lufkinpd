@@ -4,7 +4,7 @@ class DaysoffrequestsController < ApplicationController
   # GET /daysoffrequests
   # GET /daysoffrequests.json
   def index
-    @daysoffrequests = Daysoffrequest.all
+    @daysoffrequests = Daysoffrequest.all.where("operatorname ILIKE ?","%#{params[:name_search]}%")
   end
 
   # GET /daysoffrequests/1

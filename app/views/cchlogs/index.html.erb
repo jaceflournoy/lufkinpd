@@ -1,6 +1,14 @@
 <center>
 <p id="notice"><%= notice %></p>
-
+  <div id="search">
+    <%= form_tag cchlogs_path, :method => 'get' do %>
+      <%= text_field_tag :name_search, params[:name_search], :placeholder => "Name" %>
+      <%= text_field_tag :id_search, params[:id_search], :placeholder => "ID Number"%>
+      <%= text_field_tag :reason_search, params[:reason_search], :placeholder => "Reason"%>
+      <%= text_field_tag :officer_search, params[:officer_search], :placeholder => "Officer"%>
+      <%= submit_tag "Search" %>
+    <% end %>
+  </div>
 <h1>CCH Log Review</h1>
 
 <table>

@@ -1,6 +1,12 @@
 <center>
 <p id="notice"><%= notice %></p>
-
+  <div id="search">
+    <%= form_tag georeports_path, :method => 'get' do %>
+      <%= text_field_tag :name_search, params[:name_search], :placeholder => "Business Name" %>
+      <%= text_field_tag :report_search, params[:report_search], :placeholder => "Reported By" %>
+      <%= submit_tag "Search" %>
+    <% end %>
+  </div>
 <h1>GeoBase Reports</h1>
 
 <table>

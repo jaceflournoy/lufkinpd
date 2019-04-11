@@ -1,4 +1,13 @@
 <p id="notice"><%= notice %></p>
+
+<div id="search">
+  <%= form_tag ithelptickets_path, :method => 'get' do %>
+    <%= text_field_tag :name_search, params[:name_search], :placeholder => "Name" %>
+    <%= text_field_tag :unit_search, params[:unit_search], :placeholder => "Unit Number" %>
+    <%= submit_tag "Search" %>
+  <% end %>
+</div>
+
 <center>
 <h1>IT Help Tickets</h1>
 

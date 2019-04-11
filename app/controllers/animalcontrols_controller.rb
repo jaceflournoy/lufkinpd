@@ -4,7 +4,7 @@ class AnimalcontrolsController < ApplicationController
   # GET /animalcontrols
   # GET /animalcontrols.json
   def index
-    @animalcontrols = Animalcontrol.all
+    @animalcontrols = Animalcontrol.all.where("address ILIKE ?","%#{params[:address_search]}%").where("name ILIKE ?","%#{params[:name_search]}%").where("callback ILIKE ?","%#{params[:phone_search]}%").where("unitassigned ILIKE ?","%#{params[:unit_search]}%")
   end
 
   # GET /animalcontrols/1

@@ -1,5 +1,13 @@
 <p id="notice"><%= notice %></p>
 
+<div id="search">
+  <%= form_tag radionumbers_path, :method => 'get' do %>
+    <%= text_field_tag :officer_search, params[:officer_search], :placeholder => "Officer" %>
+    <%= number_field_tag :radionum_search, params[:radionum_search], :placeholder => "Radio Number", :type => "number" %>
+    <%= submit_tag "Search" %>
+  <% end %>
+</div>
+
 <h1>Unit Numbers</h1>
 
 <table class="center">

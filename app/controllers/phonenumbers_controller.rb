@@ -5,7 +5,7 @@ class PhonenumbersController < ApplicationController
   # GET /phonenumbers
   # GET /phonenumbers.json
   def index
-    @phonenumbers = Phonenumber.all
+    @phonenumbers = Phonenumber.all.where("name ILIKE ?","%#{params[:name_search]}%").where("home ILIKE ?","%#{params[:home_search]}%").where("office ILIKE ?","%#{params[:office_search]}%").where("cell ILIKE ?","%#{params[:cell_search]}%")
   end
 
   # GET /phonenumbers/1

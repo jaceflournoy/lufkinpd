@@ -33,15 +33,15 @@
   <tbody>
     <% @txdotstreets.each do |txdotstreet| %>
       <tr>
-        <td><%= txdotstreet.intersection %></td>
-        <td><%= txdotstreet.name %></td>
-        <td><%= txdotstreet.callback %></td>
-        <td><%= txdotstreet.unitassigned %></td>
-        <td><%= txdotstreet.problem %></td>
-        <td><%= txdotstreet.city_to_string %></td>
-        <td><%= txdotstreet.state_to_string %></td>
-        <td><%= txdotstreet.needed %></td>
-        <td><%= txdotstreet.comment %></td>
+        <td><%= txdotstreet.intersection.humanize %></td>
+        <td><%= txdotstreet.name.humanize %></td>
+        <td><%= txdotstreet.callback.humanize %></td>
+        <td><%= txdotstreet.unitassigned.humanize %></td>
+        <td><%= txdotstreet.problem.humanize %></td>
+        <td><%= txdotstreet.city_to_string.humanize %></td>
+        <td><%= txdotstreet.state_to_string.humanize %></td>
+        <td><%= txdotstreet.needed.humanize %></td>
+        <td><%= txdotstreet.comment.humanize %></td>
         <td><%= link_to '', txdotstreet , class: "far fa-eye"
         %></td>
         <td><%= link_to '', edit_txdotstreet_path(txdotstreet), class: "far fa-edit"

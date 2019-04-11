@@ -20,8 +20,8 @@
   <tbody>
     <% @gatecodes.each do |gatecode| %>
       <tr>
-        <td><%= gatecode.location %></td>
-        <td><%= gatecode.code %></td>
+        <td><%= gatecode.location.humanize %></td>
+        <td><%= gatecode.code.humanize %></td>
         <td><%= link_to '', gatecode, class: "far fa-eye"
         %></td>
         <td><%= link_to '', edit_gatecode_path(gatecode), class: "far fa-edit"

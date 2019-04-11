@@ -30,15 +30,15 @@
   <tbody>
     <% @cchlogs.each do |cchlog| %>
       <tr>
-        <td><%= cchlog.name %></td>
+        <td><%= cchlog.name.humanize %></td>
         <td><%= cchlog.dateofbirth %></td>
-        <td><%= cchlog.idnum %></td>
-        <td><%= cchlog.operator %></td>
-        <td><%= cchlog.reason %></td>
-        <td><%= cchlog.officer %></td>
-        <td><%= cchlog.disposition %></td>
+        <td><%= cchlog.idnum.humanize %></td>
+        <td><%= cchlog.operator.humanize %></td>
+        <td><%= cchlog.reason.humanize %></td>
+        <td><%= cchlog.officer.humanize %></td>
+        <td><%= cchlog.disposition.humanize %></td>
         <td><%= cchlog.dispositiondate %></td>
-        <td><%= cchlog.comment %></td>
+        <td><%= cchlog.comment.humanize %></td>
         <td><%= link_to '', cchlog, class: "far fa-eye"
         %></td>
         <td><%= link_to '', edit_cchlog_path(cchlog), class: "far fa-edit"

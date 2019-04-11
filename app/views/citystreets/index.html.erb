@@ -37,19 +37,19 @@
   <tbody>
     <% @citystreets.each do |citystreet| %>
       <tr>
-        <td><%= citystreet.address %></td>
-        <td><%= citystreet.name %></td>
-        <td><%= citystreet.callback %></td>
-        <td><%= citystreet.unitassigned %></td>
-        <td><%= citystreet.problem %></td>
-        <td><%= citystreet.closestintersection %></td>
-        <td><%= citystreet.city_to_string %></td>
-        <td><%= citystreet.state_to_string %></td>
-        <td><%= citystreet.lightout_to_string %></td>
-        <td><%= citystreet.lightred_to_string %></td>
-        <td><%= citystreet.roadhazard_to_string %></td>
-        <td><%= citystreet.needed %></td>
-        <td><%= citystreet.comment %></td>
+        <td><%= citystreet.address.humanize %></td>
+        <td><%= citystreet.name.humanize %></td>
+        <td><%= citystreet.callback.humanize %></td>
+        <td><%= citystreet.unitassigned.humanize %></td>
+        <td><%= citystreet.problem.humanize %></td>
+        <td><%= citystreet.closestintersection.humanize %></td>
+        <td><%= citystreet.city_to_string.humanize %></td>
+        <td><%= citystreet.state_to_string.humanize %></td>
+        <td><%= citystreet.lightout_to_string.humanize %></td>
+        <td><%= citystreet.lightred_to_string.humanize %></td>
+        <td><%= citystreet.roadhazard_to_string.humanize %></td>
+        <td><%= citystreet.needed.humanize %></td>
+        <td><%= citystreet.comment.humanize %></td>
         <td><%= link_to '', citystreet, class: "far fa-eye"
         %></td>
         <td><%= link_to '', edit_citystreet_path(citystreet), class: "far fa-edit"

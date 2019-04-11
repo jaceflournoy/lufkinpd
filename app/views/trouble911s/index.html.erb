@@ -25,10 +25,10 @@
   <tbody>
     <% @trouble911s.each do |trouble911| %>
       <tr>
-        <td><%= trouble911.providername %></td>
-        <td><%= trouble911.phonenumber %></td>
-        <td><%= trouble911.extrainfo %></td>
-        <td><%= trouble911.faxnumber %></td>
+        <td><%= trouble911.providername.humanize %></td>
+        <td><%= trouble911.phonenumber.humanize %></td>
+        <td><%= trouble911.extrainfo.humanize %></td>
+        <td><%= trouble911.faxnumber.humanize %></td>
         <td><%= link_to '', trouble911, class: "far fa-eye"
         %></td>
         <td><%= link_to '', edit_trouble911_path(trouble911), class: "far fa-edit"

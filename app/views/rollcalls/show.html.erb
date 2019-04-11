@@ -7,12 +7,12 @@
 
 <p>
   <strong>Title:</strong>
-  <%= @rollcall.title %>
+  <%= @rollcall.title.humanize %>
 </p>
 
 <p>
   <strong>Description:</strong>
-  <%= @rollcall.description %>
+  <%= @rollcall.description.humanize %>
 </p>
 
 <%= link_to 'Edit', edit_rollcall_path(@rollcall) %> |

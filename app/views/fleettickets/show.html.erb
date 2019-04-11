@@ -7,12 +7,12 @@
 
 <p>
   <strong>Reportingofficer:</strong>
-  <%= @fleetticket.reportingofficer %>
+  <%= @fleetticket.reportingofficer.humanize %>
 </p>
 
 <p>
   <strong>Problem:</strong>
-  <%= @fleetticket.problem %>
+  <%= @fleetticket.problem.humanize %>
 </p>
 
 <%= link_to 'Edit', edit_fleetticket_path(@fleetticket) %> |

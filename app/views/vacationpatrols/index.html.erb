@@ -20,8 +20,8 @@
   <tbody>
     <% @vacationpatrols.each do |vacationpatrol| %>
       <tr>
-        <td><%= vacationpatrol.officer %></td>
-        <td><%= vacationpatrol.comment %></td>
+        <td><%= vacationpatrol.officer.humanize %></td>
+        <td><%= vacationpatrol.comment.humanize %></td>
         <td><%= link_to '', vacationpatrol, class: "far fa-eye"
         %></td>
         <td><%= link_to '', edit_vacationpatrol_path(vacationpatrol), class: "far fa-edit"

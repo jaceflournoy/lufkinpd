@@ -24,9 +24,9 @@
   <tbody>
     <% @ithelptickets.each do |ithelpticket| %>
       <tr>
-        <td><%= ithelpticket.name %></td>
-        <td><%= ithelpticket.unit %></td>
-        <td><%= ithelpticket.problem %></td>
+        <td><%= ithelpticket.name.humanize %></td>
+        <td><%= ithelpticket.unit.humanize %></td>
+        <td><%= ithelpticket.problem.humanize %></td>
         <td><%= link_to '', ithelpticket, class: "far fa-eye"
         %></td>
         <td><%= link_to '', edit_ithelpticket_path(ithelpticket), class: "far fa-edit"

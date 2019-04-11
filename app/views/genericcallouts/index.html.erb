@@ -29,12 +29,12 @@
   <tbody>
     <% @genericcallouts.each do |genericcallout| %>
       <tr>
-        <td><%= genericcallout.address %></td>
-        <td><%= genericcallout.name %></td>
-        <td><%= genericcallout.callback %></td>
-        <td><%= genericcallout.unitassigned %></td>
-        <td><%= genericcallout.problem %></td>
-        <td><%= genericcallout.comment %></td>
+        <td><%= genericcallout.address.humanize %></td>
+        <td><%= genericcallout.name.humanize %></td>
+        <td><%= genericcallout.callback.humanize %></td>
+        <td><%= genericcallout.unitassigned.humanize %></td>
+        <td><%= genericcallout.problem.humanize %></td>
+        <td><%= genericcallout.comment.humanize %></td>
         <td><%= link_to '', genericcallout, class: "far fa-eye"
         %></td>
         <td><%= link_to '', edit_genericcallout_path(genericcallout), class: "far fa-edit"

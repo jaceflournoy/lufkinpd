@@ -7,7 +7,7 @@
 
 <p>
   <strong>Name:</strong>
-  <%= @sexoffender.name %>
+  <%= @sexoffender.name.humanize %>
 </p>
 
 <p>
@@ -17,22 +17,22 @@
 
 <p>
   <strong>Address:</strong>
-  <%= @sexoffender.address %>
+  <%= @sexoffender.address.humanize %>
 </p>
 
 <p>
   <strong>Offense:</strong>
-  <%= @sexoffender.offense %>
+  <%= @sexoffender.offense.humanize %>
 </p>
 
 <p>
   <strong>Risklevel:</strong>
-  <%= @sexoffender.risklevel %>
+  <%= @sexoffender.risklevel.humanize %>
 </p>
 
 <p>
   <strong>Officer:</strong>
-  <%= @sexoffender.officer %>
+  <%= @sexoffender.officer.humanize %>
 </p>
 
 <%= link_to 'Edit', edit_sexoffender_path(@sexoffender) %> |

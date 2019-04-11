@@ -24,11 +24,11 @@
   <tbody>
     <% @georeports.each do |georeport| %>
       <tr>
-        <td><%= georeport.presentaddress %></td>
-        <td><%= georeport.changeaddrto %></td>
-        <td><%= georeport.biznamechange %></td>
-        <td><%= georeport.comment %></td>
-        <td><%= georeport.reportedby %></td>
+        <td><%= georeport.presentaddress.humanize %></td>
+        <td><%= georeport.changeaddrto.humanize %></td>
+        <td><%= georeport.biznamechange.humanize %></td>
+        <td><%= georeport.comment.humanize %></td>
+        <td><%= georeport.reportedby.humanize %></td>
         <td><%= link_to '', georeport, class: "far fa-eye"
         %></td>
         <td><%= link_to '', edit_georeport_path(georeport), class: "far fa-edit"

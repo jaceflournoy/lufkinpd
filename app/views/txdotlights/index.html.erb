@@ -34,16 +34,16 @@
   <tbody>
     <% @txdotlights.each do |txdotlight| %>
       <tr>
-        <td><%= txdotlight.intersection %></td>
-        <td><%= txdotlight.name %></td>
-        <td><%= txdotlight.callback %></td>
-        <td><%= txdotlight.unitassigned %></td>
-        <td><%= txdotlight.problem %></td>
-        <td><%= txdotlight.city_to_string %></td>
-        <td><%= txdotlight.state_to_string %></td>
-        <td><%= txdotlight.lightout_to_string %></td>
-        <td><%= txdotlight.lightred_to_string %></td>
-        <td><%= txdotlight.comment %></td>
+        <td><%= txdotlight.intersection.humanize %></td>
+        <td><%= txdotlight.name.humanize %></td>
+        <td><%= txdotlight.callback.humanize %></td>
+        <td><%= txdotlight.unitassigned.humanize %></td>
+        <td><%= txdotlight.problem.humanize %></td>
+        <td><%= txdotlight.city_to_string.humanize %></td>
+        <td><%= txdotlight.state_to_string.humanize %></td>
+        <td><%= txdotlight.lightout_to_string.humanize %></td>
+        <td><%= txdotlight.lightred_to_string.humanize %></td>
+        <td><%= txdotlight.comment.humanize %></td>
         <td><%= link_to '', txdotlight, class: "far fa-eye"
         %></td>
         <td><%= link_to '', edit_txdotlight_path(txdotlight), class: "far fa-edit"

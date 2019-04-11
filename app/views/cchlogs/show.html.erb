@@ -2,7 +2,7 @@
 
 <p>
   <strong>Name:</strong>
-  <%= @cchlog.name %>
+  <%= @cchlog.name.humanize %>
 </p>
 
 <p>
@@ -12,27 +12,27 @@
 
 <p>
   <strong>Idnum:</strong>
-  <%= @cchlog.idnum %>
+  <%= @cchlog.idnum.humanize %>
 </p>
 
 <p>
   <strong>Operator:</strong>
-  <%= @cchlog.operator %>
+  <%= @cchlog.operator.humanize %>
 </p>
 
 <p>
   <strong>Reason:</strong>
-  <%= @cchlog.reason %>
+  <%= @cchlog.reason.humanize %>
 </p>
 
 <p>
   <strong>Officer:</strong>
-  <%= @cchlog.officer %>
+  <%= @cchlog.officer.humanize %>
 </p>
 
 <p>
   <strong>Disposition:</strong>
-  <%= @cchlog.disposition %>
+  <%= @cchlog.disposition.humanize %>
 </p>
 
 <p>
@@ -42,7 +42,7 @@
 
 <p>
   <strong>Comment:</strong>
-  <%= @cchlog.comment %>
+  <%= @cchlog.comment.humanize %>
 </p>
 
 <%= link_to 'Edit', edit_cchlog_path(@cchlog) %> |

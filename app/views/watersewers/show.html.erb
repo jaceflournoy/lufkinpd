@@ -2,52 +2,52 @@
 
 <p>
   <strong>Address:</strong>
-  <%= @watersewer.address %>
+  <%= @watersewer.address.humanize %>
 </p>
 
 <p>
   <strong>Name:</strong>
-  <%= @watersewer.name %>
+  <%= @watersewer.name.humanize %>
 </p>
 
 <p>
   <strong>Call Back:</strong>
-  <%= @watersewer.callback %>
+  <%= @watersewer.callback.humanize %>
 </p>
 
 <p>
   <strong>Unit Assigned:</strong>
-  <%= @watersewer.unitassigned %>
+  <%= @watersewer.unitassigned.humanize %>
 </p>
 
 <p>
   <strong>Problem:</strong>
-  <%= @watersewer.problem %>
+  <%= @watersewer.problem.humanize %>
 </p>
 
 <p>
   <strong>Wateroff:</strong>
-  <%= @watersewer.wateroff_to_string %>
+  <%= @watersewer.wateroff_to_string.humanize %>
 </p>
 
 <p>
   <strong>Cityleak:</strong>
-  <%= @watersewer.city_to_string %>
+  <%= @watersewer.city_to_string.humanize %>
 </p>
 
 <p>
   <strong>Privateleak:</strong>
-  <%= @watersewer.private_to_string %>
+  <%= @watersewer.private_to_string.humanize %>
 </p>
 
 <p>
   <strong>Noleak:</strong>
-  <%= @watersewer.no_to_string %>
+  <%= @watersewer.no_to_string.humanize %>
 </p>
 
 <p>
   <strong>Comment:</strong>
-  <%= @watersewer.comment %>
+  <%= @watersewer.comment.humanize %>
 </p>
 
 <%= link_to 'Edit', edit_watersewer_path(@watersewer) %> |

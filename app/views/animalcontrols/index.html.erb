@@ -30,12 +30,12 @@
   <tbody>
     <% @animalcontrols.each do |animalcontrol| %>
       <tr>
-        <td><%= animalcontrol.address %></td>
-        <td><%= animalcontrol.name %></td>
-        <td><%= animalcontrol.callback %></td>
-        <td><%= animalcontrol.unitassigned %></td>
-        <td><%= animalcontrol.problem %></td>
-        <td><%= animalcontrol.comment %></td>
+        <td><%= animalcontrol.address.humanize %></td>
+        <td><%= animalcontrol.name.humanize %></td>
+        <td><%= animalcontrol.callback.humanize %></td>
+        <td><%= animalcontrol.unitassigned.humanize %></td>
+        <td><%= animalcontrol.problem.humanize %></td>
+        <td><%= animalcontrol.comment.humanize %></td>
         <td><%= link_to '', animalcontrol , class: "far fa-eye"%></td>
         <td><%= link_to '', edit_animalcontrol_path(animalcontrol), class: "far fa-edit"
         %></td>

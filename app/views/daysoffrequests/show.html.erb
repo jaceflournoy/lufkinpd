@@ -2,7 +2,7 @@
 
 <p>
   <strong>Operator Name:</strong>
-  <%= @daysoffrequest.operatorname %>
+  <%= @daysoffrequest.operatorname.humanize %>
 </p>
 
 <p>
@@ -32,12 +32,12 @@
 
 <p>
   <strong>Comment:</strong>
-  <%= @daysoffrequest.comment %>
+  <%= @daysoffrequest.comment.humanize %>
 </p>
 
 <p>
   <strong>Approved:</strong>
-  <%= @daysoffrequest.approved_to_string %>
+  <%= @daysoffrequest.approved_to_string.humanize %>
 </p>
 
 <%= link_to 'Edit', edit_daysoffrequest_path(@daysoffrequest) %> |

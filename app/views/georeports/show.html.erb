@@ -2,22 +2,22 @@
 
 <p>
   <strong>Present Address:</strong>
-  <%= @georeport.presentaddress %>
+  <%= @georeport.presentaddress.humanize %>
 </p>
 
 <p>
   <strong>Change To:</strong>
-  <%= @georeport.changeaddrto %>
+  <%= @georeport.changeaddrto.humanize %>
 </p>
 
 <p>
   <strong>Business Name Change:</strong>
-  <%= @georeport.biznamechange %>
+  <%= @georeport.biznamechange.humanize %>
 </p>
 
 <p>
   <strong>Comment:</strong>
-  <%= @georeport.comment %>
+  <%= @georeport.comment.humanize %>
 </p>
 <hr width="20%">
 <br />
@@ -27,21 +27,21 @@
 <table>
   <tr>
     <td><strong>Name:</strong></td>
-    <td><%= @georeport.name1 %></td>
+    <td><%= @georeport.name1.humanize %></td>
     <td><strong>Phone:</strong></td>
-    <td><%= @georeport.phone1 %></td>
+    <td><%= @georeport.phone1.humanize %></td>
   </tr>
   <tr>
     <td><strong>Name:</strong></td>
-    <td><%= @georeport.name2 %></td>
+    <td><%= @georeport.name2.humanize %></td>
     <td><strong>Phone:</strong></td>
-    <td><%= @georeport.phone2 %></td>
+    <td><%= @georeport.phone2.humanize %></td>
   </tr>
   <tr>
     <td><strong>Name:</strong></td>
-    <td><%= @georeport.name3 %></td>
+    <td><%= @georeport.name3.humanize %></td>
     <td><strong>Phone:</strong></td>
-    <td><%= @georeport.phone3 %></td>
+    <td><%= @georeport.phone3.humanize %></td>
   </tr>
 </table>
 </center>
@@ -49,7 +49,7 @@
 
 <p>
   <strong>Reported by:</strong>
-  <%= @georeport.reportedby %>
+  <%= @georeport.reportedby.humanize %>
 </p>
 
 <%= link_to 'Edit', edit_georeport_path(@georeport) %> |

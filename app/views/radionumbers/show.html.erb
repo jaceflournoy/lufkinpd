@@ -2,7 +2,7 @@
 
 <p>
   <strong>Officer:</strong>
-  <%= @radionumber.officer %>
+  <%= @radionumber.officer.humanize %>
 </p>
 
 <p>
@@ -12,7 +12,7 @@
 
 <p>
   <strong>Extrainfo:</strong>
-  <%= @radionumber.extrainfo %>
+  <%= @radionumber.extrainfo.humanize %>
 </p>
 
 <%= link_to 'Edit', edit_radionumber_path(@radionumber) %> |

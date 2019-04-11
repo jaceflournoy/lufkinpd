@@ -1,3 +1,13 @@
+<p id="notice"><%= notice %></p>
+<div id="search">
+  <%= form_tag genericcallouts_path, :method => 'get' do %>
+    <%= text_field_tag :address_search, params[:address_search], :placeholder => "Address" %>
+    <%= text_field_tag :name_search, params[:name_search], :placeholder => "Name" %>
+    <%= text_field_tag :phone_search, params[:phone_search], :placeholder => "Callback Number" %>
+    <%= text_field_tag :unit_search, params[:unit_search], :placeholder => "Unit Number" %>
+    <%= submit_tag "Search" %>
+  <% end %>
+</div>
 <center>
 <p id="notice"><%= notice %></p>
 
@@ -19,12 +29,12 @@
   <tbody>
     <% @genericcallouts.each do |genericcallout| %>
       <tr>
-        <td><%= genericcallout.address %></td>
-        <td><%= genericcallout.name %></td>
-        <td><%= genericcallout.callback %></td>
-        <td><%= genericcallout.unitassigned %></td>
-        <td><%= genericcallout.problem %></td>
-        <td><%= genericcallout.comment %></td>
+        <td><%= genericcallout.address.humanize %></td>
+        <td><%= genericcallout.name.humanize %></td>
+        <td><%= genericcallout.callback.humanize %></td>
+        <td><%= genericcallout.unitassigned.humanize %></td>
+        <td><%= genericcallout.problem.humanize %></td>
+        <td><%= genericcallout.comment.humanize %></td>
         <td><%= link_to '', genericcallout, class: "far fa-eye"
         %></td>
         <td><%= link_to '', edit_genericcallout_path(genericcallout), class: "far fa-edit"

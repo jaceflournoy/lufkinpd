@@ -1,3 +1,14 @@
+<p id="notice"><%= notice %></p>
+<div id="search">
+  <%= form_tag watersewers_path, :method => 'get' do %>
+    <%= text_field_tag :address_search, params[:address_search], :placeholder => "Address" %>
+    <%= text_field_tag :name_search, params[:name_search], :placeholder => "Name" %>
+    <%= text_field_tag :phone_search, params[:phone_search], :placeholder => "Callback Number" %>
+    <%= text_field_tag :unit_search, params[:unit_search], :placeholder => "Unit Number" %>
+    <%= submit_tag "Search" %>
+  <% end %>
+</div>
+
 <center>
 <p id="notice"><%= notice %></p>
 
@@ -23,16 +34,16 @@
   <tbody>
     <% @watersewers.each do |watersewer| %>
       <tr>
-        <td><%= watersewer.address %></td>
-        <td><%= watersewer.name %></td>
-        <td><%= watersewer.callback %></td>
-        <td><%= watersewer.unitassigned %></td>
-        <td><%= watersewer.problem %></td>
-        <td><%= watersewer.wateroff_to_string %></td>
-        <td><%= watersewer.city_to_string %></td>
-        <td><%= watersewer.private_to_string %></td>
-        <td><%= watersewer.no_to_string %></td>
-        <td><%= watersewer.comment %></td>
+        <td><%= watersewer.address.humanize %></td>
+        <td><%= watersewer.name.humanize %></td>
+        <td><%= watersewer.callback.humanize %></td>
+        <td><%= watersewer.unitassigned.humanize %></td>
+        <td><%= watersewer.problem.humanize %></td>
+        <td><%= watersewer.wateroff_to_string.humanize %></td>
+        <td><%= watersewer.city_to_string.humanize %></td>
+        <td><%= watersewer.private_to_string.humanize %></td>
+        <td><%= watersewer.no_to_string.humanize %></td>
+        <td><%= watersewer.comment.humanize %></td>
         <td><%= link_to '', watersewer , class: "far fa-eye"
         %></td>
         <td><%= link_to '', edit_watersewer_path(watersewer), class: "far fa-edit"

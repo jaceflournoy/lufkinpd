@@ -1,3 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<div id="search">
+  <%= form_tag citystreets_path, :method => 'get' do %>
+    <%= text_field_tag :address_search, params[:address_search], :placeholder => "Address" %>
+    <%= text_field_tag :name_search, params[:name_search], :placeholder => "Name" %>
+    <%= text_field_tag :phone_search, params[:phone_search], :placeholder => "Callback Number" %>
+    <%= text_field_tag :unit_search, params[:unit_search], :placeholder => "Unit Number" %>
+    <%= submit_tag "Search" %>
+  <% end %>
+</div>
 <center>
 <p id="notice"><%= notice %></p>
 
@@ -26,19 +37,19 @@
   <tbody>
     <% @citystreets.each do |citystreet| %>
       <tr>
-        <td><%= citystreet.address %></td>
-        <td><%= citystreet.name %></td>
-        <td><%= citystreet.callback %></td>
-        <td><%= citystreet.unitassigned %></td>
-        <td><%= citystreet.problem %></td>
-        <td><%= citystreet.closestintersection %></td>
-        <td><%= citystreet.city_to_string %></td>
-        <td><%= citystreet.state_to_string %></td>
-        <td><%= citystreet.lightout_to_string %></td>
-        <td><%= citystreet.lightred_to_string %></td>
-        <td><%= citystreet.roadhazard_to_string %></td>
-        <td><%= citystreet.needed %></td>
-        <td><%= citystreet.comment %></td>
+        <td><%= citystreet.address.humanize %></td>
+        <td><%= citystreet.name.humanize %></td>
+        <td><%= citystreet.callback.humanize %></td>
+        <td><%= citystreet.unitassigned.humanize %></td>
+        <td><%= citystreet.problem.humanize %></td>
+        <td><%= citystreet.closestintersection.humanize %></td>
+        <td><%= citystreet.city_to_string.humanize %></td>
+        <td><%= citystreet.state_to_string.humanize %></td>
+        <td><%= citystreet.lightout_to_string.humanize %></td>
+        <td><%= citystreet.lightred_to_string.humanize %></td>
+        <td><%= citystreet.roadhazard_to_string.humanize %></td>
+        <td><%= citystreet.needed.humanize %></td>
+        <td><%= citystreet.comment.humanize %></td>
         <td><%= link_to '', citystreet, class: "far fa-eye"
         %></td>
         <td><%= link_to '', edit_citystreet_path(citystreet), class: "far fa-edit"

@@ -2,32 +2,32 @@
 
 <p>
   <strong>Address:</strong>
-  <%= @animalcontrol.address %>
+  <%= @animalcontrol.address.humanize %>
 </p>
 
 <p>
   <strong>Name:</strong>
-  <%= @animalcontrol.name %>
+  <%= @animalcontrol.name.humanize %>
 </p>
 
 <p>
   <strong>Call Back:</strong>
-  <%= @animalcontrol.callback %>
+  <%= @animalcontrol.callback.humanize %>
 </p>
 
 <p>
   <strong>Unit Assigned:</strong>
-  <%= @animalcontrol.unitassigned %>
+  <%= @animalcontrol.unitassigned.humanize %>
 </p>
 
 <p>
   <strong>Problem:</strong>
-  <%= @animalcontrol.problem %>
+  <%= @animalcontrol.problem.humanize %>
 </p>
 
 <p>
   <strong>Comment:</strong>
-  <%= @animalcontrol.comment %>
+  <%= @animalcontrol.comment.humanize %>
 </p>
 
 <%= link_to 'Edit', edit_animalcontrol_path(@animalcontrol) %> |

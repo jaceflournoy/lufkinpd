@@ -26,13 +26,13 @@
   <tbody>
     <% @sexoffenders.each do |sexoffender| %>
       <tr>
-        <td><%= sexoffender.name %></td>
+        <td><%= sexoffender.name.humanize %></td>
         <% if false %>
         <td><%= sexoffender.dateofbirth %></td>
-        <td><%= sexoffender.address %></td>
-        <td><%= sexoffender.offense %></td>
-        <td><%= sexoffender.risklevel %></td>
-        <td><%= sexoffender.officer %></td>
+        <td><%= sexoffender.address.humanize %></td>
+        <td><%= sexoffender.offense.humanize %></td>
+        <td><%= sexoffender.risklevel.humanize %></td>
+        <td><%= sexoffender.officer.humanize %></td>
         <% end %>
         <td><%= link_to '', sexoffender , class: "far fa-eye"
         %></td>

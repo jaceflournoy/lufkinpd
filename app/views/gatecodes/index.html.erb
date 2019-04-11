@@ -1,4 +1,10 @@
 <p id="notice"><%= notice %></p>
+<div id="search">
+  <%= form_tag gatecodes_path, :method => 'get' do %>
+    <%= text_field_tag :location_search, params[:location_search], :placeholder => "Location" %>
+    <%= submit_tag "Search" %>
+  <% end %>
+</div>
 
 <h1>Gate Codes</h1>
 
@@ -14,8 +20,8 @@
   <tbody>
     <% @gatecodes.each do |gatecode| %>
       <tr>
-        <td><%= gatecode.location %></td>
-        <td><%= gatecode.code %></td>
+        <td><%= gatecode.location.humanize %></td>
+        <td><%= gatecode.code.humanize %></td>
         <td><%= link_to '', gatecode, class: "far fa-eye"
         %></td>
         <td><%= link_to '', edit_gatecode_path(gatecode), class: "far fa-edit"

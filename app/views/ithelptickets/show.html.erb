@@ -2,17 +2,17 @@
 
 <p>
   <strong>Name:</strong>
-  <%= @ithelpticket.name %>
+  <%= @ithelpticket.name.humanize %>
 </p>
 
 <p>
   <strong>Unit:</strong>
-  <%= @ithelpticket.unit %>
+  <%= @ithelpticket.unit.humanize %>
 </p>
 
 <p>
   <strong>Problem:</strong>
-  <%= @ithelpticket.problem %>
+  <%= @ithelpticket.problem.humanize %>
 </p>
 
 <%= link_to 'Edit', edit_ithelpticket_path(@ithelpticket) %> |

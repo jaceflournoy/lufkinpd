@@ -2,12 +2,12 @@
 
 <p>
   <strong>Officer:</strong>
-  <%= @vacationpatrol.officer %>
+  <%= @vacationpatrol.officer.humanize %>
 </p>
 
 <p>
   <strong>Comment:</strong>
-  <%= @vacationpatrol.comment %>
+  <%= @vacationpatrol.comment.humanize %>
 </p>
 
 <%= link_to 'Edit', edit_vacationpatrol_path(@vacationpatrol) %> |

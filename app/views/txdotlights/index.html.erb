@@ -1,3 +1,14 @@
+<p id="notice"><%= notice %></p>
+<div id="search">
+  <%= form_tag txdotlights_path, :method => 'get' do %>
+    <%= text_field_tag :address_search, params[:address_search], :placeholder => "Address" %>
+    <%= text_field_tag :name_search, params[:name_search], :placeholder => "Name" %>
+    <%= text_field_tag :phone_search, params[:phone_search], :placeholder => "Callback Number" %>
+    <%= text_field_tag :unit_search, params[:unit_search], :placeholder => "Unit Number" %>
+    <%= submit_tag "Search" %>
+  <% end %>
+</div>
+
 <center>
 <p id="notice"><%= notice %></p>
 
@@ -23,16 +34,16 @@
   <tbody>
     <% @txdotlights.each do |txdotlight| %>
       <tr>
-        <td><%= txdotlight.intersection %></td>
-        <td><%= txdotlight.name %></td>
-        <td><%= txdotlight.callback %></td>
-        <td><%= txdotlight.unitassigned %></td>
-        <td><%= txdotlight.problem %></td>
-        <td><%= txdotlight.city_to_string %></td>
-        <td><%= txdotlight.state_to_string %></td>
-        <td><%= txdotlight.lightout_to_string %></td>
-        <td><%= txdotlight.lightred_to_string %></td>
-        <td><%= txdotlight.comment %></td>
+        <td><%= txdotlight.intersection.humanize %></td>
+        <td><%= txdotlight.name.humanize %></td>
+        <td><%= txdotlight.callback.humanize %></td>
+        <td><%= txdotlight.unitassigned.humanize %></td>
+        <td><%= txdotlight.problem.humanize %></td>
+        <td><%= txdotlight.city_to_string.humanize %></td>
+        <td><%= txdotlight.state_to_string.humanize %></td>
+        <td><%= txdotlight.lightout_to_string.humanize %></td>
+        <td><%= txdotlight.lightred_to_string.humanize %></td>
+        <td><%= txdotlight.comment.humanize %></td>
         <td><%= link_to '', txdotlight, class: "far fa-eye"
         %></td>
         <td><%= link_to '', edit_txdotlight_path(txdotlight), class: "far fa-edit"

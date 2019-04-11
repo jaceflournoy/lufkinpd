@@ -2,67 +2,67 @@
 
 <p>
   <strong>Address:</strong>
-  <%= @citystreet.address %>
+  <%= @citystreet.address.humanize %>
 </p>
 
 <p>
   <strong>Name:</strong>
-  <%= @citystreet.name %>
+  <%= @citystreet.name.humanize %>
 </p>
 
 <p>
   <strong>Call Back:</strong>
-  <%= @citystreet.callback %>
+  <%= @citystreet.callback.humanize %>
 </p>
 
 <p>
   <strong>Unit Assigned:</strong>
-  <%= @citystreet.unitassigned %>
+  <%= @citystreet.unitassigned.humanize %>
 </p>
 
 <p>
   <strong>Problem:</strong>
-  <%= @citystreet.problem %>
+  <%= @citystreet.problem.humanize %>
 </p>
 
 <p>
   <strong>Closest Intersection:</strong>
-  <%= @citystreet.closestintersection %>
+  <%= @citystreet.closestintersection.humanize %>
 </p>
 
 <p>
   <strong>City:</strong>
-  <%= @citystreet.city_to_string %>
+  <%= @citystreet.city_to_string.humanize %>
 </p>
 
 <p>
   <strong>State:</strong>
-  <%= @citystreet.state_to_string %>
+  <%= @citystreet.state_to_string.humanize %>
 </p>
 
 <p>
   <strong>Lightout:</strong>
-  <%= @citystreet.lightout_to_string %>
+  <%= @citystreet.lightout_to_string.humanize %>
 </p>
 
 <p>
   <strong>Lightred:</strong>
-  <%= @citystreet.lightred_to_string %>
+  <%= @citystreet.lightred_to_string.humanize %>
 </p>
 
 <p>
   <strong>Roadhazard:</strong>
-  <%= @citystreet.roadhazard_to_string %>
+  <%= @citystreet.roadhazard_to_string.humanize %>
 </p>
 
 <p>
   <strong>Needed:</strong>
-  <%= @citystreet.needed %>
+  <%= @citystreet.needed.humanize %>
 </p>
 
 <p>
   <strong>Comment:</strong>
-  <%= @citystreet.comment %>
+  <%= @citystreet.comment.humanize %>
 </p>
 
 <%= link_to 'Edit', edit_citystreet_path(@citystreet) %> |

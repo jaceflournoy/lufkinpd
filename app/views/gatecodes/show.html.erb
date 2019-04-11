@@ -2,12 +2,12 @@
 
 <p>
   <strong>Location:</strong>
-  <%= @gatecode.location %>
+  <%= @gatecode.location.humanize %>
 </p>
 
 <p>
   <strong>Code:</strong>
-  <%= @gatecode.code %>
+  <%= @gatecode.code.humanize%>
 </p>
 
 <%= link_to 'Edit', edit_gatecode_path(@gatecode) %> |

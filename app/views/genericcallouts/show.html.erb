@@ -2,32 +2,32 @@
 
 <p>
   <strong>Address:</strong>
-  <%= @genericcallout.address %>
+  <%= @genericcallout.address.humanize %>
 </p>
 
 <p>
   <strong>Name:</strong>
-  <%= @genericcallout.name %>
+  <%= @genericcallout.name.humanize %>
 </p>
 
 <p>
   <strong>Call Back:</strong>
-  <%= @genericcallout.callback %>
+  <%= @genericcallout.callback.humanize %>
 </p>
 
 <p>
   <strong>Unit Assigned:</strong>
-  <%= @genericcallout.unitassigned %>
+  <%= @genericcallout.unitassigned.humanize %>
 </p>
 
 <p>
   <strong>Problem:</strong>
-  <%= @genericcallout.problem %>
+  <%= @genericcallout.problem.humanize %>
 </p>
 
 <p>
   <strong>Comment:</strong>
-  <%= @genericcallout.comment %>
+  <%= @genericcallout.comment.humanize %>
 </p>
 
 <%= link_to 'Edit', edit_genericcallout_path(@genericcallout) %> |

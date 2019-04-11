@@ -4,7 +4,7 @@ class IthelpticketsController < ApplicationController
   # GET /ithelptickets
   # GET /ithelptickets.json
   def index
-    @ithelptickets = Ithelpticket.all
+    @ithelptickets = Ithelpticket.all.where("name ILIKE ?","%#{params[:name_search]}%").where("unit ILIKE ?","%#{params[:unit_search]}%")
   end
 
   # GET /ithelptickets/1

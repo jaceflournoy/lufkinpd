@@ -1,4 +1,13 @@
 <p id="notice"><%= notice %></p>
+
+<div id="search">
+  <%= form_tag ithelptickets_path, :method => 'get' do %>
+    <%= text_field_tag :name_search, params[:name_search], :placeholder => "Name" %>
+    <%= text_field_tag :unit_search, params[:unit_search], :placeholder => "Unit Number" %>
+    <%= submit_tag "Search" %>
+  <% end %>
+</div>
+
 <center>
 <h1>IT Help Tickets</h1>
 
@@ -15,9 +24,9 @@
   <tbody>
     <% @ithelptickets.each do |ithelpticket| %>
       <tr>
-        <td><%= ithelpticket.name %></td>
-        <td><%= ithelpticket.unit %></td>
-        <td><%= ithelpticket.problem %></td>
+        <td><%= ithelpticket.name.humanize %></td>
+        <td><%= ithelpticket.unit.humanize %></td>
+        <td><%= ithelpticket.problem.humanize %></td>
         <td><%= link_to '', ithelpticket, class: "far fa-eye"
         %></td>
         <td><%= link_to '', edit_ithelpticket_path(ithelpticket), class: "far fa-edit"

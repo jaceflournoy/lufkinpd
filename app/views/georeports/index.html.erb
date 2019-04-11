@@ -1,6 +1,12 @@
 <center>
 <p id="notice"><%= notice %></p>
-
+  <div id="search">
+    <%= form_tag georeports_path, :method => 'get' do %>
+      <%= text_field_tag :name_search, params[:name_search], :placeholder => "Business Name" %>
+      <%= text_field_tag :report_search, params[:report_search], :placeholder => "Reported By" %>
+      <%= submit_tag "Search" %>
+    <% end %>
+  </div>
 <h1>GeoBase Reports</h1>
 
 <table>
@@ -18,11 +24,11 @@
   <tbody>
     <% @georeports.each do |georeport| %>
       <tr>
-        <td><%= georeport.presentaddress %></td>
-        <td><%= georeport.changeaddrto %></td>
-        <td><%= georeport.biznamechange %></td>
-        <td><%= georeport.comment %></td>
-        <td><%= georeport.reportedby %></td>
+        <td><%= georeport.presentaddress.humanize %></td>
+        <td><%= georeport.changeaddrto.humanize %></td>
+        <td><%= georeport.biznamechange.humanize %></td>
+        <td><%= georeport.comment.humanize %></td>
+        <td><%= georeport.reportedby.humanize %></td>
         <td><%= link_to '', georeport, class: "far fa-eye"
         %></td>
         <td><%= link_to '', edit_georeport_path(georeport), class: "far fa-edit"

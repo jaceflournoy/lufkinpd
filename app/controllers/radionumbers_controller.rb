@@ -4,7 +4,7 @@ class RadionumbersController < ApplicationController
   # GET /radionumbers
   # GET /radionumbers.json
   def index
-    @radionumbers = Radionumber.all
+    @radionumbers = Radionumber.all.where("officer ILIKE ?","%#{params[:officer_search]}%").where("cast(radionumber as varchar(20)) ILIKE ?","%#{params[:radionum_search]}%")
   end
 
   # GET /radionumbers/1

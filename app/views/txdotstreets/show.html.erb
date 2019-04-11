@@ -2,47 +2,47 @@
 
 <p>
   <strong>Intersection:</strong>
-  <%= @txdotstreet.intersection %>
+  <%= @txdotstreet.intersection.humanize %>
 </p>
 
 <p>
   <strong>Name:</strong>
-  <%= @txdotstreet.name %>
+  <%= @txdotstreet.name.humanize %>
 </p>
 
 <p>
   <strong>Call Back:</strong>
-  <%= @txdotstreet.callback %>
+  <%= @txdotstreet.callback.humanize %>
 </p>
 
 <p>
   <strong>Unit Assigned:</strong>
-  <%= @txdotstreet.unitassigned %>
+  <%= @txdotstreet.unitassigned.humanize %>
 </p>
 
 <p>
   <strong>Problem:</strong>
-  <%= @txdotstreet.problem %>
+  <%= @txdotstreet.problem.humanize %>
 </p>
 
 <p>
   <strong>City:</strong>
-  <%= @txdotstreet.city_to_string %>
+  <%= @txdotstreet.city_to_string.humanize %>
 </p>
 
 <p>
   <strong>State:</strong>
-  <%= @txdotstreet.state_to_string %>
+  <%= @txdotstreet.state_to_string.humanize %>
 </p>
 
 <p>
   <strong>Needed:</strong>
-  <%= @txdotstreet.needed %>
+  <%= @txdotstreet.needed.humanize %>
 </p>
 
 <p>
   <strong>Comment:</strong>
-  <%= @txdotstreet.comment %>
+  <%= @txdotstreet.comment.humanize %>
 </p>
 
 <%= link_to 'Edit', edit_txdotstreet_path(@txdotstreet) %> |

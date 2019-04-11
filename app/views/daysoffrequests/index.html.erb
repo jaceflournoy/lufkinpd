@@ -1,6 +1,13 @@
 <center>
 <p id="notice"><%= notice %></p>
 
+  <div id="search">
+    <%= form_tag daysoffrequests_path, :method => 'get' do %>
+      <%= text_field_tag :name_search, params[:name_search], :placeholder => "Name" %>
+      <%= submit_tag "Search" %>
+    <% end %>
+  </div>
+
 <h1>Days Off Requests</h1>
 
 <table>
@@ -21,14 +28,14 @@
   <tbody>
     <% @daysoffrequests.each do |daysoffrequest| %>
       <tr>
-        <td><%= daysoffrequest.operatorname %></td>
+        <td><%= daysoffrequest.operatorname.humanize %></td>
         <td><%= daysoffrequest.firstdayoff %></td>
         <td><%= daysoffrequest.lastdayoff %></td>
         <td><%= daysoffrequest.returndate %></td>
         <td><%= daysoffrequest.hoursrequested %></td>
         <td><%= daysoffrequest.timerequested %></td>
-        <td><%= daysoffrequest.comment %></td>
-        <td><%= daysoffrequest.approved_to_string %></td>
+        <td><%= daysoffrequest.comment.humanize %></td>
+        <td><%= daysoffrequest.approved_to_string.humanize %></td>
         <td><%= link_to '', daysoffrequest, class: "far fa-eye"
         %></td>
         <td><%= link_to '', edit_daysoffrequest_path(daysoffrequest), class: "far fa-edit"

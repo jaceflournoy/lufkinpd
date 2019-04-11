@@ -4,7 +4,7 @@ class GeoreportsController < ApplicationController
   # GET /georeports
   # GET /georeports.json
   def index
-    @georeports = Georeport.all
+    @georeports = Georeport.all.where("biznamechange ILIKE ?","%#{params[:name_search]}%").where("reportedby ILIKE ?","%#{params[:report_search]}%")
   end
 
   # GET /georeports/1

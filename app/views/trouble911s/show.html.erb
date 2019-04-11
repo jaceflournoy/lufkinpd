@@ -2,22 +2,22 @@
 
 <p>
   <strong>Provider Name:</strong>
-  <%= @trouble911.providername %>
+  <%= @trouble911.providername.humanize %>
 </p>
 
 <p>
   <strong>Phone Number:</strong>
-  <%= @trouble911.phonenumber %>
+  <%= @trouble911.phonenumber.humanize %>
 </p>
 
 <p>
   <strong>Fax Number:</strong>
-  <%= @trouble911.faxnumber %>
+  <%= @trouble911.faxnumber.humanize %>
 </p>
 
 <p>
   <strong>Extra Info:</strong>
-  <%= @trouble911.extrainfo %>
+  <%= @trouble911.extrainfo.humanize %>
 </p>
 
 <%= link_to 'Edit', edit_trouble911_path(@trouble911) %> |

@@ -1,5 +1,13 @@
 <center>
 <p id="notice"><%= notice %></p>
+  <div id="search">
+    <%= form_tag trouble911s_path, :method => 'get' do %>
+      <%= text_field_tag :name_search, params[:name_search], :placeholder => "Name" %>
+      <%= text_field_tag :phone_search, params[:phone_search], :placeholder => "Phone Number" %>
+      <%= text_field_tag :fax_search, params[:fax_search], :placeholder => "Fax Number" %>
+      <%= submit_tag "Search" %>
+    <% end %>
+  </div>
 
 <h1>911 Trouble Report</h1>
 
@@ -17,10 +25,10 @@
   <tbody>
     <% @trouble911s.each do |trouble911| %>
       <tr>
-        <td><%= trouble911.providername %></td>
-        <td><%= trouble911.phonenumber %></td>
-        <td><%= trouble911.extrainfo %></td>
-        <td><%= trouble911.faxnumber %></td>
+        <td><%= trouble911.providername.humanize %></td>
+        <td><%= trouble911.phonenumber.humanize %></td>
+        <td><%= trouble911.extrainfo.humanize %></td>
+        <td><%= trouble911.faxnumber.humanize %></td>
         <td><%= link_to '', trouble911, class: "far fa-eye"
         %></td>
         <td><%= link_to '', edit_trouble911_path(trouble911), class: "far fa-edit"

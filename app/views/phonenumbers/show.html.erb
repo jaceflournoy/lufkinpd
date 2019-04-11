@@ -2,27 +2,27 @@
 
 <p>
   <strong>Name:</strong>
-  <%= @phonenumber.name %>
+  <%= @phonenumber.name.humanize %>
 </p>
 
 <p>
   <strong>Home:</strong>
-  <%= @phonenumber.home %>
+  <%= @phonenumber.home.humanize %>
 </p>
 
 <p>
   <strong>Office:</strong>
-  <%= @phonenumber.office %>
+  <%= @phonenumber.office.humanize %>
 </p>
 
 <p>
   <strong>Cell:</strong>
-  <%= @phonenumber.cell %>
+  <%= @phonenumber.cell.humanize %>
 </p>
 
 <p>
   <strong>Secondary contact:</strong>
-  <%= @phonenumber.secondary_contact %>
+  <%= @phonenumber.secondary_contact.humanize %>
 </p>
 
 <%= link_to 'Edit', edit_phonenumber_path(@phonenumber) %> |

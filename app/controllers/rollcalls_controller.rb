@@ -5,7 +5,7 @@ class RollcallsController < ApplicationController
   # GET /rollcalls
   # GET /rollcalls.json
   def index
-      @rollcalls = Rollcall.all
+    @rollcalls = Rollcall.all.where("cast(radionum as varchar(20)) ILIKE ?","%#{params[:radionum_search]}%").where("title ILIKE ?","%#{params[:title_search]}%")
   end
 
   # GET /rollcalls/1

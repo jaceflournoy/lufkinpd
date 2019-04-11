@@ -1,4 +1,10 @@
 <p id="notice"><%= notice %></p>
+<div id="search">
+  <%= form_tag gatecodes_path, :method => 'get' do %>
+    <%= text_field_tag :location_search, params[:location_search], :placeholder => "Location" %>
+    <%= submit_tag "Search" %>
+  <% end %>
+</div>
 
 <h1>Gate Codes</h1>
 

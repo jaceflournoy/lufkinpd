@@ -1,6 +1,14 @@
 
 <p id="notice"><%= notice %></p>
 
+<div id="search">
+  <%= form_tag rollcalls_path, :method => 'get' do %>
+    <%= number_field_tag :radionum_search, params[:radionum_search], :placeholder => "Radio Number", :type => "number" %>
+    <%= text_field_tag :title_search, params[:title_search], :placeholder => "Title" %>
+    <%= submit_tag "Search" %>
+  <% end %>
+</div>
+
 <h1>Roll Review</h1>
 
 <table class="center">

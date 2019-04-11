@@ -1,5 +1,15 @@
 <p id="notice"><%= notice %></p>
 <center>
+
+  <div id="search">
+    <%= form_tag fleettickets_path, :method => 'get' do %>
+      <%= number_field_tag :unit_search, params[:unit_search], :placeholder => "Unit Number", :type => "number" %>
+      <%= text_field_tag :officer_search, params[:officer_search], :placeholder => "Officer" %>
+      <%= text_field_tag :problem_search, params[:problem_search], :placeholder => "Problem" %>
+      <%= submit_tag "Search" %>
+    <% end %>
+  </div>
+
 <h1>Fleet Tickets</h1>
 
 <table>

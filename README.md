@@ -16,6 +16,7 @@ Changelog - 4/11
 - Sex Offender CSS Change for Show Page
 - Humanized all forms
 - Added search bar to all forms
+- Added Pagination for all tables.
 
 Changelog - 4/10
 - Added 911 Trouble Report

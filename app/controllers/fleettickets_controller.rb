@@ -4,7 +4,8 @@ class FleetticketsController < ApplicationController
   # GET /fleettickets
   # GET /fleettickets.json
   def index
-    @fleettickets = Fleetticket.all.where("cast(unitnumber as varchar(20)) ILIKE ?", "%#{params[:unit_search]}%").where(["reportingofficer ILIKE ?","%#{params[:officer_search]}%"]).where(["problem ILIKE ?","%#{params[:problem_search]}%"])
+    @fleettickets = Fleetticket.all.paginate(:per_page =>15, :page => params[:page])
+                        .where("cast(unitnumber as varchar(20)) ILIKE ?", "%#{params[:unit_search]}%").where(["reportingofficer ILIKE ?","%#{params[:officer_search]}%"]).where(["problem ILIKE ?","%#{params[:problem_search]}%"])
   end
 
   # GET /fleettickets/1

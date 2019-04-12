@@ -4,7 +4,8 @@ class WatersewersController < ApplicationController
   # GET /watersewers
   # GET /watersewers.json
   def index
-    @watersewers = Watersewer.all.where("address ILIKE ?","%#{params[:address_search]}%").where("name ILIKE ?","%#{params[:name_search]}%").where("callback ILIKE ?","%#{params[:phone_search]}%").where("unitassigned ILIKE ?","%#{params[:unit_search]}%")
+    @watersewers = Watersewer.all.paginate(:per_page =>15, :page => params[:page])
+                       .where("address ILIKE ?","%#{params[:address_search]}%").where("name ILIKE ?","%#{params[:name_search]}%").where("callback ILIKE ?","%#{params[:phone_search]}%").where("unitassigned ILIKE ?","%#{params[:unit_search]}%")
   end
 
   # GET /watersewers/1

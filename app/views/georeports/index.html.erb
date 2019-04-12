@@ -7,6 +7,11 @@
       <%= submit_tag "Search" %>
     <% end %>
   </div>
+
+  <div class="apple_pagination">
+    <%= will_paginate @georeports %>
+  </div>
+
 <h1>GeoBase Reports</h1>
 
 <table>

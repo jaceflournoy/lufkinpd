@@ -5,7 +5,8 @@ class GatecodesController < ApplicationController
   # GET /gatecodes
   # GET /gatecodes.json
   def index
-    @gatecodes = Gatecode.all.where(["location ILIKE ?","%#{params[:location_search]}%"])
+    @gatecodes = Gatecode.all.paginate(:per_page =>15, :page => params[:page])
+                     .where(["location ILIKE ?","%#{params[:location_search]}%"])
   end
 
   # GET /gatecodes/1

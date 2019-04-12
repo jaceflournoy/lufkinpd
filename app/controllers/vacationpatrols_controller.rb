@@ -4,7 +4,8 @@ class VacationpatrolsController < ApplicationController
   # GET /vacationpatrols
   # GET /vacationpatrols.json
   def index
-    @vacationpatrols = Vacationpatrol.all.where(["officer ILIKE ?","%#{params[:name_search]}%"])
+    @vacationpatrols = Vacationpatrol.all.paginate(:per_page =>15, :page => params[:page])
+                           .where(["officer ILIKE ?","%#{params[:name_search]}%"])
   end
 
   # GET /vacationpatrols/1

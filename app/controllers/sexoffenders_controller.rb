@@ -4,7 +4,8 @@ class SexoffendersController < ApplicationController
   # GET /sexoffenders
   # GET /sexoffenders.json
   def index
-    @sexoffenders = Sexoffender.all.where(["name LIKE ?","%#{params[:name_search]}%"])
+    @sexoffenders = Sexoffender.all.paginate(:per_page =>15, :page => params[:page])
+                        .where(["name LIKE ?","%#{params[:name_search]}%"])
   end
 
   # GET /sexoffenders/1

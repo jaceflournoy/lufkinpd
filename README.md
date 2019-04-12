@@ -4,13 +4,18 @@ TODO - LUFKINPD
 
 Mandatory:
 - Work on roles/priviledges
-- Humanize All Form fields
-- Add search bar to most forms
+- Pagination
 
 Features/Improvements:
 - Add audit log
 
 -----------------
+
+Changelog - 4/11
+- Sex Offender CSS Change for Show Page
+- Humanized all forms
+- Added search bar to all forms
+
 Changelog - 4/10
 - Added 911 Trouble Report
 - Made entire site dark

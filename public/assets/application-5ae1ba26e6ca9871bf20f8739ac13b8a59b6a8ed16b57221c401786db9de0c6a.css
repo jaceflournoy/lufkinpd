@@ -1,3 +1,108 @@
+/* line 1, app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 0px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+}
+
+/* line 11, app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 17, app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 23, app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+
+/* line 26, app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+
+/* line 30, app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+}
+
+/* line 35, app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 39, app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 5px 7px;
+}
+
+/* line 44, app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 49, app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 53, app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #383838;
+  display: inline-block;
+}
+
+/* line 64, app/assets/stylesheets/scaffolds.scss */
+.field_with_errors input, .field_with_errors textarea {
+  background-color: lightpink;
+  color: white;
+}
+
+/* line 70, app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+
+/* line 74, app/assets/stylesheets/scaffolds.scss */
+.formTable td {
+  padding: 5px 5px 3px;
+}
+/* line 4, app/assets/stylesheets/sexoffenders.scss */
+.wrapper {
+  column-count: 2;
+  column-width: 10px;
+  column-rule: 1px solid lightblue;
+  margin-left: 30px;
+}
+
+/* line 11, app/assets/stylesheets/sexoffenders.scss */
+.wrapper .left {
+  text-align: right;
+  padding-right: 10px;
+}
+
+/* line 16, app/assets/stylesheets/sexoffenders.scss */
+.wrapper .right {
+  text-align: left;
+  padding-left: 10px;
+}
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -10,11 +115,12 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
- *= require_self
+
+
  */
 
 /* CSS Document */
+
 
 body {
     background-color: #383838;
@@ -77,101 +183,92 @@ input{
     color: white;
 }
 
-.button {
-    /* background styles */
-    position: relative;
+a.button {
+    background-color: #FF00FF !important;
+    width: 200px;
+    height: 50px;
+    text-align: center;
     display: inline-block;
-    padding: 15px 25px;
-    background-color: #f44336; /*for compatibility with older browsers*/
+    position: relative;
+    margin: 50px auto 0;
+    overflow: hidden;
     border: 1px solid #333333;
-
-    /* text styles */
+    color: white;
     text-decoration: none;
-    color: #fff;
-    font-size: 17px;
-    font-family: sans-serif;
-    font-weight: 100;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
+
     -webkit-box-shadow: inset 0px 1px 1px 0px rgba(255,255,255,.4);
     -moz-box-shadow: inset 0px 1px 1px 0px rgba(255,255,255,.4);
     box-shadow: inset 0px 1px 1px 0px rgba(255,255,255,.4);
-    text-shadow: 0px -1px #333;
-    cursor: pointer;
 
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+
+
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+
+    background-image: -webkit-linear-gradient(bottom, #383838 0%, #444444 49%, #555 50%, #555 100%);
+    background-image: -moz-linear-gradient(bottom, #383838 0%, #444444 49%, #555 50%, #555 100%);
+    background-image: -ms-linear-gradient(bottom, #383838 0%, #444444 49%, #555 50%, #555 100%);
+    background-image: -o-linear-gradient(bottom, #383838 0%, #444444 49%, #555 50%, #555 100%);
+    background-image: linear-gradient(bottom, #383838 0%, #444444 49%, #555 50%, #555 100%);
 }
 
-.button:after{
+a.button span.text {
+    position: absolute;
+    top: 16px;
+    left: 50px;
+    font: 15px Arial;
+}
+
+a.button span.shine {
     content: '';
     position: absolute;
-    top: 2px;
-    left: 2px;
-    width: calc(100% - 4px);
-    height: 50%;
-    background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.2));
+    height: 400px;
+    width: 20px;
+    background: white;
+    top: -80px;
+    left: -20px;
+    display: block;
+    opacity: 0.8;
+
+    -webkit-box-shadow: 0px 0px 20px 10px white;
+    -moz-box-shadow: 0px 0px 20px 10px white;
+    box-shadow: 0px 0px 20px 10px white;
+
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
 }
 
-.button:hover{
+a.button:hover {
     -webkit-box-shadow: inset 0px 1px 10px 0px rgba(255,255,255,.4), 0px 3px 3px 0px rgba(0,0,0,0.4);
     -moz-box-shadow: inset 0px 1px 10px 0px rgba(255,255,255,.4), 0px 3px 3px 0px rgba(0,0,0,0.4);
     box-shadow: inset 0px 1px 10px 0px rgba(255,255,255,.4), 0px 3px 3px 0px rgba(0,0,0,0.4);
 }
 
-.button:active {
+a.button:active {
     -webkit-box-shadow: inset 0px 1px 15px 0px rgba(0,0,0,.4), inset 0px 1px 1px 1px rgba(0,0,0,.2), 0px 1px 1px 0 rgba(255,255,255,.5);
     -moz-box-shadow: inset 0px 1px 15px 0px rgba(0,0,0,.4), inset 0px 1px 1px 1px rgba(0,0,0,.2), 0px 1px 1px 0 rgba(255,255,255,.5);
     box-shadow: inset 0px 1px 15px 0px rgba(0,0,0,.4), inset 0px 1px 1px 1px rgba(0,0,0,.2), 0px 1px 1px 0 rgba(255,255,255,.5);
 }
 
-.button2 {
-    /* background styles */
-    position: relative;
-    display: inline-block;
-    padding: 15px 25px;
-    background-color: #008cba; /*for compatibility with older browsers*/
-    border: 1px solid #333333;
-
-    /* text styles */
-    text-decoration: none;
-    color: #fff;
-    font-size: 17px;
-    font-family: sans-serif;
-    font-weight: 100;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    -webkit-box-shadow: inset 0px 1px 1px 0px rgba(255,255,255,.4);
-    -moz-box-shadow: inset 0px 1px 1px 0px rgba(255,255,255,.4);
-    box-shadow: inset 0px 1px 1px 0px rgba(255,255,255,.4);
-    text-shadow: 0px -1px #333;
-    cursor: pointer;
-
+a.button:hover span.shine {
+    left: 170px;
+    top: -300px;
 }
-
-.button2:after{
-    content: '';
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    width: calc(100% - 4px);
-    height: 50%;
-    background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.2));
-}
-
-.button2:hover{
-    -webkit-box-shadow: inset 0px 1px 10px 0px rgba(255,255,255,.4), 0px 3px 3px 0px rgba(0,0,0,0.4);
-    -moz-box-shadow: inset 0px 1px 10px 0px rgba(255,255,255,.4), 0px 3px 3px 0px rgba(0,0,0,0.4);
-    box-shadow: inset 0px 1px 10px 0px rgba(255,255,255,.4), 0px 3px 3px 0px rgba(0,0,0,0.4);
-}
-
-.button2:active {
-    -webkit-box-shadow: inset 0px 1px 15px 0px rgba(0,0,0,.4), inset 0px 1px 1px 1px rgba(0,0,0,.2), 0px 1px 1px 0 rgba(255,255,255,.5);
-    -moz-box-shadow: inset 0px 1px 15px 0px rgba(0,0,0,.4), inset 0px 1px 1px 1px rgba(0,0,0,.2), 0px 1px 1px 0 rgba(255,255,255,.5);
-    box-shadow: inset 0px 1px 15px 0px rgba(0,0,0,.4), inset 0px 1px 1px 1px rgba(0,0,0,.2), 0px 1px 1px 0 rgba(255,255,255,.5);
-}
-
-
 
 .a {
     text-decoration: none;

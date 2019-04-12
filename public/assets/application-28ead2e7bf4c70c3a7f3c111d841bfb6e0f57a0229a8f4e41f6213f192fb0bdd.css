@@ -1,3 +1,108 @@
+/* line 1, app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 0px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+}
+
+/* line 11, app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 17, app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 23, app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+
+/* line 26, app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+
+/* line 30, app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+}
+
+/* line 35, app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 39, app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 5px 7px;
+}
+
+/* line 44, app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 49, app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 53, app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #383838;
+  display: inline-block;
+}
+
+/* line 64, app/assets/stylesheets/scaffolds.scss */
+.field_with_errors input, .field_with_errors textarea {
+  background-color: lightpink;
+  color: white;
+}
+
+/* line 70, app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+
+/* line 74, app/assets/stylesheets/scaffolds.scss */
+.formTable td {
+  padding: 5px 5px 3px;
+}
+/* line 4, app/assets/stylesheets/sexoffenders.scss */
+.wrapper {
+  column-count: 2;
+  column-width: 10px;
+  column-rule: 1px solid lightblue;
+  margin-left: 30px;
+}
+
+/* line 11, app/assets/stylesheets/sexoffenders.scss */
+.wrapper .left {
+  text-align: right;
+  padding-right: 10px;
+}
+
+/* line 16, app/assets/stylesheets/sexoffenders.scss */
+.wrapper .right {
+  text-align: left;
+  padding-left: 10px;
+}
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -10,11 +115,12 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
- *= require_self
+
+
  */
 
 /* CSS Document */
+
 
 body {
     background-color: #383838;

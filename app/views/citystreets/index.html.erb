@@ -9,8 +9,11 @@
     <%= submit_tag "Search" %>
   <% end %>
 </div>
+
+<div class="apple_pagination">
+  <%= will_paginate @citystreets %>
+</div>
 <center>
-<p id="notice"><%= notice %></p>
 
 <h1>City Street Dept. Call-Out</h1>
 

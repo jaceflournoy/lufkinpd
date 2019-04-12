@@ -4,7 +4,8 @@ class CchlogsController < ApplicationController
   # GET /cchlogs
   # GET /cchlogs.json
   def index
-        @cchlogs = Cchlog.all.where("name ILIKE ?","%#{params[:name_search]}%")
+        @cchlogs = Cchlog.all.paginate(:per_page =>15, :page => params[:page])
+                       .where("name ILIKE ?","%#{params[:name_search]}%")
                        .where("idnum ILIKE ?","%#{params[:id_search]}%")
                        .where("reason ILIKE ?","%#{params[:reason_search]}%")
                        .where("officer ILIKE ?","%#{params[:officer_search]}%")

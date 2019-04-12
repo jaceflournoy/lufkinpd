@@ -4,7 +4,8 @@ class Trouble911sController < ApplicationController
   # GET /trouble911s
   # GET /trouble911s.json
   def index
-    @trouble911s = Trouble911.all.where("providername ILIKE ?","%#{params[:name_search]}%").where("phonenumber ILIKE ?","%#{params[:phone_search]}%").where("faxnumber ILIKE ?","%#{params[:fax_search]}%")
+    @trouble911s = Trouble911.all.paginate(:per_page =>15, :page => params[:page])
+                       .where("providername ILIKE ?","%#{params[:name_search]}%").where("phonenumber ILIKE ?","%#{params[:phone_search]}%").where("faxnumber ILIKE ?","%#{params[:fax_search]}%")
   end
 
   # GET /trouble911s/1

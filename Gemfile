@@ -60,12 +60,12 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'cancancan', '~> 2.0'
 
 gem 'image_processing', '~> 1.2'
-
 gem 'mini_magick'
-
 gem 'bootstrap-sass', '~> 3.4.1'
 gem 'sassc-rails', '>= 2.1.0'
 gem 'jquery-rails'
 gem 'lockup'
 gem 'rails_admin', '~> 1.3'
 gem 'validates_timeliness', '~> 5.0.0.alpha3'
+gem 'will_paginate', '~> 3.1.1'
+gem 'will_paginate-bootstrap'

@@ -4,7 +4,8 @@ class TxdotstreetsController < ApplicationController
   # GET /txdotstreets
   # GET /txdotstreets.json
   def index
-    @txdotstreets = Txdotstreet.all.where("intersection ILIKE ?","%#{params[:address_search]}%").where("name ILIKE ?","%#{params[:name_search]}%").where("callback ILIKE ?","%#{params[:phone_search]}%").where("unitassigned ILIKE ?","%#{params[:unit_search]}%")
+    @txdotstreets = Txdotstreet.all.paginate(:per_page =>15, :page => params[:page])
+                        .where("intersection ILIKE ?","%#{params[:address_search]}%").where("name ILIKE ?","%#{params[:name_search]}%").where("callback ILIKE ?","%#{params[:phone_search]}%").where("unitassigned ILIKE ?","%#{params[:unit_search]}%")
   end
 
   # GET /txdotstreets/1

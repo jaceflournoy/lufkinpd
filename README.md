@@ -4,7 +4,6 @@ TODO - LUFKINPD
 
 Mandatory:
 - Work on roles/priviledges
-- Pagination
 - Seed file
 
 Features/Improvements:

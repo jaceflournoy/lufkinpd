@@ -130,17 +130,16 @@ Rollcall.create!([{
 p "Created a total of #{Rollcall.count} Roll Call entries."
 
 
-#s1 = Sexoffender.create!([{
-#    name:'test',
-#    address:'test',
-#    offense:'test',
-#    risklevel:'test',
-#    officer:'test',
-#    dateofbirth: 30.years.ago,
-#    created_at: DateTime.now,
-#    updated_at: DateTime.now}])
-#s1.image.attach(io: File.open('app/assets/images/defaultimages/default-avatar.jpg'), filename: 'default-avatar.jpg', content_type: 'image/jpg')
-#p "Created a total of #{Sexoffender.count} Sex Offender entries."
+Sexoffender.create!([{
+    name:'test',
+    address:'test',
+    offense:'test',
+    risklevel:'test',
+    officer:'test',
+    dateofbirth: 30.years.ago,
+    created_at: DateTime.now,
+    updated_at: DateTime.now}])
+p "Created a total of #{Sexoffender.count} Sex Offender entries."
 
 
 Txdotlight.create!([{

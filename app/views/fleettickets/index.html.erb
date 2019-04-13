@@ -30,7 +30,7 @@
     <% @fleettickets.each do |fleetticket| %>
       <tr>
         <td><%= fleetticket.unitnumber %></td>
-        <td><%= fleetticket.reportingofficer.humanize %></td>
+        <td><%= fleetticket.reportingofficer.humanize.titleize %></td>
         <td><%= fleetticket.problem.humanize %></td>
         <td><%= link_to '', fleetticket , class: "far fa-eye"
         %></td>

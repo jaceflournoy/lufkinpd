@@ -28,7 +28,7 @@
   <tbody>
     <% @ithelptickets.each do |ithelpticket| %>
       <tr>
-        <td><%= ithelpticket.name.humanize %></td>
+        <td><%= ithelpticket.name.humanize.titleize %></td>
         <td><%= ithelpticket.unit.humanize %></td>
         <td><%= ithelpticket.problem.humanize %></td>
         <td><%= link_to '', ithelpticket, class: "far fa-eye"

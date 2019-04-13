@@ -31,7 +31,7 @@
   <tbody>
     <% @sexoffenders.each do |sexoffender| %>
       <tr>
-        <td><%= sexoffender.name.humanize %></td>
+        <td><%= sexoffender.name.humanize.titleize %></td>
         <% if false %>
         <td><%= sexoffender.dateofbirth %></td>
         <td><%= sexoffender.address.humanize %></td>

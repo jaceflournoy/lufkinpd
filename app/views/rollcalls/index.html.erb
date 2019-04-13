@@ -28,7 +28,7 @@
     <% @rollcalls.each do |rollcall| %>
       <tr>
         <td><%= rollcall.radionum %></td>
-        <td><%= rollcall.title.humanize %></td>
+        <td><%= rollcall.title.humanize.titleize %></td>
         <td><%= rollcall.description.humanize %></td>
         <td><%= rollcall.created_at %></td>
         <td><%= link_to '', rollcall , class: "far fa-eye"%></td>

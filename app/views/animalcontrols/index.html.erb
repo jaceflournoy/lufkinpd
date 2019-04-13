@@ -34,7 +34,7 @@
     <% @animalcontrols.each do |animalcontrol| %>
       <tr>
         <td><%= animalcontrol.address.humanize %></td>
-        <td><%= animalcontrol.name.humanize %></td>
+        <td><%= animalcontrol.name.humanize.titleize %></td>
         <td><%= animalcontrol.callback.humanize %></td>
         <td><%= animalcontrol.unitassigned.humanize %></td>
         <td><%= animalcontrol.problem.humanize %></td>

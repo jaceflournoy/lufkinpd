@@ -37,7 +37,7 @@
     <% @txdotstreets.each do |txdotstreet| %>
       <tr>
         <td><%= txdotstreet.intersection.humanize %></td>
-        <td><%= txdotstreet.name.humanize %></td>
+        <td><%= txdotstreet.name.humanize.titleize %></td>
         <td><%= txdotstreet.callback.humanize %></td>
         <td><%= txdotstreet.unitassigned.humanize %></td>
         <td><%= txdotstreet.problem.humanize %></td>

@@ -4,8 +4,8 @@ class Phonenumber < ApplicationRecord
             length: {maximum: 140},
             on: :create,
             allow_nil: false,
-            format: { with: /\A[a-zA-Z]+\z/,
-                      message: "only allows letters" }
+            format: { with: /\A^[\p{L}\s'.-]+$\z/,
+                      message: "only allows letters, dashes, apostrophes, and periods." }
 
   validates :home,
             length: {maximum: 140},

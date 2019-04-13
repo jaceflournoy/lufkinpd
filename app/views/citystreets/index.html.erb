@@ -41,7 +41,7 @@
     <% @citystreets.each do |citystreet| %>
       <tr>
         <td><%= citystreet.address.humanize %></td>
-        <td><%= citystreet.name.humanize %></td>
+        <td><%= citystreet.name.humanize.titleize %></td>
         <td><%= citystreet.callback.humanize %></td>
         <td><%= citystreet.unitassigned.humanize %></td>
         <td><%= citystreet.problem.humanize %></td>

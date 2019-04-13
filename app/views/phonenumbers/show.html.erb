@@ -2,7 +2,7 @@
 
 <p>
   <strong>Name:</strong>
-  <%= @phonenumber.name.humanize %>
+  <%= @phonenumber.name.humanize.titleize %>
 </p>
 
 <p>
@@ -22,7 +22,7 @@
 
 <p>
   <strong>Secondary contact:</strong>
-  <%= @phonenumber.secondary_contact.humanize %>
+  <%= @phonenumber.secondary_contact.humanize.titleize %>
 </p>
 
 <%= link_to 'Edit', edit_phonenumber_path(@phonenumber) %> |

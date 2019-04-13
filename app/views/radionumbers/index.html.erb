@@ -27,7 +27,7 @@
   <tbody>
     <% @radionumbers.each do |radionumber| %>
       <tr>
-        <td><%= radionumber.officer.humanize %></td>
+        <td><%= radionumber.officer.humanize.titleize %></td>
         <td><%= radionumber.radionumber %></td>
         <td><%= radionumber.extrainfo.humanize %></td>
         <td><%= link_to '', radionumber, class: "far fa-eye"

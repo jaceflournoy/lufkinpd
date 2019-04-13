@@ -24,7 +24,7 @@
   <tbody>
     <% @vacationpatrols.each do |vacationpatrol| %>
       <tr>
-        <td><%= vacationpatrol.officer.humanize %></td>
+        <td><%= vacationpatrol.officer.humanize.titleize %></td>
         <td><%= vacationpatrol.comment.humanize %></td>
         <td><%= link_to '', vacationpatrol, class: "far fa-eye"
         %></td>

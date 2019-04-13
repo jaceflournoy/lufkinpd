@@ -38,7 +38,7 @@
     <% @txdotlights.each do |txdotlight| %>
       <tr>
         <td><%= txdotlight.intersection.humanize %></td>
-        <td><%= txdotlight.name.humanize %></td>
+        <td><%= txdotlight.name.humanize.titleize %></td>
         <td><%= txdotlight.callback.humanize %></td>
         <td><%= txdotlight.unitassigned.humanize %></td>
         <td><%= txdotlight.problem.humanize %></td>

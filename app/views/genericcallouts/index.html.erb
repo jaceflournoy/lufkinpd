@@ -34,8 +34,8 @@
   <tbody>
     <% @genericcallouts.each do |genericcallout| %>
       <tr>
-        <td><%= genericcallout.address.humanize %></td>
-        <td><%= genericcallout.name.humanize %></td>
+        <td><%= genericcallout.address.humanize.titleize %></td>
+        <td><%= genericcallout.name.humanize.titleize %></td>
         <td><%= genericcallout.callback.humanize %></td>
         <td><%= genericcallout.unitassigned.humanize %></td>
         <td><%= genericcallout.problem.humanize %></td>

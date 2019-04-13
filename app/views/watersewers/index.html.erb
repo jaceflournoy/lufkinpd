@@ -39,7 +39,7 @@
     <% @watersewers.each do |watersewer| %>
       <tr>
         <td><%= watersewer.address.humanize %></td>
-        <td><%= watersewer.name.humanize %></td>
+        <td><%= watersewer.name.humanize.titleize %></td>
         <td><%= watersewer.callback.humanize %></td>
         <td><%= watersewer.unitassigned.humanize %></td>
         <td><%= watersewer.problem.humanize %></td>

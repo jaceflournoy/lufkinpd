@@ -29,7 +29,7 @@
   <tbody>
     <% @trouble911s.each do |trouble911| %>
       <tr>
-        <td><%= trouble911.providername.humanize %></td>
+        <td><%= trouble911.providername.humanize.titleize %></td>
         <td><%= trouble911.phonenumber.humanize %></td>
         <td><%= trouble911.extrainfo.humanize %></td>
         <td><%= trouble911.faxnumber.humanize %></td>

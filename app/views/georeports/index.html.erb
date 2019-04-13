@@ -31,9 +31,9 @@
       <tr>
         <td><%= georeport.presentaddress.humanize %></td>
         <td><%= georeport.changeaddrto.humanize %></td>
-        <td><%= georeport.biznamechange.humanize %></td>
+        <td><%= georeport.biznamechange.humanize.titleize %></td>
         <td><%= georeport.comment.humanize %></td>
-        <td><%= georeport.reportedby.humanize %></td>
+        <td><%= georeport.reportedby.humanize.titleize %></td>
         <td><%= link_to '', georeport, class: "far fa-eye"
         %></td>
         <td><%= link_to '', edit_georeport_path(georeport), class: "far fa-edit"

@@ -31,11 +31,11 @@
   <tbody>
     <% @phonenumbers.each do |phonenumber| %>
       <tr>
-        <td><%= phonenumber.name.humanize %></td>
+        <td><%= phonenumber.name.humanize.titleize %></td>
         <td><%= phonenumber.home.humanize %></td>
         <td><%= phonenumber.office.humanize %></td>
         <td><%= phonenumber.cell.humanize %></td>
-        <td><%= phonenumber.secondary_contact.humanize %></td>
+        <td><%= phonenumber.secondary_contact.humanize.titleize %></td>
         <td><%= link_to '', phonenumber, class: "far fa-eye"
         %></td>
         <td><%= link_to '', edit_phonenumber_path(phonenumber), class: "far fa-edit"

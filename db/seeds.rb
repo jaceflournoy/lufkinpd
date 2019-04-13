@@ -32,7 +32,7 @@ Watersewer.destroy_all
 # end
 #
 
-20.times do |index|
+50.times do |index|
   Animalcontrol.create!(
       address: Faker::Address.street_address,
       name: Faker::Name.name,
@@ -43,7 +43,7 @@ Watersewer.destroy_all
 end
 p "Created a total of #{Animalcontrol.count} Animal Control Call-Out entries."
 
-20.times do |index|
+50.times do |index|
   Cchlog.create!(
     name: Faker::Name.name,
     dateofbirth: Faker::Date.between(30.years.ago, 10.years.ago),
@@ -57,7 +57,7 @@ p "Created a total of #{Animalcontrol.count} Animal Control Call-Out entries."
 end
 p "Created a total of #{Cchlog.count} CCH Log entries."
 
-20.times do |index|
+50.times do |index|
 Citystreet.create!([{
     address:Faker::Address.street_address,
     name:Faker::Name.name,
@@ -75,7 +75,7 @@ Citystreet.create!([{
 end
 p "Created a total of #{Citystreet.count} City/Street Call-Out entries."
 
-20.times do |index|
+50.times do |index|
 Daysoffrequest.create!([{
     operatorname:Faker::Name.name,
     firstdayoff: Faker::Number.between(1, 4).days.from_now,
@@ -89,7 +89,7 @@ end
 p "Created a total of #{Daysoffrequest.count} Days Off Request entries."
 
 
-20.times do |index|
+50.times do |index|
 Gatecode.create!([{
     location:Faker::Address.street_address,
     code:Faker::Number.between(1,10)}])
@@ -97,7 +97,7 @@ end
 p "Created a total of #{Gatecode.count} Gate Code entries."
 
 
-20.times do |index|
+50.times do |index|
 Genericcallout.create!([{
     address:Faker::Address.street_address,
     name:Faker::Name.name,
@@ -109,7 +109,7 @@ end
 p "Created a total of #{Genericcallout.count} Generic Call-Out entries."
 
 
-20.times do |index|
+50.times do |index|
 Georeport.create!([{
     presentaddress:Faker::Address.street_address,
     changeaddrto:Faker::Address.street_address,
@@ -126,7 +126,7 @@ end
 p "Created a total of #{Georeport.count} GeoBase Report entries."
 
 
-20.times do |index|
+50.times do |index|
 Phonenumber.create!([{
     name: Faker::Name.name_with_middle,
     home:Faker::PhoneNumber.cell_phone,
@@ -136,7 +136,7 @@ Phonenumber.create!([{
 end
 p "Created a total of #{Phonenumber.count} Phone Number entries."
 
-20.times do |index|
+50.times do |index|
 Radionumber.create!([{
     officer:Faker::Name.name,
     radionumber: Faker::Number.number(5),
@@ -144,7 +144,7 @@ Radionumber.create!([{
 end
 p "Created a total of #{Radionumber.count} Radio Number entries."
 
-20.times do |index|
+50.times do |index|
 Rollcall.create!([{
     radionum: Faker::Number.number(5),
     title: Faker::Name.name,
@@ -152,7 +152,7 @@ Rollcall.create!([{
 end
 p "Created a total of #{Rollcall.count} Roll Call entries."
 
-20.times do |index|
+50.times do |index|
 Sexoffender.create!([{
     name:Faker::Name.name,
     address:Faker::Address.street_address,
@@ -165,7 +165,7 @@ Sexoffender.create!([{
 end
 p "Created a total of #{Sexoffender.count} Sex Offender entries."
 
-20.times do |index|
+50.times do |index|
 Txdotlight.create!([{
     intersection:Faker::Address.street_address,
     name:Faker::Name.name,
@@ -180,7 +180,7 @@ Txdotlight.create!([{
 end
 p "Created a total of #{Txdotlight.count} TX-DOT Light Call-Out entries."
 
-20.times do |index|
+50.times do |index|
 Txdotstreet.create!([{
     intersection:Faker::Address.street_address,
     name:Faker::Name.name,
@@ -194,7 +194,7 @@ Txdotstreet.create!([{
 end
 p "Created a total of #{Txdotstreet.count} TX-DOT Street Call-Out entries."
 
-20.times do |index|
+50.times do |index|
 Watersewer.create!([{
     address:Faker::Address.street_address,
     name:Faker::Name.name,

@@ -33,7 +33,9 @@
         <td><%= rollcall.created_at %></td>
         <td><%= link_to '', rollcall , class: "far fa-eye"%></td>
         <td><%= link_to '', edit_rollcall_path(rollcall) , class: "far fa-edit" %></td>
+        <% if can? :delete, :all %>
         <td><%= link_to '', rollcall, method: :delete, data: { confirm: 'Are you sure?' }, class: "far fa-trash-alt" %></td>
+          <% end %>
       </tr>
     <% end %>
   </tbody>

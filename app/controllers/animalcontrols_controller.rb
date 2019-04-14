@@ -1,4 +1,5 @@
 class AnimalcontrolsController < ApplicationController
+  load_and_authorize_resource
   before_action :set_animalcontrol, only: [:show, :edit, :update, :destroy]
 
   # GET /animalcontrols

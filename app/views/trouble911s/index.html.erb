@@ -37,7 +37,9 @@
         %></td>
         <td><%= link_to '', edit_trouble911_path(trouble911), class: "far fa-edit"
         %></td>
-        <td><%= link_to '', trouble911, method: :delete, data: { confirm: 'Are you sure?' }, class: "far fa-trash-alt" %></td>
+        <% if can? :delete, :all %>
+      <td><%= link_to '', trouble911, method: :delete, data: { confirm: 'Are you sure?' }, class: "far fa-trash-alt" %></td>
+          <%end %>
       </tr>
     <% end %>
   </tbody>

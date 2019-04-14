@@ -1,4 +1,5 @@
 class WatersewersController < ApplicationController
+  load_and_authorize_resource
   before_action :set_watersewer, only: [:show, :edit, :update, :destroy]
 
   # GET /watersewers

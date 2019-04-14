@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Officer:</strong>
+  <%= @comment.officer %>
+</p>
+
+<p>
+  <strong>Additionalinfo:</strong>
+  <%= @comment.additionalinfo %>
+</p>
+
+<p>
+  <strong>Sexoffender:</strong>
+  <%= @comment.sexoffender %>
+</p>
+
+<%= link_to 'Edit', edit_comment_path(@comment) %> |
+<%= link_to 'Back', comments_path %>

@@ -1,5 +1,12 @@
 RailsAdmin.config do |config|
 
+  config.authorize_with do
+    authenticate_or_request_with_http_basic('Login required') do |username, password|
+      username == Rails.application.secrets.user &&
+          password == Rails.application.secrets.password
+    end
+  end
+
   ### Popular gems integration
 
   ## == Devise ==
@@ -9,7 +16,8 @@ RailsAdmin.config do |config|
   # config.current_user_method(&:current_user)
 
   ## == Cancan ==
-  # config.authorize_with :cancan
+
+  #config.authorize_with :cancancan
 
   ## == Pundit ==
   # config.authorize_with :pundit
@@ -35,7 +43,7 @@ RailsAdmin.config do |config|
     show_in_app
 
     ## With an audit adapter, you can add:
-    # history_index
-    # history_show
+     #history_index
+     #history_show
   end
 end

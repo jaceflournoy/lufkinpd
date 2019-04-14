@@ -1,4 +1,5 @@
 class RadionumbersController < ApplicationController
+  load_and_authorize_resource
   before_action :set_radionumber, only: [:show, :edit, :update, :destroy]
 
   # GET /radionumbers

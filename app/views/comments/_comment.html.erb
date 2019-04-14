@@ -1,0 +1,14 @@
+<div>
+  <div>
+    <p><Strong>Officer:</Strong> <%= comment.officer %></p>
+    <p><strong>Additional Info:</strong><br /> <%= comment.additionalinfo %></p>
+    <p style="font-size: 7px;">Created <%= time_ago_in_words(comment.created_at)%> ago</p>
+  </div>
+  <% if can? :delete, :all %>
+  <p><%= link_to '', [comment.sexoffender, comment],
+                 method: :delete,
+                 class: "far fa-trash-alt",
+                 data: { confirm: 'Are you sure?' } %></p>
+    <%end %>
+</div>
+<hr width=20%>

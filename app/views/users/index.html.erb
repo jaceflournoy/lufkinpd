@@ -1,4 +1,5 @@
 <p id="notice"><%= notice %></p>
+<% if can? :delete, :all %>
 
 <div class="apple_pagination">
   <%= will_paginate @users %>
@@ -31,3 +32,4 @@
 <br>
 
 <%= link_to 'New User', new_user_path %>
+<%end %>

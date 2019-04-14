@@ -1,4 +1,5 @@
 class CchlogsController < ApplicationController
+  load_and_authorize_resource
   before_action :set_cchlog, only: [:show, :edit, :update, :destroy]
 
   # GET /cchlogs

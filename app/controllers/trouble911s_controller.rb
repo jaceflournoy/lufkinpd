@@ -1,4 +1,5 @@
 class Trouble911sController < ApplicationController
+  load_and_authorize_resource
   before_action :set_trouble911, only: [:show, :edit, :update, :destroy]
 
   # GET /trouble911s

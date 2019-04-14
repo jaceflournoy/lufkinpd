@@ -1,6 +1,6 @@
 class Sexoffender < ApplicationRecord
   has_one_attached :image
-
+  has_many :comments
   validates_date :dateofbirth, :on_or_before => lambda {Date.current}
   validates :name,
             presence: true,

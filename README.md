@@ -2,12 +2,10 @@
 
 TODO - LUFKINPD
 
-Mandatory:
-- Work on roles/priviledges
-- Seed file
-
 Features/Improvements:
 - Add audit log
+- Admin History View for deleted/changed records
+- Archive instead of delete
 
 -----------------
 

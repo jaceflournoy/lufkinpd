@@ -42,7 +42,9 @@
         <td><%= link_to '', animalcontrol , class: "far fa-eye"%></td>
         <td><%= link_to '', edit_animalcontrol_path(animalcontrol), class: "far fa-edit"
         %></td>
-        <td><%= link_to '', animalcontrol, method: :delete, data: { confirm: 'Are you sure?' }, class: "far fa-trash-alt" %></td>
+        <% if can? :delete, :all %>
+      <td><%= link_to '', animalcontrol, method: :delete, data: { confirm: 'Are you sure?' }, class: "far fa-trash-alt" %></td>
+          <%end %>
       </tr>
     <% end %>
   </tbody>

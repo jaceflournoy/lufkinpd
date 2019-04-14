@@ -34,7 +34,9 @@
         %></td>
         <td><%= link_to '', edit_radionumber_path(radionumber), class: "far fa-edit"
         %></td>
-        <td><%= link_to '', radionumber, method: :delete, data: { confirm: 'Are you sure?' }, class: "far fa-trash-alt" %></td>
+        <% if can? :delete, :all %>
+      <td><%= link_to '', radionumber, method: :delete, data: { confirm: 'Are you sure?' }, class: "far fa-trash-alt" %></td>
+          <%end %>
       </tr>
     <% end %>
   </tbody>

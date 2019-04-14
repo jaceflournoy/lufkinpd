@@ -1,4 +1,5 @@
 class IthelpticketsController < ApplicationController
+  load_and_authorize_resource
   before_action :set_ithelpticket, only: [:show, :edit, :update, :destroy]
 
   # GET /ithelptickets

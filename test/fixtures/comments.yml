@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  officer: MyString
+  additionalinfo: MyText
+  sexoffender: one
+
+two:
+  officer: MyString
+  additionalinfo: MyText
+  sexoffender: two

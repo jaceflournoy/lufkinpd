@@ -1,0 +1,16 @@
+<%= form_for([@sexoffender, @sexoffender.comments.build]) do |form| %>
+
+  <div class="field">
+    <%= form.label :officer, "Officer:" %>
+    <%= form.text_field :officer %>
+  </div>
+
+  <div class="field">
+    <%= form.label :additionalinfo, "Additional Information:" %>
+    <%= form.text_area :additionalinfo %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

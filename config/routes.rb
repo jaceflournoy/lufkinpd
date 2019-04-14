@@ -15,7 +15,9 @@ Rails.application.routes.draw do
   resources :fleettickets
   resources :radionumbers
   resources :vacationpatrols
-  resources :sexoffenders
+  resources :sexoffenders do
+    resources :comments
+  end
   resources :phonenumbers
   resources :gatecodes
   resources :rollcalls

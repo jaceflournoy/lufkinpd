@@ -8,19 +8,16 @@ class Daysoffrequest < ApplicationRecord
   validates :operatorname,
             presence: true,
             length: {maximum: 140},
-            on: :create,
             allow_nil: false
 
   validates :hoursrequested,
             presence: true,
             length: {maximum: 4},
-            on: :create,
             allow_nil: false,
             numericality: {only_integer:true, greater_than: 0}
 
   validates :comment,
             length: {maximum: 400},
-            on: :create,
             allow_nil: false
 
 

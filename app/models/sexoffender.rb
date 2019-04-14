@@ -5,31 +5,25 @@ class Sexoffender < ApplicationRecord
   validates :name,
             presence: true,
             length: {maximum: 140},
-            on: :create,
             allow_nil: false
   validates :address,
             presence: true,
             length: {maximum: 140},
-            on: :create,
             allow_nil: false
   validates :offense,
             presence: true,
             length: {maximum: 140},
-            on: :create,
             allow_nil: false
   validates :risklevel,
             presence: true,
             length: {maximum: 140},
-            on: :create,
             allow_nil: false
   validates :officer,
             presence: true,
             length: {maximum: 140},
-            on: :create,
             allow_nil: false
   validates :dateofbirth,
             presence: true,
-            on: :create,
             allow_nil: false
 
   before_create :add_default_sexoff_img, on: [:create, :update]

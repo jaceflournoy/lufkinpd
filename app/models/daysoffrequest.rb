@@ -16,10 +16,9 @@ class Daysoffrequest < ApplicationRecord
             length: {maximum: 4},
             on: :create,
             allow_nil: false,
-            numericality: true
+            numericality: {only_integer:true, greater_than: 0}
 
   validates :comment,
-            presence: true,
             length: {maximum: 400},
             on: :create,
             allow_nil: false

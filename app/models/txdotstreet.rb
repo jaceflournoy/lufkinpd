@@ -28,7 +28,6 @@ class Txdotstreet < ApplicationRecord
             on: :create,
             allow_nil: false
   validates :needed,
-            presence: true,
             length: {maximum: 140},
             on: :create,
             allow_nil: false

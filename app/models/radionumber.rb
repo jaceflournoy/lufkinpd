@@ -10,5 +10,5 @@ class Radionumber < ApplicationRecord
             length: {maximum: 9},
             on: :create,
             allow_nil: false,
-            numericality: true
+            numericality: {only_integer:true, greater_than: 0}
 end

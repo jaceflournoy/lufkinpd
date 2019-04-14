@@ -15,7 +15,6 @@ class Trouble911 < ApplicationRecord
             on: :create,
             allow_nil: false
   validates :extrainfo,
-            presence: true,
             length: {maximum: 240},
             on: :create,
             allow_nil: false

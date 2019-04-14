@@ -24,8 +24,7 @@ class Genericcallout < ApplicationRecord
             length: {maximum: 400 },
             on: :create,
             allow_nil: false
-  validates :problem,
-            presence: true,
+  validates :comment,
             length: {maximum: 400 },
             on: :create,
             allow_nil: false

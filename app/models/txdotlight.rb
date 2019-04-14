@@ -40,7 +40,6 @@ class Txdotlight < ApplicationRecord
             on: :create,
             allow_nil: false
   validates :comment,
-            presence: true,
             length: {maximum: 400 },
             on: :create,
             allow_nil: false

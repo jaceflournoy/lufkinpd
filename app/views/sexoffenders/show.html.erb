@@ -50,7 +50,7 @@
   <% if @sexoffender.comments.count > 0 %>
 <hr width = 50%>
   <h2><%= @sexoffender.comments.count %> comments</h2>
-    <%= render @sexoffender.comments.select(&:persisted?) %>
+    <%= render @sexoffender.comments.reverse.select(&:persisted?) %>
   <% end %>
 </div>
 
